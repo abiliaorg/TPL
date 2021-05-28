@@ -1,0 +1,209 @@
+#avatar{
+    display: block;
+    background-color: white;
+}
+
+#avatar .grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-rows: [row]1fr [row]1fr [row]1fr [row]1fr [row]3fr [row]1fr; 
+  grid-gap: 4px;
+}
+
+#avatar .grid__item {
+  /* padding: 1em; */
+  font-size: 14px;
+  background-color: white;
+}
+
+#avatar .item-v1 {
+  grid-column: col / span 4;
+  grid-row: row / span 4;
+}
+
+#avatar .item-v2 {
+  grid-column: col 5 / span 2;
+  grid-row: row;
+}
+
+#avatar .item-v22 {
+  grid-column: col 7 / span 2;
+  grid-row: row;
+}
+
+#avatar .item-v3 {
+  grid-column: col 9 / span 4;
+  grid-row: row;
+}
+
+#avatar .item-v4 {
+  grid-column: col 5 / span 4;
+  grid-row: row 2;
+}
+
+#avatar .item-v5 {
+  grid-column: col 9 / span 4;
+  grid-row: row 2;
+}
+
+#avatar .item-v6 {
+  grid-column: col 5 / span 4;
+  grid-row: row 3;
+}
+
+#avatar .item-v7 {
+  grid-column: col 9 / span 4;
+  grid-row: row 3;
+}
+
+#avatar .item-v8 {
+  grid-column: col 5 / span 4;
+  grid-row: row 4;
+}
+
+#avatar .item-v9 {
+  grid-column: col 9 / span 4;
+  grid-row: row 4;
+}
+
+#avatar .item-v10 {
+  grid-column: col / span 12;
+  grid-row: row 5;
+}
+
+#avatar .item-v11 {
+  grid-column: col / span 12;
+  grid-row: row 6;
+}
+
+
+#avatar #button_avatar_done{
+    background-color: black;
+    color: white;
+    cursor: pointer;    
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #come_ti_chiami{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_donna{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_uomo{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_capelli{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_abbigliamento{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_posture{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_data_di_nascita{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_accessori{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_segni_particolari{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_professione{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#avatar #button_left{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #button_right{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar #scroll_box{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-weight: bold;
+    font-size: 20px;
+}

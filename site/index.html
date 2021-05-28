@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <script src="./assets/vendors/jquery.js"></script>
+				<script src="./assets/vendors/bootstrap.bundle.min.js"></script>
+			
+        <script src="./assets/scripts/main.js"></script>  			
+			
+				<link href="./assets/vendors/bootstrap.min.css" rel="stylesheet"> 
+        <link href="./assets/styles/main.css" rel="stylesheet"> 
+    
+    </head>
+         
+    <body>
+
+        <header>
+
+            
+        </header>
+        
+        <div class="info">State: load</div>
+
+        <div class="state" id="load">
+            hello
+        </div>
+        
+        
+        <div class="state" id="home">         
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__item item-v1" id="button_home">Torna alla home</div>
+                    <div class="grid__item item-v2" id="info_home">Scopri il nostro team e i nostri obiettivi.</div>
+                    <div class="grid__item item-v3" id="button_signup">Registrati</div>
+                    <div class="grid__item item-v4" id="button_login">Log in</div>
+                    <div class="grid__item item-v5" id="button_play">GIOCA</div>
+                    <div class="grid__item item-v6" id="button_explore">SCOPRI</div>
+                    <div class="grid__item item-v7" id="button_suggest">SUGGERISCI</div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="popup" id="popup_signup">
+            <div class="header"><a class="close"></a></div> 
+            <div class="body">
+                <div class="popup1__grid">
+                    <div class="popup1__grid__item popup1__item-v1" id="signup_first">REGISTRATI ORA!</div>
+                    <div class="popup1__grid__item popup1__item-v2" id="signup_name">Nome</div>
+                    <div class="popup1__grid__item popup1__item-v3" id="signup_sirname">Cognome</div>
+                    <div class="popup1__grid__item popup1__item-v4" id="signup_email">Email</div>
+                    <div class="popup1__grid__item popup1__item-v5" id="signup_pass">Password</div>
+                    <div class="popup1__grid__item popup1__item-v6" id="signup_confirmpass">Confirm Password</div>
+                    <div class="popup1__grid__item popup1__item-v7" id="signup_last">Tick Boxes here</div>
+                    <div class="popup1__grid__item popup1__item-v8" id="button_signup_popup">Registrati ora!</div>
+                </div>
+            </div>
+        </div>      
+        
+        <div class="popup" id="popup_login">
+            <div class="header"><a class="close"></a></div> 
+            <div class="body">
+                <div class="popup2__grid">
+                    <div class="popup2__grid__item popup2__item-v1" id="login_first">Hello!</div>
+                    <div class="popup2__grid__item popup2__item-v2" id="login_pic">Picture</div>
+                    <div class="popup2__grid__item popup2__item-v3" id="login_username">User Name</div>
+                    <div class="popup2__grid__item popup2__item-v4" id="login_pass">Password</div>
+                    <div class="popup2__grid__item popup2__item-v5" id="login_forgotpass">Forgot Password?</div>
+                    <div class="popup2__grid__item popup2__item-v6" id="button_login_popup">Accedi!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup_play">
+            <div class="header"><a class="close"></a></div> 
+            <div class="bodyplain">
+                <h1 class="topic">GIOCA</h1>
+                <p class="para">Lorem ipsum dolor sit amet</p>
+                <a id="play_done">GIOCA CON NOI!</a>  
+            </div>
+        </div>
+
+        <div class="popup" id="popup_explore">
+            <div class="header"><a class="close"></a></div> 
+            <div class="bodyplain">
+                <h1 class="topic">SCOPRI</h1>
+                <p class="para">Lorem ipsum dolor sit amet</p>
+                <a id="explore_done">GIOCA CON NOI!</a>  
+            </div>
+        </div>
+
+        <div class="popup" id="popup_suggest">  
+            <div class="header"><a class="close"></a></div> 
+            <div class="bodyplain">
+                <h1 class="topic">SUGGERISCI</h1>
+                <p class="para">Lorem ipsum dolor sit amet</p>
+                <a id="suggest_done">GIOCA CON NOI!</a>  
+            </div>
+        </div>
+
+
+
+
+        <div class="state" id="avatar">
+              <div class="container">
+                <div class="grid">
+                    <div class="grid__item item-v1" id="come_ti_chiami">Come ti chiami?</div>
+                    <div class="grid__item item-v2" id="button_donna">Donna</div>
+                    <div class="grid__item item-v22" id="button_uomo">Uomo</div>
+                    <div class="grid__item item-v3" id="button_data_di_nascita">Data di nascita</div>
+                    <div class="grid__item item-v4" id="button_capelli">Capelli</div>
+                    <div class="grid__item item-v5" id="button_accessori">Accessori</div>
+                    <div class="grid__item item-v6" id="button_abbigliamento">Abbigliamento</div>
+                    <div class="grid__item item-v7" id="button_segni_particolari">Segni particolari</div>
+                    <div class="grid__item item-v8" id="button_posture">Posture</div>
+                    <div class="grid__item item-v9" id="button_professione">Professione</div>
+                    <div class="grid__item item-v10" id="button_abb">!!!!</div>
+                    <div class="grid__item item-v11" id="button_avatar_done">Fatto!</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="state" id="interest">
+              <div class="container">
+                <div class="grid">
+                    <div class="grid__item item-v1" id="nome">Nome</div>
+                    <div class="grid__item item-v2" id="button_interessi_1">Interessi 1</div>
+                    <div class="grid__item item-v3" id="button_interessi_2">Interessi 2</div>
+                    <div class="grid__item item-v4" id="button_interessi_3">Interessi 3</div>
+                    <div class="grid__item item-v5" id="button_interessi_4">Interessi 4</div>
+                    <div class="grid__item item-v6" id="options_grid">
+                        <div class="grid1">
+                            <div class="grid1__item grid1__item-v1" id="int1">Interesse 1</div>
+                            <div class="grid1__item grid1__item-v2" id="int2">Interesse 2</div>
+                            <div class="grid1__item grid1__item-v3" id="int3">Interesse 3</div>
+                            <div class="grid1__item grid1__item-v4" id="int4">Interesse 4</div>
+                            <div class="grid1__item grid1__item-v5" id="int5">Interesse 1</div>
+                            <div class="grid1__item grid1__item-v6" id="int6">Interesse 2</div>
+                            <div class="grid1__item grid1__item-v7" id="int7">Interesse 3</div>
+                            <div class="grid1__item grid1__item-v8" id="int8">Interesse 4</div>
+                            <div class="grid1__item grid1__item-v9" id="int9">Interesse 1</div>
+                            <div class="grid1__item grid1__item-v10" id="int10">Interesse 2</div>
+                            <div class="grid1__item grid1__item-v11" id="int11">Interesse 3</div>
+                            <div class="grid1__item grid1__item-v12" id="int12">Interesse 4</div>
+                            <div class="grid1__item grid1__item-v13" id="int13">Interesse 1</div>
+                            <div class="grid1__item grid1__item-v14" id="int14">Interesse 2</div>
+                            <div class="grid1__item grid1__item-v15" id="int15">Interesse 3</div>
+                            <div class="grid1__item grid1__item-v16" id="int16">Interesse 4</div>
+                        </div>
+                    </div>
+                    <div class="grid__item item-v7" id="button_interest_done">Fatto!</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="state" id="familytree">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__item item-v1" id="main">
+                        Main Play Area
+                    </div>
+                    <div class="grid__item item-v2" id="side_panel">
+                        <div class="sidegrid">
+                            <div class="sidegrid__item sidegrid__item-v1" id="add_adult">
+                                <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
+                                    <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
+                                        <svg width="70" height="70">
+                                          <g>
+                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                          </g>
+                                        </svg>
+                                    </div>
+                                    <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%"> 
+                                        <p>Aggiungi un adulto (14+)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidegrid__item sidegrid__item-v2" id="add_child">
+                                <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
+                                    <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
+                                        <svg width="70" height="70">
+                                          <g>
+                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                          </g>
+                                        </svg>
+                                    </div>
+                                    <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%"> 
+                                        <p>Aggiungi un bambino (1+)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidegrid__item sidegrid__item-v3" id="add_baby">
+                                <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
+                                    <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
+                                        <svg width="70" height="70">
+                                          <g>
+                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                          </g>
+                                        </svg>
+                                    </div>
+                                    <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%"> 
+                                        <p>Aggiungi un bebe</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidegrid__item sidegrid__item-v4" id="add_animal">
+                                <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
+                                    <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
+                                        <svg width="70" height="70">
+                                          <g>
+                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                          </g>
+                                        </svg>
+                                    </div>
+                                    <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%"> 
+                                        <p>Aggiungi un animale</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidegrid__item sidegrid__item-v5" id="add_home">
+                                <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
+                                    <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
+                                        <svg width="70" height="70">
+                                          <g>
+                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                            <circle cx=40% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+                                            <circle cx=50% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+                                            <circle cx=60% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+                                          </g>
+                                        </svg>
+                                    </div>
+                                    <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%"> 
+                                        <p>La tua casa dove vivi?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup_adult">
+            <div class="header"><a class="close"></a></div> 
+            <div class="body">
+                <div class="popup1__grid">
+                    <div class="popup1__grid__item popup1__item-v1" id="popup_adult_body">REGISTRATI ORA!
+                    </div>
+                    <div class="popup1__grid__item popup1__item-v2" id="button_popup_adult_done">Fatto!</div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="popup" id="popup_child">
+            <div class="header"><a class="close"></a></div> 
+            <div class="body">
+                <div class="popup2__grid">
+                    <div class="popup2__grid__item popup2__item-v1" id="popup_child_body">REGISTRATI ORA!
+                    </div>
+                    <div class="popup2__grid__item popup2__item-v2" id="button_popup_child_done">Fatto!</div>
+                </div>
+            </div>
+        </div>    
+
+        <div class="popup" id="popup_baby">
+            <div class="header"><a class="close"></a></div> 
+            <div class="body">
+                <div class="popup3__grid">
+                    <div class="popup3__grid__item popup3__item-v1" id="popup_baby_body">REGISTRATI ORA!
+                    </div>
+                    <div class="popup3__grid__item popup3__item-v2" id="button_popup_baby_done">Fatto!</div>
+                </div>
+            </div>
+        </div>    
+
+        <div class="popup" id="popup_animal">
+            <div class="header"><a class="close"></a></div> 
+            <div class="body">
+                <div class="popup4__grid">
+                    <div class="popup4__grid__item popup4__item-v1" id="popup_animal_body">REGISTRATI ORA!
+                    </div>
+                    <div class="popup4__grid__item popup4__item-v2" id="button_popup_animal_done">Fatto!</div>
+                </div>
+            </div>
+        </div>    
+
+        <div class="popup" id="popup_home">
+            <div class="header"><a class="close"></a></div> 
+            <div class="body">
+                <div class="popup5__grid">
+                    <div class="popup5__grid__item popup5__item-v1" id="popup_home_body">
+                        <div class="popup51__grid">
+                            <div class="popup51__grid__item popup51__item-v1" id="popup_home_1">Appartamento</div>
+                            <div class="popup51__grid__item popup51__item-v2" id="popup_home_2">Villa/Villetta</div>
+                            <div class="popup51__grid__item popup51__item-v3" id="popup_home_3">Casa Indipendente</div>
+                            <div class="popup51__grid__item popup51__item-v4" id="popup_home_4">Attico/Mansarda</div>
+                            <div class="popup51__grid__item popup51__item-v5" id="popup_home_5">Loft</div>
+                            <div class="popup51__grid__item popup51__item-v6" id="popup_home_6">Rustico Casale</div>
+                            <div class="popup51__grid__item popup51__item-v7" id="popup_home_7">Picture</div>
+                        </div>
+                    </div>
+                    <div class="popup5__grid__item popup5__item-v2" id="button_popup_home_done">Fatto!</div>
+                </div>
+            </div>
+        </div>        
+
+				<div class="state" id="dexterslab">
+              <div class="container b-l b-r">
+                
+								<div class="row main b-b">
+									<div class="col-1 menu_left">
+										<div class="row b-b back_home">Torna a casa</div> 
+										<div class="row b-b guide">Guida</div> 
+									</div>
+									<div class="col-2 b-l b-l panel_left">
+										<!--automatically populated-->
+									
+									</div>
+									<div class="col-6 b-l panel_center">
+										<div class="row b-b panel_canvas"></div>
+										<div class="row panel_drawing"></div>
+									</div>
+									<div class="col-2 b-l panel_right">
+										<!--automatically populated-->
+									</div>
+									<div class="col-1 b-l menu_right"></div>
+								</div>
+								
+								<div class="row menu_bottom">
+									<div class="col button_main" data-info="accessories">Accessori</div>
+									<div class="col b-l button_main" data-info="constructivelements">Elementi Costruttivi</div>
+									<div class="col b-l button_main" data-info="technologies">Tecnologia</div>
+									<div class="col b-l button_main" data-info="materials">Materiali</div>
+								</div>
+								
+            </div>
+        </div>
+
+        <!--<div class="state" id="dexterslab">
+              <div class="container">
+                <div class="grid">
+                    <div class="grid__item item-v1" id="dexterslab_home">Torna a casa</div>
+                    <div class="grid__item item-v2" id="dexterslab_guide">Guida</div>
+                    <div class="grid__item item-v3" ></div>
+                    <div class="grid__item item-v4" ></div>
+                    <div class="grid__item item-v5 button_main" data-info="accessories">Accessori</div>
+                    <div class="grid__item item-v6 button_main" data-info="constructivelements">Elementi Costruttivi</div>
+                    <div class="grid__item item-v7 button_main" data-info="technologies">Tecnologia</div>
+                    <div class="grid__item item-v8 button_main" data-info="materials">Materiali</div>
+                    <div class="grid__item item-v9" id="dexterslab_container">	
+											<div class="left">
+											
+											
+											</div>
+											<div class="center">
+												<div class="canvas"></div>
+												<div class="drawing"></div>
+											</div>
+											<div class="right">
+											
+											
+											</div>	
+									</div>
+                </div>
+            </div>
+        </div>-->
+
+        <!--<div class="playspace" id="ps_material">
+            <div class="grid_mat">
+                    <div class="grid_mat__item grid_mat__item-v1" id="mat_legno">Legno</div>
+                    <div class="grid_mat__item grid_mat__item-v2" id="mat_ferro">Ferro</div>
+                    <div class="grid_mat__item grid_mat__item-v3" id="mat_carta">Carta</div>
+                    <div class="grid_mat__item grid_mat__item-v4" id="mat_stoffa">Stoffa</div>
+                    <div class="grid_mat__item grid_mat__item-v5" id="mat_plastica">Plastica</div>
+                    <div class="grid_mat__item grid_mat__item-v6" id="mat_pietra">Pietra</div>
+                    <div class="grid_mat__item grid_mat__item-v7" id="mat_play">
+                        <div class="grid_mat_in">
+                                <div class="grid_mat_in__item grid_mat_in__item-v1" id="mat_canvas">Canvas</div>
+                                <div class="grid_mat_in__item grid_mat_in__item-v2" ></div>
+                                <div class="grid_mat_in__item grid_mat_in__item-v3" id="mat_draw">Draw</div>
+                        </div>
+                    </div>
+            </div>
+        </div>    
+
+        <div class="playspace" id="ps_accessory">
+            <div class="grid_acc">
+                    <div class="grid_acc__item grid_acc__item-v1" id="acc_sm">Suono Musica</div>
+                    <div class="grid_acc__item grid_acc__item-v2" id="acc_luci">Luci</div>
+                    <div class="grid_acc__item grid_acc__item-v3" id="acc_ruote">Ruote</div>
+                    <div class="grid_acc__item grid_acc__item-v4" id="acc_bandi">Bandierina</div>
+                    <div class="grid_acc__item grid_acc__item-v5" id="acc_play">
+                        <div class="grid_acc_in">
+                                <div class="grid_acc_in__item grid_acc_in__item-v1" id="acc_canvas">Canvas</div>
+                                <div class="grid_acc_in__item grid_acc_in__item-v2" ></div>
+                                <div class="grid_acc_in__item grid_acc_in__item-v3" id="acc_draw">Draw</div>
+                        </div>
+                    </div>        
+            </div>
+        </div> -->  
+
+
+
+    </body>
+    
+</html>

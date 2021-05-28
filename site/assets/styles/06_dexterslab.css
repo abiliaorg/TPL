@@ -1,0 +1,55 @@
+#dexterslab{
+    display: block;
+    background-color: white;
+}
+
+
+#dexterslab .container div{
+	background-color: white;
+}
+
+#dexterslab .main{
+	height: 85%;
+	
+}
+#dexterslab .menu_bottom{
+	height: 15%;
+	
+}
+
+#dexterslab .panel_left{
+	overflow-y:auto;
+	
+}
+#dexterslab .panel_right{
+	overflow-y:auto;
+	
+}
+
+#dexterslab .panel_canvas{
+	height: 80%;
+	
+}
+
+#dexterslab .panel_drawing{
+	height: 20%;
+	
+}
+
+#dexterslab .button_item{
+	height: 33%;
+	
+}
+
+#dexterslab .b-t{
+	border-top: 4px solid black;	
+}
+#dexterslab .b-b{
+	border-bottom: 4px solid black;	
+}
+#dexterslab .b-l{
+	border-left: 4px solid black;	
+}
+#dexterslab .b-r{
+	border-right: 4px solid black;	
+}
