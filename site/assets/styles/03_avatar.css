@@ -1,209 +1,140 @@
-#avatar{
+#avatar {
     display: block;
     background-color: white;
 }
 
-#avatar .grid {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-rows: [row]1fr [row]1fr [row]1fr [row]1fr [row]3fr [row]1fr; 
-  grid-gap: 4px;
+#avatar .ht-40 {
+    height: 40%;
 }
 
-#avatar .grid__item {
-  /* padding: 1em; */
-  font-size: 14px;
-  background-color: white;
+#avatar .ht-50 {
+    height: 50%;
 }
 
-#avatar .item-v1 {
-  grid-column: col / span 4;
-  grid-row: row / span 4;
+#avatar .ht-25 {
+    height: 25%;
 }
 
-#avatar .item-v2 {
-  grid-column: col 5 / span 2;
-  grid-row: row;
+#avatar .ht-10 {
+    height: 10%;
 }
 
-#avatar .item-v22 {
-  grid-column: col 7 / span 2;
-  grid-row: row;
-}
-
-#avatar .item-v3 {
-  grid-column: col 9 / span 4;
-  grid-row: row;
-}
-
-#avatar .item-v4 {
-  grid-column: col 5 / span 4;
-  grid-row: row 2;
-}
-
-#avatar .item-v5 {
-  grid-column: col 9 / span 4;
-  grid-row: row 2;
-}
-
-#avatar .item-v6 {
-  grid-column: col 5 / span 4;
-  grid-row: row 3;
-}
-
-#avatar .item-v7 {
-  grid-column: col 9 / span 4;
-  grid-row: row 3;
-}
-
-#avatar .item-v8 {
-  grid-column: col 5 / span 4;
-  grid-row: row 4;
-}
-
-#avatar .item-v9 {
-  grid-column: col 9 / span 4;
-  grid-row: row 4;
-}
-
-#avatar .item-v10 {
-  grid-column: col / span 12;
-  grid-row: row 5;
-}
-
-#avatar .item-v11 {
-  grid-column: col / span 12;
-  grid-row: row 6;
-}
-
-
-#avatar #button_avatar_done{
+#avatar .done_button {
     background-color: black;
     color: white;
-    cursor: pointer;    
+    cursor: pointer;
+}
+
+#avatar #button_avatar_done {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #come_ti_chiami{
+#avatar #come_ti_chiami {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_donna{
-    background-color: white;
+#avatar #button_donna {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_uomo{
-    background-color: white;
+#avatar #button_uomo {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_capelli{
-    background-color: white;
+#avatar #button_capelli {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_abbigliamento{
-    background-color: white;
+#avatar #button_abbigliamento {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_posture{
-    background-color: white;
+#avatar #button_posture {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_data_di_nascita{
-    background-color: white;
+#avatar #button_data_di_nascita {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_accessori{
-    background-color: white;
+#avatar #button_accessori {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_segni_particolari{
-    background-color: white;
+#avatar #button_segni_particolari {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_professione{
-    background-color: white;
+#avatar #button_professione {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-
-#avatar #button_left{
-    background-color: white;
+#avatar #button_left {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #button_right{
+#avatar #button_right {
     height: 100%;
-    background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#avatar #scroll_box{
+#avatar #centre_carousel {
     height: 100%;
-    background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }

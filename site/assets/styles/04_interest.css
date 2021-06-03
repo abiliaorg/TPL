@@ -1,210 +1,51 @@
-#interest{
+#interest {
     display: block;
     background-color: white;
 }
 
-#interest .grid {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-rows: [row]2fr [row]2fr [row]3fr [row]1fr; 
-  grid-gap: 4px;
+#interest .ht-40 {
+    height: 40%;
 }
 
-#interest .grid__item {
-  /* padding: 1em; */
-  font-size: 14px;
-  background-color: white;
+#interest .ht-50 {
+    height: 50%;
 }
 
-#interest .item-v1 {
-  grid-column: col / span 4;
-  grid-row: row / span 2;
+#interest .ht-10 {
+    height: 10%;
 }
 
-#interest .item-v2 {
-  grid-column: col 5 / span 4;
-  grid-row: row;
+#interest .ht-0 {
+    height: 0%;
 }
 
-#interest .item-v3 {
-  grid-column: col 9 / span 4;
-  grid-row: row;
-}
-
-#interest .item-v4 {
-  grid-column: col 5 / span 4;
-  grid-row: row 2;
-}
-
-#interest .item-v5 {
-  grid-column: col 9 / span 4;
-  grid-row: row 2;
-}
-
-#interest .item-v6 {
-  grid-column: col / span 12;
-  grid-row: row 3;
-}
-
-#interest .item-v7 {
-  grid-column: col / span 12;
-  grid-row: row 4;
-}
-
-
-#interest #button_interest_done{
-    height: 100%;
+#interest .done_button {
     background-color: black;
     color: white;
-    cursor: pointer;    
+    cursor: pointer;
+}
+
+#interest #button_interest_done {
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#interest #nome{
+#interest #nome {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
 
-#interest #button_interessi_1{
-    background-color: white;
+#interest .int_button {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     font-weight: bold;
     font-size: 20px;
 }
-
-#interest #button_interessi_3{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#interest #button_interessi_2{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#interest #button_interessi_4{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#interest .grid1 {
-  display: grid;
-  height: 100%;
-  grid-template-columns: repeat(8, [col] 1fr);
-  grid-template-rows: [row]1fr [row]1fr; 
-  grid-gap: 4px;
-  background-color: var(--border-color);
-}
-
-#interest .grid1__item {
-  /* padding: 1em; */
-  font-size: 14px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-}
-
-#interest .grid1__item-v1 {
-  grid-column: col / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v2 {
-  grid-column: col 2 / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v3 {
-  grid-column: col 3 / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v4 {
-  grid-column: col 4 / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v5 {
-  grid-column: col 5 / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v6 {
-  grid-column: col 6 / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v7 {
-  grid-column: col 7 / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v8 {
-  grid-column: col 8 / span 1;
-  grid-row: row ;
-}
-
-#interest .grid1__item-v9 {
-  grid-column: col / span 1;
-  grid-row: row 2;
-}
-
-#interest .grid1__item-v10 {
-  grid-column: col 2 / span 1;
-  grid-row: row 2;
-}
-
-#interest .grid1__item-v11 {
-  grid-column: col 3 / span 1;
-  grid-row: row 2;
-}
-
-#interest .grid1__item-v12 {
-  grid-column: col 4 / span 1;
-  grid-row: row 2;
-}
-
-#interest .grid1__item-v13 {
-  grid-column: col 5 / span 1;
-  grid-row: row 2;
-}
-
-#interest .grid1__item-v14 {
-  grid-column: col 6 / span 1;
-  grid-row: row 2;
-}
-
-#interest .grid1__item-v15 {
-  grid-column: col 7 / span 1;
-  grid-row: row 2;
-}
-
-#interest .grid1__item-v16 {
-  grid-column: col 8 / span 1;
-  grid-row: row 2;
-}
-

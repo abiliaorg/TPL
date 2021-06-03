@@ -1,18 +1,217 @@
-#home{
+#home {
     display: block;
     background-color: white;
 }
+
+#home .ht-40 {
+    height: 40%;
+}
+
+#home .ht-60 {
+    height: 60%;
+}
+
+#home .big_button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#home #button_home {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#home #info_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#home #button_signup {
+    height: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#home #button_login {
+    height: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#popup_signup .ht-reg {
+    height: calc(100%/6);
+}
+
+#popup_signup .done_button {
+    background-color: black;
+    color: white;
+}
+
+#popup_signup #button_signup_popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#popup_login .ht-reg {
+    height: calc(100%/6);
+}
+
+#popup_login .ht-5reg {
+    height: calc(500%/6);
+}
+
+#popup_login .ht-20 {
+    height: 20%;
+}
+
+#popup_login .ht-40 {
+    height: 40%;
+}
+
+#popup_login .done_button {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#popup_login #button_login_popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#popup_login #login_pic {
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup_play #play_done {
+    color: #6633FF;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_explore #explore_done {
+    color: #6633FF;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_suggest #suggest_done {
+    color: #6633FF;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_play .topic {
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_play .para {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_explore .topic {
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_explore .para {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_suggest .topic {
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#popup_suggest .para {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* OLD WAY OF CREATING LAYOUTS (USING GRIDS)
+
+<==x.css==>
 
 #home .grid {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-rows: [row]1fr [row]1fr [row]3fr; 
+  grid-template-rows: [row]1fr [row]1fr [row]3fr;
   grid-gap: 4px;
 }
 
 #home .grid__item {
-  /* padding: 1em; */
+  /* padding: 1em;
   font-size: 14px;
   background-color: white;
 }
@@ -27,297 +226,12 @@
   grid-row: row / span 2;
 }
 
-#home .item-v3 {
-  grid-column: col 11 / span 2;
-  grid-row: row;
-}
+<== index.html ==>
 
-#home .item-v4 {
-  grid-column: col 11 / span 2;
-  grid-row: row 2;
-}
+<div class="grid">
+  <div class="grid__item item-v1" id="come_ti_chiami">Come ti chiami?</div>
+  <div class="grid__item item-v2" id="button_donna">Donna</div>
+  <div class="grid__item item-v3" id="button_uomo">Uomo</div>
+</div>
 
-#home .item-v5 {
-  grid-column: col / span 4;
-  grid-row: row 3;
-}
-
-#home .item-v6 {
-  grid-column: col 5 / span 4;
-  grid-row: row 3;
-}
-
-#home .item-v7 {
-  grid-column: col 9 / span 4;
-  grid-row: row 3;
-}
-
-
-#home #button_home{
-    cursor: pointer;    
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 30px;
-}
-
-#home #info_home{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 25px;
-}
-
-#home #button_play{
-    cursor: pointer; 
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    font-weight: bold;
-    font-size: 40px;
-}
-
-#home #button_explore{
-    cursor: pointer;    
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 40px;
-}
-
-#home #button_suggest{
-    cursor: pointer;   
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 40px;
-}
-
-#home #button_signup{
-    cursor: pointer; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#home #button_login{
-    cursor: pointer; 
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#home #login_pic{
-    height: 100%;   
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-}
-
-
-#popup_signup .popup1__grid {
-  display: grid;
-  height: 100%;
-  grid-template-columns: [col]1fr [col]1fr;
-  grid-template-rows: [row]1fr [row]1fr [row]1fr [row]1fr [row]1fr [row]1fr; 
-  grid-gap: 4px;
-}
-
-#popup_signup .popup1__grid__item {
-  /* padding: 1em; */
-  font-size: 14px;
-  background-color: white;
-}
-
-#popup_signup .popup1__item-v1 {
-  grid-column: col / span 2;
-  grid-row: row ;
-}
-
-#popup_signup .popup1__item-v2 {
-  grid-column: col / span 1;
-  grid-row: row 2;
-}
-
-#popup_signup .popup1__item-v3 {
-  grid-column: col 2/ span 1;
-  grid-row: row 2;
-}
-
-#popup_signup .popup1__item-v4 {
-  grid-column: col / span 2;
-  grid-row: row 3;
-}
-
-#popup_signup .popup1__item-v5 {
-  grid-column: col / span 1;
-  grid-row: row 4;
-}
-
-#popup_signup .popup1__item-v6 {
-  grid-column: col 2/ span 1;
-  grid-row: row 4;
-}
-
-#popup_signup .popup1__item-v7 {
-  grid-column: col / span 2;
-  grid-row: row 5;
-}
-
-#popup_signup .popup1__item-v8 {
-  grid-column: col / span 2;
-  grid-row: row 6;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  cursor: pointer;
-}
-
-
-
-#popup_login .popup2__grid {
-  display: grid;
-  height: 100%;
-  grid-template-columns: [col]1fr [col]1fr;
-  grid-template-rows: [row]1fr [row]1fr [row]1fr [row]2fr [row]1fr; 
-  grid-gap: 4px;
-}
-
-#popup_login .popup2__grid__item {
-  /* padding: 1em; */
-  font-size: 14px;
-  background-color: white;
-}
-
-#popup_login .popup2__item-v1 {
-  grid-column: col / span 1;
-  grid-row: row ;
-}
-
-#popup_login .popup2__item-v2 {
-  grid-column: col 2/ span 1;
-  grid-row: row / span 4;
-}
-
-#popup_login .popup2__item-v3 {
-  grid-column: col / span 1;
-  grid-row: row 2;
-}
-
-#popup_login .popup2__item-v4 {
-  grid-column: col / span 1;
-  grid-row: row 3;
-}
-
-#popup_login .popup2__item-v5 {
-  grid-column: col / span 1;
-  grid-row: row 4;
-}
-
-#popup_login .popup2__item-v6 {
-  grid-column: col / span 2;
-  grid-row: row 5;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  cursor: pointer;
-}
-
-
-#popup_play #play_done {
-  color: #6633FF;
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#popup_explore #explore_done {
-  color: #6633FF;
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#popup_suggest #suggest_done {
-  color: #6633FF;
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-
-#popup_play .topic{
-  font-weight: bold;
-  font-size: 35px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#popup_play .para{
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#popup_explore .topic{
-  font-weight: bold;
-  font-size: 35px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#popup_explore .para{
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#popup_suggest .topic{
-  font-weight: bold;
-  font-size: 35px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#popup_suggest .para{
-  font-weight: bold;
-  font-size: 20px;
-  padding-left: 30px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center; 
-}
+*/
