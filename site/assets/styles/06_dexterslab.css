@@ -15,6 +15,10 @@
     height: 15%;
 }
 
+#dexterslab .ht-20 {
+    height: 20%;
+}
+
 #dexterslab .panel_left {
     overflow-y: auto;
 }
@@ -33,4 +37,8 @@
 
 #dexterslab .button_item {
     height: 33%;
+}
+
+#dexterslab .selected {
+    background-color: #FFCC00 !important;
 }

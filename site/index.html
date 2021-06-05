@@ -219,97 +219,103 @@
 
 
     <div class="state" id="familytree">
-        <div class="container">
-            <div class="grid">
-                <div class="grid__item item-v1" id="main">
-                    Main Play Area
-                </div>
-                <div class="grid__item item-v2" id="side_panel">
-                    <div class="sidegrid">
-                        <div class="sidegrid__item sidegrid__item-v1" id="add_adult">
-                            <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
-                                <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
-                                    <svg width="70" height="70">
-                                          <g>
-                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                          </g>
-                                        </svg>
-                                </div>
-                                <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%">
-                                    <p>Aggiungi un adulto (14+)</p>
-                                </div>
+        <div class="container b-l b-r">
+
+            <div class="row ht-100 b-b">
+
+                <div class="col-10" id="main">Main Play Area</div>
+
+                <div class="col-2" id="side_panel">
+
+                    <div class="row ht-15" id="add_adult">
+                        <div class="button_grid">
+                            <div class="button_svg">
+                                <svg width="70" height="70">
+                                      <g>
+                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                      </g>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="sidegrid__item sidegrid__item-v2" id="add_child">
-                            <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
-                                <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
-                                    <svg width="70" height="70">
-                                          <g>
-                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                          </g>
-                                        </svg>
-                                </div>
-                                <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%">
-                                    <p>Aggiungi un bambino (1+)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidegrid__item sidegrid__item-v3" id="add_baby">
-                            <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
-                                <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
-                                    <svg width="70" height="70">
-                                          <g>
-                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                          </g>
-                                        </svg>
-                                </div>
-                                <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%">
-                                    <p>Aggiungi un bebe</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidegrid__item sidegrid__item-v4" id="add_animal">
-                            <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
-                                <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
-                                    <svg width="70" height="70">
-                                          <g>
-                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                            <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                            <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                          </g>
-                                        </svg>
-                                </div>
-                                <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%">
-                                    <p>Aggiungi un animale</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidegrid__item sidegrid__item-v5" id="add_home">
-                            <div style="display: grid; height: 100%; grid-template-columns: [col] 1fr; grid-template-rows: [row]2fr [row]1fr; background-color: white; grid-gap: 10px;">
-                                <div style="grid-column: col; grid-row: row 1; display: flex; justify-content: center; align-items: flex-end;">
-                                    <svg width="70" height="70">
-                                          <g>
-                                            <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                            <circle cx=40% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
-                                            <circle cx=50% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
-                                            <circle cx=60% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
-                                          </g>
-                                        </svg>
-                                </div>
-                                <div style="grid-column: col; grid-row: row 2; cursor: pointer; padding-right: 10%; padding-left: 10%">
-                                    <p>La tua casa dove vivi?</p>
-                                </div>
+                            <div class="button_text">
+                                <p>Aggiungi un adulto (14+)</p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row ht-15" id="add_child">
+                        <div class="button_grid">
+                            <div class="button_svg">
+                                <svg width="70" height="70">
+                                      <g>
+                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                      </g>
+                                </svg>
+                            </div>
+                            <div class="button_text">
+                                <p>Aggiungi un bambino (1+)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ht-15" id="add_baby">
+                        <div class="button_grid">
+                            <div class="button_svg">
+                                <svg width="70" height="70">
+                                      <g>
+                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                      </g>
+                                </svg>
+                            </div>
+                            <div class="button_text">
+                                <p>Aggiungi un bebe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ht-15" id="add_animal">
+                        <div class="button_grid">
+                            <div class="button_svg">
+                                <svg width="70" height="70">
+                                      <g>
+                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+                                      </g>
+                                </svg>
+                            </div>
+                            <div class="button_text">
+                                <p>Aggiungi un animale</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ht-15" id="add_home">
+                        <div class="button_grid">
+                            <div class="button_svg">
+                                <svg width="70" height="70">
+                                    <g>
+                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+                                        <circle cx=40% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+                                        <circle cx=50% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+                                        <circle cx=60% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="button_text">
+                                <p>La tua casa dove vivi?</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -318,10 +324,10 @@
             <a class="close"></a>
         </div>
         <div class="body">
-            <div class="popup1__grid">
-                <div class="popup1__grid__item popup1__item-v1" id="popup_adult_body">REGISTRATI ORA!
-                </div>
-                <div class="popup1__grid__item popup1__item-v2" id="button_popup_adult_done">Fatto!</div>
+            <div class="row ht-reg cent">Come si chiama?</div>
+            <div class="row ht-4reg b-b"></div>
+            <div class="row ht-reg done_button">
+                <div class="col-12" id="button_popup_adult_done">Fatto!</div>
             </div>
         </div>
     </div>
@@ -331,10 +337,10 @@
             <a class="close"></a>
         </div>
         <div class="body">
-            <div class="popup2__grid">
-                <div class="popup2__grid__item popup2__item-v1" id="popup_child_body">REGISTRATI ORA!
-                </div>
-                <div class="popup2__grid__item popup2__item-v2" id="button_popup_child_done">Fatto!</div>
+            <div class="row ht-reg cent">Come si chiama?</div>
+            <div class="row ht-4reg b-b"></div>
+            <div class="row ht-reg done_button">
+                <div class="col-12" id="button_popup_child_done">Fatto!</div>
             </div>
         </div>
     </div>
@@ -344,10 +350,10 @@
             <a class="close"></a>
         </div>
         <div class="body">
-            <div class="popup3__grid">
-                <div class="popup3__grid__item popup3__item-v1" id="popup_baby_body">REGISTRATI ORA!
-                </div>
-                <div class="popup3__grid__item popup3__item-v2" id="button_popup_baby_done">Fatto!</div>
+            <div class="row ht-reg cent">Come si chiama?</div>
+            <div class="row ht-4reg b-b"></div>
+            <div class="row ht-reg done_button">
+                <div class="col-12" id="button_popup_baby_done">Fatto!</div>
             </div>
         </div>
     </div>
@@ -357,10 +363,10 @@
             <a class="close"></a>
         </div>
         <div class="body">
-            <div class="popup4__grid">
-                <div class="popup4__grid__item popup4__item-v1" id="popup_animal_body">REGISTRATI ORA!
-                </div>
-                <div class="popup4__grid__item popup4__item-v2" id="button_popup_animal_done">Fatto!</div>
+            <div class="row ht-reg cent">Come si chiama?</div>
+            <div class="row ht-4reg b-b"></div>
+            <div class="row ht-reg done_button">
+                <div class="col-12" id="button_popup_animal_done">Fatto!</div>
             </div>
         </div>
     </div>
@@ -370,19 +376,23 @@
             <a class="close"></a>
         </div>
         <div class="body">
-            <div class="popup5__grid">
-                <div class="popup5__grid__item popup5__item-v1" id="popup_home_body">
-                    <div class="popup51__grid">
-                        <div class="popup51__grid__item popup51__item-v1" id="popup_home_1">Appartamento</div>
-                        <div class="popup51__grid__item popup51__item-v2" id="popup_home_2">Villa/Villetta</div>
-                        <div class="popup51__grid__item popup51__item-v3" id="popup_home_3">Casa Indipendente</div>
-                        <div class="popup51__grid__item popup51__item-v4" id="popup_home_4">Attico/Mansarda</div>
-                        <div class="popup51__grid__item popup51__item-v5" id="popup_home_5">Loft</div>
-                        <div class="popup51__grid__item popup51__item-v6" id="popup_home_6">Rustico Casale</div>
-                        <div class="popup51__grid__item popup51__item-v7" id="popup_home_7">Picture</div>
-                    </div>
+            <div class="row ht-5reg b-b">
+                <div class="col-3">
+                    <div class="row ht-33 b-b" id="popup_home_1">Appartamento</div>
+                    <div class="row ht-33 b-b" id="popup_home_2">Villa/Villetta</div>
+                    <div class="row ht-33" id="popup_home_3">Casa Indipendente</div>
                 </div>
-                <div class="popup5__grid__item popup5__item-v2" id="button_popup_home_done">Fatto!</div>
+                <div class="col-3 b-l">
+                    <div class="row ht-33 b-b" id="popup_home_4">Attico/Mansarda</div>
+                    <div class="row ht-33 b-b" id="popup_home_5">Loft</div>
+                    <div class="row ht-33" id="popup_home_6">Rustico Casale</div>
+                </div>
+                <div class="col-6 b-l" id="home_map">
+                    Picture
+                </div>
+            </div>
+            <div class="row ht-reg done_button">
+                <div class="col-12" id="button_popup_home_done">Fatto!</div>
             </div>
         </div>
     </div>
@@ -392,15 +402,18 @@
 
             <div class="row main b-b">
                 <div class="col-1 menu_left">
-                    <div class="row b-b back_home">Torna a casa</div>
-                    <div class="row b-b guide">Guida</div>
+                    <div class="row b-b ht-20 back_home">Torna a casa</div>
+                    <div class="row b-b ht-20 guide">Guida</div>
                 </div>
                 <div class="col-2 b-l panel_left">
                     <!--automatically populated-->
                 </div>
                 <div class="col-6 b-l panel_center">
                     <div class="row b-b panel_canvas"></div>
-                    <div class="row panel_drawing"></div>
+                    <div class="row panel_drawing">
+                        <div class="col-8"></div>
+                        <div class="col-4 b-l">Draw</div>
+                    </div>
                 </div>
                 <div class="col-2 b-l panel_right">
                     <!--automatically populated-->
@@ -409,77 +422,14 @@
             </div>
 
             <div class="row menu_bottom">
-                <div class="col-3 button_main" data-info="accessories">Accessori</div>
-                <div class="col-3 b-l button_main" data-info="constructivelements">Elementi Costruttivi</div>
-                <div class="col-3 b-l button_main" data-info="technologies">Tecnologia</div>
-                <div class="col-3 b-l button_main" data-info="materials">Materiali</div>
+                <div class="col-3 button_main selected" data-info="accessories" button-state="on">Accessori</div>
+                <div class="col-3 b-l button_main" data-info="constructivelements" button-state="off">Elementi Costruttivi</div>
+                <div class="col-3 b-l button_main" data-info="technologies" button-state="off">Tecnologia</div>
+                <div class="col-3 b-l button_main" data-info="materials" button-state="off">Materiali</div>
             </div>
 
         </div>
     </div>
-
-    <!--<div class="state" id="dexterslab">
-              <div class="container">
-                <div class="grid">
-                    <div class="grid__item item-v1" id="dexterslab_home">Torna a casa</div>
-                    <div class="grid__item item-v2" id="dexterslab_guide">Guida</div>
-                    <div class="grid__item item-v3" ></div>
-                    <div class="grid__item item-v4" ></div>
-                    <div class="grid__item item-v5 button_main" data-info="accessories">Accessori</div>
-                    <div class="grid__item item-v6 button_main" data-info="constructivelements">Elementi Costruttivi</div>
-                    <div class="grid__item item-v7 button_main" data-info="technologies">Tecnologia</div>
-                    <div class="grid__item item-v8 button_main" data-info="materials">Materiali</div>
-                    <div class="grid__item item-v9" id="dexterslab_container">	
-											<div class="left">
-											
-											
-											</div>
-											<div class="center">
-												<div class="canvas"></div>
-												<div class="drawing"></div>
-											</div>
-											<div class="right">
-											
-											
-											</div>	
-									</div>
-                </div>
-            </div>
-        </div>-->
-
-    <!--<div class="playspace" id="ps_material">
-            <div class="grid_mat">
-                    <div class="grid_mat__item grid_mat__item-v1" id="mat_legno">Legno</div>
-                    <div class="grid_mat__item grid_mat__item-v2" id="mat_ferro">Ferro</div>
-                    <div class="grid_mat__item grid_mat__item-v3" id="mat_carta">Carta</div>
-                    <div class="grid_mat__item grid_mat__item-v4" id="mat_stoffa">Stoffa</div>
-                    <div class="grid_mat__item grid_mat__item-v5" id="mat_plastica">Plastica</div>
-                    <div class="grid_mat__item grid_mat__item-v6" id="mat_pietra">Pietra</div>
-                    <div class="grid_mat__item grid_mat__item-v7" id="mat_play">
-                        <div class="grid_mat_in">
-                                <div class="grid_mat_in__item grid_mat_in__item-v1" id="mat_canvas">Canvas</div>
-                                <div class="grid_mat_in__item grid_mat_in__item-v2" ></div>
-                                <div class="grid_mat_in__item grid_mat_in__item-v3" id="mat_draw">Draw</div>
-                        </div>
-                    </div>
-            </div>
-        </div>    
-
-        <div class="playspace" id="ps_accessory">
-            <div class="grid_acc">
-                    <div class="grid_acc__item grid_acc__item-v1" id="acc_sm">Suono Musica</div>
-                    <div class="grid_acc__item grid_acc__item-v2" id="acc_luci">Luci</div>
-                    <div class="grid_acc__item grid_acc__item-v3" id="acc_ruote">Ruote</div>
-                    <div class="grid_acc__item grid_acc__item-v4" id="acc_bandi">Bandierina</div>
-                    <div class="grid_acc__item grid_acc__item-v5" id="acc_play">
-                        <div class="grid_acc_in">
-                                <div class="grid_acc_in__item grid_acc_in__item-v1" id="acc_canvas">Canvas</div>
-                                <div class="grid_acc_in__item grid_acc_in__item-v2" ></div>
-                                <div class="grid_acc_in__item grid_acc_in__item-v3" id="acc_draw">Draw</div>
-                        </div>
-                    </div>        
-            </div>
-        </div> -->
 
 
 
