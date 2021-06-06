@@ -138,3 +138,11 @@
     font-weight: bold;
     font-size: 20px;
 }
+
+#avatar .owl-carousel .owl-item.big div {
+    background: #ac0000 !important;
+}
+
+#avatar .owl-carousel .owl-item.medium div {
+    background: #dd0000 !important;
+}

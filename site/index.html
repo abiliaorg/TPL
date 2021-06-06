@@ -3,13 +3,10 @@
 
 <head>
 
-    <script src="./assets/vendors/jquery.js"></script>
-    <script src="./assets/vendors/bootstrap.bundle.min.js"></script>
-
-    <script src="./assets/scripts/main.js"></script>
-
     <link href="./assets/vendors/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/vendors/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/vendors/owlcarousel/owl.theme.default.min.css">
 
 </head>
 
@@ -85,10 +82,18 @@
         <div class="body">
             <div class="row ht-5reg">
                 <div class="col-6">
-                    <div class="row ht-20 b-b" id="login_first">Hello!</div>
-                    <div class="row ht-20 b-b" id="login_username">User Name</div>
-                    <div class="row ht-20 b-b" id="login_password">Password</div>
-                    <div class="row ht-40" id="login_forgotpass">Forgot Password</div>
+                    <div class="row ht-20 b-b">
+                        <div class="col-12" id="login_first">Hello!</div>
+                    </div>
+                    <div class="row ht-20 b-b">
+                        <div class="col-12" id="login_username">User Name</div>
+                    </div>
+                    <div class="row ht-20 b-b">
+                        <div class="col-12" id="login_password">Password</div>
+                    </div>
+                    <div class="row ht-40">
+                        <div class="col-12" id="login_forgotpass">Forgot Password</div>
+                    </div>
                 </div>
                 <div class="col-6 b-l" id="login_pic">
                     Picture
@@ -146,21 +151,74 @@
                         <div class="col-6" id="button_donna">Donna</div>
                         <div class="col-6 b-l" id="button_uomo">Uomo</div>
                     </div>
-                    <div class="row b-b ht-25" id="button_capelli">Capelli</div>
-                    <div class="row b-b ht-25" id="button_abbigliamento">Abbigliamento</div>
-                    <div class="row ht-25" id="button_posture">Posture</div>
+                    <div class="row b-b ht-25">
+                        <div class="col-12" id="button_capelli">Capelli</div>
+                    </div>
+                    <div class="row b-b ht-25">
+                        <div class="col-12" id="button_abbigliamento">Abbigliamento</div>
+                    </div>
+                    <div class="row ht-25">
+                        <div class="col-12" id="button_posture">Posture</div>
+                    </div>
                 </div>
                 <div class="col-4 b-l">
-                    <div class="row b-b ht-25" id="button_data_di_nascita">Data di nascita</div>
-                    <div class="row b-b ht-25" id="button_accessori">Accessori</div>
-                    <div class="row b-b ht-25" id="button_segni_particolari">Segni particolari</div>
-                    <div class="row ht-25" id="button_professione">Professione</div>
+                    <div class="row b-b ht-25">
+                        <div class="col-12" id="button_data_di_nascita">Data di nascita</div>
+                    </div>
+                    <div class="row b-b ht-25">
+                        <div class="col-12" id="button_accessori">Accessori</div>
+                    </div>
+                    <div class="row b-b ht-25">
+                        <div class="col-12" id="button_segni_particolari">Segni particolari</div>
+                    </div>
+                    <div class="row ht-25">
+                        <div class="col-12" id="button_professione">Professione</div>
+                    </div>
                 </div>
             </div>
 
             <div class="row ht-40 b-b">
                 <div class="col-1" id="button_left">L</div>
-                <div class="col-10" id="centre_carousel">Carousel</div>
+                <div class="col-10" id="centre_carousel">
+                    <div class="loop owl-carousel">
+                        <div class="item">
+                            <h4>1</h4>
+                        </div>
+                        <div class="item">
+                            <h4>2</h4>
+                        </div>
+                        <div class="item">
+                            <h4>3</h4>
+                        </div>
+                        <div class="item">
+                            <h4>4</h4>
+                        </div>
+                        <div class="item">
+                            <h4>5</h4>
+                        </div>
+                        <div class="item">
+                            <h4>6</h4>
+                        </div>
+                        <div class="item">
+                            <h4>7</h4>
+                        </div>
+                        <div class="item">
+                            <h4>8</h4>
+                        </div>
+                        <div class="item">
+                            <h4>9</h4>
+                        </div>
+                        <div class="item">
+                            <h4>10</h4>
+                        </div>
+                        <div class="item">
+                            <h4>11</h4>
+                        </div>
+                        <div class="item">
+                            <h4>12</h4>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-1" id="button_right">R</div>
             </div>
 
@@ -180,12 +238,20 @@
             <div class="row ht-50 b-b">
                 <div class="col-4" id="nome">Nome</div>
                 <div class="col-4 b-l">
-                    <div class="row ht-50 b-b int_button" id="button_interessi_1">Interessi 1</div>
-                    <div class="row ht-50 int_button" id="button_interessi_2">Interessi 2</div>
+                    <div class="row ht-50 b-b int_button">
+                        <div class="col-12" id="button_interessi_1">Interessi 1</div>
+                    </div>
+                    <div class="row ht-50 int_button">
+                        <div class="col-12" id="button_interessi_2">Interessi 2</div>
+                    </div>
                 </div>
                 <div class="col-4 b-l">
-                    <div class="row ht-50 b-b int_button" id="button_interessi_3">Interessi 3</div>
-                    <div class="row ht-50 int_button" id="button_interessi_4">Interessi 4</div>
+                    <div class="row ht-50 b-b int_button">
+                        <div class="col-12" id="button_interessi_3">Interessi 3</div>
+                    </div>
+                    <div class="row ht-50 int_button">
+                        <div class="col-12" id="button_interessi_4">Interessi 4</div>
+                    </div>
                 </div>
             </div>
 
@@ -431,7 +497,12 @@
         </div>
     </div>
 
-
+    <footer>
+        <script src="./assets/vendors/jquery.js"></script>
+        <script src="./assets/vendors/bootstrap.bundle.min.js"></script>
+        <script src="./assets/scripts/main.js"></script>
+        <script src="./assets/vendors/owlcarousel/owl.carousel.min.js"></script>
+    </footer>
 
 </body>
 
