@@ -14,7 +14,7 @@ function State_Home() {
 
 	};
 
-
+	_this.Init = function() {
     window.app.view.button_signup.on("click", function(){
         window.app.view.popup_signup.show();
         //alert("signup");
@@ -50,6 +50,8 @@ function State_Home() {
         window.app.view.popup_play.hide();
         goToState("dexterslab");
     });
+		
+	}
 
 
 	return _this;

@@ -22,7 +22,6 @@ var NstylesLoaded = 0;
 
 $(document).ready(function() {
     console.log("Document ready!");
-
     loadScript("./states/settings.js", onMainLoaded, onStateError);
 });
 
@@ -116,11 +115,21 @@ function onStateError() {
 
 function Ready() {
     console.log("🏁 Everything is loaded");
+	
+		Initialize();
 
     window.setTimeout(function() {
         goToState("load");
     }, 1000);
 
+}
+
+function Initialize(){
+	for(var s in window.app.states){
+		if(window.app.states[s].Init!==undefined){
+			window.app.states[s].Init();
+		}
+	}
 }
 
 function onStyleLoaded() {

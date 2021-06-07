@@ -13,6 +13,8 @@ function State_FamilyTree() {
 		
 
 	};
+	
+	_this.Init = function() {
 
 	window.app.view.add_adult.on("click", function(){
         window.app.view.popup_adult.show();
@@ -33,10 +35,8 @@ function State_FamilyTree() {
     window.app.view.add_home.on("click", function(){
         window.app.view.popup_home.show();
     });
-
-
-
-
+		
+	}
 
 	return _this;
 
