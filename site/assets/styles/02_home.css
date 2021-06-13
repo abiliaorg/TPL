@@ -20,6 +20,10 @@
     font-size: 40px;
 }
 
+#home .sidebar {
+    height: 35.5%;
+}
+
 #home #button_home {
     cursor: pointer;
     display: flex;
