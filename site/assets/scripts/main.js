@@ -25,6 +25,13 @@ $(document).ready(function() {
     loadScript("./states/settings.js", onMainLoaded, onStateError);
 });
 
+$(window).on("resize", function() {    
+	console.log("resizing");	
+	if(window.app.states[window.app.settings.currentState].Resize!==undefined){
+		window.app.states[window.app.settings.currentState].Resize();
+	}	
+});
+
 
 function LoadStates_Scripts() {
 
@@ -151,7 +158,6 @@ function goToState(state) {
     window.app.states[state].Run();
     //console.log(state);
 }
-
 
 
 //---------------------------------------------------------- END

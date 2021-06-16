@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.03 131.49">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Chi_Siamo" data-name="Chi Siamo">
+      <g>
+        <path class="cls-1" d="M129.52,13.37,5.42,113.16A9.2,9.2,0,0,0,4,126.07H4a9.22,9.22,0,0,0,12.91,1.4L141,27.68,158,2Z"/>
+        <line class="cls-2" x1="132.32" y1="22.83" x2="16.54" y2="116.56"/>
+        <path class="cls-2" d="M141,27.68s-11.83-1.24-11.51-14.31"/>
+        <path class="cls-2" d="M25.49,120.66S13.61,120.3,13,107.24"/>
+      </g>
+    </g>
+  </g>
+</svg>

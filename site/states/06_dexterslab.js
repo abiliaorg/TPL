@@ -93,153 +93,160 @@ function State_DextersLab() {
                 },
             ]
 
-        }
-
+    }
+			
+				window.app.dexterslab.drawingMode = false;
+			  window.app.dexterslab.canvas = new fabric.Canvas('dexters_canvas', {isDrawingMode: window.app.dexterslab.drawingMode});
+				
+				window.app.view.dexters_canvas_container = $("#dexters_canvas_container");
+				updateCanvas();
 
         window.app.view.button_main = $("#dexterslab .button_main");
         window.app.view.panel_left = $("#dexterslab .panel_left");
-        window.app.view.panel_right = $("#dexterslab .panel_right");
+        window.app.view.panel_right = $("#dexterslab .panel_right");	
+			  window.app.view.button_draw = $("#dexterslab #button_draw");
+			
+			  updatePanels("accessories");
 
-        window.app.view.button_main.on("click", function() {
-
-            window.app.view.button_main.attr("button-state", "off").removeClass('selected');
-            $(this).attr("button-state", "on").addClass('selected');
-
-            var info = $(this).attr("data-info");
-
-            var listofitems = window.app.dexterslab.items[info];
-
-            var right_elements = "";
-            var left_elements = "";
-
-            for (i = 0; i < listofitems.length; i++) {
-
-                if (i % 2 == 0) { //even
-                    left_elements += '<div class="row b-b button_item">' + listofitems[i].title + '</div>';
-                } else {
-                    right_elements += '<div class="row b-b button_item">' + listofitems[i].title + '</div>';
-                }
-
-            }
-
-            window.app.view.panel_left.html(left_elements);
-            window.app.view.panel_right.html(right_elements);
-
-
-        });
-
+        window.app.view.button_main.on("click", function() {						
+					var info = $(this).attr("data-info");
+					updatePanels(info);
+        });			
+		
+				$('#dexterslab').on('click', '.button_item', function() {
+					 var id = $(this).attr("data-id");					 
+					 addItemToCanvas(id);
+				});
+			
+				window.app.view.button_draw.on("click",function(){
+					window.app.dexterslab.drawingMode = !window.app.dexterslab.drawingMode;//changing the state from true to false and from false to true
+					window.app.dexterslab.canvas.isDrawingMode = window.app.dexterslab.drawingMode;
+					window.app.view.button_draw.toggleClass("active");				
+					
+					//change cursor
+					if(window.app.dexterslab.drawingMode){						
+						//$("html").css("cursor: url('./assets/images/pen.svg') !important");
+					}else{
+						//$("html").css("cursor: default, auto");
+					}
+				});
+			
+				$(window).on("keydown", function( event ) {
+					//event.preventDefault();
+					//console.log(event.which);					
+					if ( event.which == 46 ) {
+					 window.app.dexterslab.canvas.remove(window.app.dexterslab.canvas.getActiveObject());
+					}
+				});
+			
+				window.app.dexterslab.canvas.on('mouse:up', function (e) {
+					//check if user clicked an object
+					if (e.target) {
+						console.log(e.target._type);
+					}
+				});
+			
     }
+		
+		_this.Resize = function(){			
+			//console.log("resize inside dexter");			
+			updateCanvas();			
+		}
+		
+		function updateCanvas(){
+			
+				window.app.dexterslab.canvas.setWidth(window.app.view.dexters_canvas_container.width());
+        window.app.dexterslab.canvas.setHeight(window.app.view.dexters_canvas_container.height());
+        window.app.dexterslab.canvas.calcOffset();
+		}
+		
+		function updatePanels(info){
+			window.app.view.button_main.removeClass('selected');
+			$("#dexterslab .button_main[data-info='"+info+"']").addClass('selected');
 
-    // window.onresize = (event) => {
-    //     fitResponsiveCanvas();
-    // };
+			var listofitems = window.app.dexterslab.items[info];
 
-    // function fitResponsiveCanvas() {
-    //     // canvas dimensions
-    //     let canvasSize = {
-    //         width: 1200,
-    //         height: 1400
-    //     };
-    //     // canvas container dimensions
-    //     let containerSize = {
-    //         width: document.getElementById('dexters_canvas_container').offsetWidth,
-    //         height: document.getElementById('dexters_canvas_container').offsetHeight
-    //     };
-    //     canvas.setDimensions(containerSize);
-    //     // how you want to handle your zoom is really application dependant.
-    //     let scaleRatio = Math.min(containerSize.width / canvasSize.width, containerSize.height / canvasSize.height);
-    //     canvas.setZoom(scaleRatio)
-    // }
+			var right_elements = "";
+			var left_elements = "";
 
-    // window.app.view.dexters_draw.on("click", function() {
-    //     const canvas = document.getElementById("dexters_canvas");
-    //     console.log(canvas.width, canvas.height);
+			for (i = 0; i < listofitems.length; i++) {
 
-    //     // get canvas 2D context and set him correct size
-    //     var ctx = canvas.getContext('2d');
-    //     resize();
-    //     console.log(canvas.width, canvas.height);
+					if (i % 2 == 0) { //even
+							left_elements += '<div class="row b-b button_item" data-id="'+listofitems[i].id+'">' + listofitems[i].title + '</div>';
+					} else {
+							right_elements += '<div class="row b-b button_item" data-id="'+listofitems[i].id+'">' + listofitems[i].title + '</div>';
+					}
 
-    //     // last known position
-    //     var pos = { x: 0, y: 0 };
+			}
 
-    //     window.addEventListener('resize', resize);
-    //     document.getElementById("dexters_canvas").addEventListener('mousemove', draw);
-    //     document.getElementById("dexters_canvas").addEventListener('mousedown', setPosition);
-    //     document.getElementById("dexters_canvas").addEventListener('mouseenter', setPosition);
+			window.app.view.panel_left.html(left_elements);
+			window.app.view.panel_right.html(right_elements);
+		}
+	
+	
+		function addItemToCanvas(type){
+			console.log("element clicked: "+type);
+			
+			
+			switch (type){
+					
+				case "circle":
+					
+					var item = new fabric.Circle({ 
+						radius: 30, 
+						fill: '#f55', 
+						top: 100, 
+						left: 100,
+						_type: "circle"
+					});		
 
-    //     // new position from mouse event
-    //     function setPosition(e) {
-    //         pos.x = e.clientX;
-    //         pos.y = e.clientY;
-    //     }
+					/*canvas.item(0).set({
+							borderColor: 'red',
+							cornerColor: 'green',
+							cornerSize: 6,
+							transparentCorners: false
+					});
+					canvas.setActiveObject(canvas.item(0));
+					this.__canvases.push(canvas);*/
+					
+					break;
+					
+				case "square":
+					
+					var item = new fabric.Rect({ 
+							width: 30, 
+							height: 30, 
+							left: 100, 
+							top: 100, 
+							fill: '#000',
+						  _type: "square"
+					});
+					
+					break;
+					
+					
+					
+				default:
+					break;
+					
+					
+			}		
+			
+			window.app.dexterslab.canvas.add(item);
+			window.app.dexterslab.canvas.setActiveObject(item); 
+		
+		}
 
-    //     // resize canvas
-    //     function resize() {
-    //         ctx.canvas.width = window.innerWidth;
-    //         ctx.canvas.height = window.innerHeight;
-    //     }
-
-    //     function draw(e) {
-    //         // mouse left button must be pressed
-    //         if (e.buttons !== 1) return;
-
-    //         ctx.beginPath(); // begin
-
-    //         ctx.lineWidth = 5;
-    //         ctx.lineCap = 'round';
-    //         ctx.strokeStyle = '#c0392b';
-
-    //         ctx.moveTo(pos.x, pos.y); // from
-    //         setPosition(e);
-    //         ctx.lineTo(pos.x, pos.y); // to
-
-    //         ctx.stroke(); // draw it!
-    //     }
-    // });
-
-    window.app.view.dexters_draw.on("click", function() {
-
-        var canvas = this.__canvas = new fabric.Canvas('dexters_canvas', {
-            isDrawingMode: true
-        });
-
-        // canvas.setDimensions({ width: '100%', height: '100%' }, { cssOnly: true });
-        // canvas.setDimensions({ width: '100%', height: '100%' }, { cssOnly: true });
-        // canvas.setHeight(window.innerHeight);
-        canvas.setWidth(window.innerWidth);
-        canvas.setHeight(500);
-        canvas.calcOffset();
-
-        fabric.Object.prototype.transparentCorners = false;
-
-        var brush = canvas.freeDrawingBrush;
-        brush.color = 'blue';
-        brush.width = 3;
-
-    });
-
-    window.app.view.circle = $("#circle");
-
-    window.app.view.circle.on("click", function() {
-
-        canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
-
-        canvas.item(0).set({
-            borderColor: 'red',
-            cornerColor: 'green',
-            cornerSize: 6,
-            transparentCorners: false
-        });
-        canvas.setActiveObject(canvas.item(0));
-        this.__canvases.push(canvas);
-
-    });
 
     return _this;
 
 }
 
 window.app.states.dexterslab = State_DextersLab();
+
+/*
+var brush = canvas.freeDrawingBrush;
+        brush.color = 'blue';
+        brush.width = 3;*/
 
 //---------------------------------------------------------- END

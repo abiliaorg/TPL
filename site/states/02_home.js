@@ -52,6 +52,14 @@ function State_Home() {
     });
 		
 	}
+	
+	_this.Resize = function() {
+		
+		var width = $("#button_signup").width();
+		var left = $("#button_signup").offset().left;
+		$(".sidebar").css("left",width+left+4+"px");
+		
+	}
 
 
 	return _this;
