@@ -128,57 +128,112 @@ function State_DextersLab() {
 
         });
 
-
     }
 
-    window.app.view.dexters_draw = $("#dexters_draw");
-    window.app.view.dexters_canvas = $("#dexters_canvas");
+    // window.onresize = (event) => {
+    //     fitResponsiveCanvas();
+    // };
+
+    // function fitResponsiveCanvas() {
+    //     // canvas dimensions
+    //     let canvasSize = {
+    //         width: 1200,
+    //         height: 1400
+    //     };
+    //     // canvas container dimensions
+    //     let containerSize = {
+    //         width: document.getElementById('dexters_canvas_container').offsetWidth,
+    //         height: document.getElementById('dexters_canvas_container').offsetHeight
+    //     };
+    //     canvas.setDimensions(containerSize);
+    //     // how you want to handle your zoom is really application dependant.
+    //     let scaleRatio = Math.min(containerSize.width / canvasSize.width, containerSize.height / canvasSize.height);
+    //     canvas.setZoom(scaleRatio)
+    // }
+
+    // window.app.view.dexters_draw.on("click", function() {
+    //     const canvas = document.getElementById("dexters_canvas");
+    //     console.log(canvas.width, canvas.height);
+
+    //     // get canvas 2D context and set him correct size
+    //     var ctx = canvas.getContext('2d');
+    //     resize();
+    //     console.log(canvas.width, canvas.height);
+
+    //     // last known position
+    //     var pos = { x: 0, y: 0 };
+
+    //     window.addEventListener('resize', resize);
+    //     document.getElementById("dexters_canvas").addEventListener('mousemove', draw);
+    //     document.getElementById("dexters_canvas").addEventListener('mousedown', setPosition);
+    //     document.getElementById("dexters_canvas").addEventListener('mouseenter', setPosition);
+
+    //     // new position from mouse event
+    //     function setPosition(e) {
+    //         pos.x = e.clientX;
+    //         pos.y = e.clientY;
+    //     }
+
+    //     // resize canvas
+    //     function resize() {
+    //         ctx.canvas.width = window.innerWidth;
+    //         ctx.canvas.height = window.innerHeight;
+    //     }
+
+    //     function draw(e) {
+    //         // mouse left button must be pressed
+    //         if (e.buttons !== 1) return;
+
+    //         ctx.beginPath(); // begin
+
+    //         ctx.lineWidth = 5;
+    //         ctx.lineCap = 'round';
+    //         ctx.strokeStyle = '#c0392b';
+
+    //         ctx.moveTo(pos.x, pos.y); // from
+    //         setPosition(e);
+    //         ctx.lineTo(pos.x, pos.y); // to
+
+    //         ctx.stroke(); // draw it!
+    //     }
+    // });
 
     window.app.view.dexters_draw.on("click", function() {
-        const canvas = document.getElementById("dexters_canvas");
-        console.log(canvas.width, canvas.height);
 
-        // get canvas 2D context and set him correct size
-        var ctx = canvas.getContext('2d');
-        resize();
-        console.log(canvas.width, canvas.height);
+        var canvas = this.__canvas = new fabric.Canvas('dexters_canvas', {
+            isDrawingMode: true
+        });
 
-        // last known position
-        var pos = { x: 0, y: 0 };
+        // canvas.setDimensions({ width: '100%', height: '100%' }, { cssOnly: true });
+        // canvas.setDimensions({ width: '100%', height: '100%' }, { cssOnly: true });
+        // canvas.setHeight(window.innerHeight);
+        canvas.setWidth(window.innerWidth);
+        canvas.setHeight(500);
+        canvas.calcOffset();
 
-        window.addEventListener('resize', resize);
-        document.getElementById("dexters_canvas").addEventListener('mousemove', draw);
-        document.getElementById("dexters_canvas").addEventListener('mousedown', setPosition);
-        document.getElementById("dexters_canvas").addEventListener('mouseenter', setPosition);
+        fabric.Object.prototype.transparentCorners = false;
 
-        // new position from mouse event
-        function setPosition(e) {
-            pos.x = e.clientX;
-            pos.y = e.clientY;
-        }
+        var brush = canvas.freeDrawingBrush;
+        brush.color = 'blue';
+        brush.width = 3;
 
-        // resize canvas
-        function resize() {
-            ctx.canvas.width = window.innerWidth;
-            ctx.canvas.height = window.innerHeight;
-        }
+    });
 
-        function draw(e) {
-            // mouse left button must be pressed
-            if (e.buttons !== 1) return;
+    window.app.view.circle = $("#circle");
 
-            ctx.beginPath(); // begin
+    window.app.view.circle.on("click", function() {
 
-            ctx.lineWidth = 5;
-            ctx.lineCap = 'round';
-            ctx.strokeStyle = '#c0392b';
+        canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
 
-            ctx.moveTo(pos.x, pos.y); // from
-            setPosition(e);
-            ctx.lineTo(pos.x, pos.y); // to
+        canvas.item(0).set({
+            borderColor: 'red',
+            cornerColor: 'green',
+            cornerSize: 6,
+            transparentCorners: false
+        });
+        canvas.setActiveObject(canvas.item(0));
+        this.__canvases.push(canvas);
 
-            ctx.stroke(); // draw it!
-        }
     });
 
     return _this;
