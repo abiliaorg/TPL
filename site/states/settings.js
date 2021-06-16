@@ -47,12 +47,14 @@ window.app.view.popup_animal = $("#popup_animal");
 window.app.view.add_home = $("#add_home");
 window.app.view.popup_home = $("#popup_home");
 
-
-
 window.app.view.popup_close = $(".popup .close");
 
 window.app.view.popup_close.on("click", function() {
     $(".popup").hide();
 });
+
+
+window.app.view.dexters_draw = $("#dexters_draw");
+window.app.view.dexters_canvas = $("#dexters_canvas");
 
 //---------------------------------------------------------- END
