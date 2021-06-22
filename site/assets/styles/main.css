@@ -1,10 +1,13 @@
-@font-face {font-family: "Circular Std Bold";
-    src: url("../fonts/csb/csb.eot"); /* IE9*/
+@font-face {
+    font-family: "Circular Std Bold";
+    src: url("../fonts/csb/csb.eot");
+    /* IE9*/
     src: url("../fonts/csb/csb.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/csb/csb.woff2") format("woff2"), /* chrome firefox */
     url("../fonts/csb/csb.woff") format("woff"), /* chrome firefox */
     url("../fonts/csb/csb.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("../fonts/csb/csb.svg#Circular Std Bold") format("svg"); /* iOS 4.1- */
+    url("../fonts/csb/csb.svg#Circular Std Bold") format("svg");
+    /* iOS 4.1- */
 }
 
 :root {
@@ -40,7 +43,7 @@ body {
 }
 
 .info {
-    width: 100px;
+    width: 200px;
     height: 30px;
     position: absolute;
     z-index: 999;
