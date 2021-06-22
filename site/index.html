@@ -35,8 +35,18 @@
         <div class="container b-l b-r">
 
             <div class="row ht-40 b-b">
-                <div class="col-3" id="button_home">Torna alla home</div>
-                <div class="col-7 b-l" id="info_home">Scopri il nostro team e i nostri obiettivi.</div>
+                <div class="col-3" id="button_home">
+                    <div class="button_grid">
+                        <div class="button_svg">
+                            <img src="./assets/images/homelogo.svg" alt="Home Icon" height="90" width="90">
+                        </div>
+                        <div class="button_text">Torna alla home</div>
+                    </div>
+                </div>
+                <div class="col-7 b-l" id="info_home">
+                    <p class="cblack">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
+                    <p class="cpurple">Scopri il nostro team e i nostri obiettivi.</p>
+                </div>
                 <div class="col-2 b-l">
                     <div class="row b-b" id="button_signup">Registrati</div>
                     <div class="row" id="button_login">Log in</div>
@@ -60,7 +70,19 @@
             <a class="close"></a>
         </div>
         <div class="body">
-            <div class="row ht-reg b-b">
+
+            <div class="signup_grid">
+                <div class="sup_item i1" id="signup_first">REGISTRATI ORA!</div>
+                <div class="sup_item i2" id="signup_name">Nome</div>
+                <div class="sup_item i3" id="signup_sirname">Cognome</div>
+                <div class="sup_item i4" id="signup_email">Email</div>
+                <div class="sup_item i5" id="signup_pass">Password</div>
+                <div class="sup_item i6" id="signup_confirmpass">Confirm Password</div>
+                <div class="sup_item i7" id="signup_last">Tick Boxes here</div>
+                <div class="sup_item i8" id="button_signup_popup">Registrati ora!</div>
+            </div>
+
+            <!-- <div class="row ht-reg b-b">
                 <div class="col-12" id="signup_first">REGISTRATI ORA!</div>
             </div>
             <div class="row ht-reg b-b">
@@ -79,7 +101,8 @@
             </div>
             <div class="row ht-reg done_button">
                 <div class="col-12" id="button_signup_popup">Registrati ora!</div>
-            </div>
+            </div> -->
+
         </div>
     </div>
 
@@ -88,7 +111,17 @@
             <a class="close"></a>
         </div>
         <div class="body">
-            <div class="row ht-5reg">
+
+            <div class="login_grid">
+                <div class="log_item i1" id="login_first">Hello!</div>
+                <div class="log_item i2" id="login_pic">Picture</div>
+                <div class="log_item i3" id="login_username">User Name</div>
+                <div class="log_item i4" id="login_pass">Password</div>
+                <div class="log_item i5" id="login_forgotpass">Forgot Password?</div>
+                <div class="log_item i6" id="button_login_popup">Accedi!</div>
+            </div>
+
+            <!-- <div class="row ht-5reg">
                 <div class="col-6">
                     <div class="row ht-20 b-b">
                         <div class="col-12" id="login_first">Hello!</div>
@@ -109,7 +142,8 @@
             </div>
             <div class="row ht-reg done_button">
                 <div class="col-12" id="button_login_popup">Accedi!</div>
-            </div>
+            </div> -->
+
         </div>
     </div>
 
@@ -119,7 +153,8 @@
         </div>
         <div class="body">
             <h1 class="topic">GIOCA</h1>
-            <p class="para">Lorem ipsum dolor sit amet</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut la oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul lamcorper suscipit lobortis nisl
+                ut aliquip ex ea com</p>
             <a id="play_done">GIOCA CON NOI!</a>
         </div>
     </div>
@@ -130,7 +165,8 @@
         </div>
         <div class="body">
             <h1 class="topic">SCOPRI</h1>
-            <p class="para">Lorem ipsum dolor sit amet</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut la oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul lamcorper suscipit lobortis nisl
+                ut aliquip ex ea com</p>
             <a id="explore_done">GIOCA CON NOI!</a>
         </div>
     </div>
@@ -141,7 +177,8 @@
         </div>
         <div class="body">
             <h1 class="topic">SUGGERISCI</h1>
-            <p class="para">Lorem ipsum dolor sit amet</p>
+            <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut la oreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul lamcorper suscipit lobortis nisl
+                ut aliquip ex ea com</p>
             <a id="suggest_done">GIOCA CON NOI!</a>
         </div>
     </div>
@@ -153,8 +190,22 @@
                 <div class="col-4" id="come_ti_chiami">Come ti chiami?</div>
                 <div class="col-4 b-l">
                     <div class="row b-b ht-25">
-                        <div class="col-6" id="button_donna">Donna</div>
-                        <div class="col-6 b-l" id="button_uomo">Uomo</div>
+                        <div class="col-6" id="button_donna">
+                            <div class="button_grid">
+                                <div class="button_svg">
+                                    <img src="./assets/images/avatar/female.png" alt="Female" height="40" width="50">
+                                </div>
+                                <div class="button_text">Donna</div>
+                            </div>
+                        </div>
+                        <div class="col-6 b-l" id="button_uomo">
+                            <div class="button_grid">
+                                <div class="button_svg">
+                                    <img src="./assets/images/avatar/male.png" alt="Male" height="40" width="40">
+                                </div>
+                                <div class="button_text">Uomo</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row b-b ht-25">
                         <div class="col-12" id="button_capelli">Capelli</div>
@@ -183,13 +234,17 @@
             </div>
 
             <div class="row ht-40 b-b">
-                <div class="col-1 carousel-avatar-prev" id="button_left">L</div>
+                <div class="col-1 carousel-avatar-prev" id="button_left">
+                    <img src="./assets/images/avatar/leftarrow.svg" alt="Left" height="80" width="30">
+                </div>
                 <div class="col-10" id="centre_carousel">
                     <div class="loop owl-carousel carousel-avatar">
                         <!--automatically populated-->
                     </div>
                 </div>
-                <div class="col-1 carousel-avatar-next" id="button_right">R</div>
+                <div class="col-1 carousel-avatar-next" id="button_right">
+                    <img src="./assets/images/avatar/rightarrow.svg" alt="Right" height="80" width="30">
+                </div>
             </div>
 
             <div class="row ht-10">
@@ -223,23 +278,23 @@
             </div>
 
             <div class="row ht-40 b-b">
-                <div class="col ht-50" id="int1">Interesse 1</div>
-                <div class="col ht-50 b-l" id="int2">Interesse 2</div>
-                <div class="col ht-50 b-l" id="int3">Interesse 3</div>
-                <div class="col ht-50 b-l" id="int4">Interesse 4</div>
-                <div class="col ht-50 b-l" id="int5">Interesse 5</div>
-                <div class="col ht-50 b-l" id="int6">Interesse 6</div>
-                <div class="col ht-50 b-l" id="int7">Interesse 7</div>
-                <div class="col ht-50 b-l" id="int8">Interesse 8</div>
+                <div class="col ht-50 interesse" id="int1">Interesse 1</div>
+                <div class="col ht-50 b-l interesse" id="int2">Interesse 2</div>
+                <div class="col ht-50 b-l interesse" id="int3">Interesse 3</div>
+                <div class="col ht-50 b-l interesse" id="int4">Interesse 4</div>
+                <div class="col ht-50 b-l interesse" id="int5">Interesse 5</div>
+                <div class="col ht-50 b-l interesse" id="int6">Interesse 6</div>
+                <div class="col ht-50 b-l interesse" id="int7">Interesse 7</div>
+                <div class="col ht-50 b-l interesse" id="int8">Interesse 8</div>
                 <div class="w-100 ht-0 b-b"></div>
-                <div class="col ht-50" id="int9">Interesse 1</div>
-                <div class="col ht-50 b-l" id="int10">Interesse 2</div>
-                <div class="col ht-50 b-l" id="int11">Interesse 3</div>
-                <div class="col ht-50 b-l" id="int12">Interesse 4</div>
-                <div class="col ht-50 b-l" id="int13">Interesse 5</div>
-                <div class="col ht-50 b-l" id="int14">Interesse 6</div>
-                <div class="col ht-50 b-l" id="int15">Interesse 7</div>
-                <div class="col ht-50 b-l" id="int16">Interesse 8</div>
+                <div class="col ht-50 interesse" id="int9">Interesse 1</div>
+                <div class="col ht-50 b-l interesse" id="int10">Interesse 2</div>
+                <div class="col ht-50 b-l interesse" id="int11">Interesse 3</div>
+                <div class="col ht-50 b-l interesse" id="int12">Interesse 4</div>
+                <div class="col ht-50 b-l interesse" id="int13">Interesse 5</div>
+                <div class="col ht-50 b-l interesse" id="int14">Interesse 6</div>
+                <div class="col ht-50 b-l interesse" id="int15">Interesse 7</div>
+                <div class="col ht-50 b-l interesse" id="int16">Interesse 8</div>
             </div>
 
             <div class="row ht-10">

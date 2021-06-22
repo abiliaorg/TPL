@@ -172,7 +172,7 @@
         grid-row: row 2;
         padding: 0% !important;
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         align-items: center;
     }
     

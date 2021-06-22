@@ -59,56 +59,63 @@
 
 #avatar #button_capelli {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 25px;
     font-weight: bold;
     font-size: 20px;
 }
 
 #avatar #button_abbigliamento {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 25px;
     font-weight: bold;
     font-size: 20px;
 }
 
 #avatar #button_posture {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 25px;
     font-weight: bold;
     font-size: 20px;
 }
 
 #avatar #button_data_di_nascita {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 25px;
     font-weight: bold;
     font-size: 20px;
 }
 
 #avatar #button_accessori {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 25px;
     font-weight: bold;
     font-size: 20px;
 }
 
 #avatar #button_segni_particolari {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 25px;
     font-weight: bold;
     font-size: 20px;
 }
 
 #avatar #button_professione {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 25px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -189,4 +196,29 @@
     border: 4px solid black;
     border-radius: 50% !important;
     margin: 0;
+}
+
+#avatar .button_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row]3fr [row]2fr;
+    grid-gap: 2px;
+}
+
+#avatar .button_svg {
+    grid-column: col;
+    grid-row: row 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#avatar .button_text {
+    grid-column: col;
+    grid-row: row 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }

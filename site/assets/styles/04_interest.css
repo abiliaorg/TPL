@@ -44,8 +44,16 @@
 
 #interest .int_button {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 30px;
     align-items: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+#interest .interesse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
