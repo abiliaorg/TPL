@@ -10,7 +10,8 @@ var statesToLoad = [
     "03_avatar",
     "04_interest",
     "05_familytree",
-    "06_dexterslab",
+    "06_dexterslab",	
+    "07_bazar",
 ];
 
 var NstatesToLoad = statesToLoad.length; //+2 for the 2 scripts of settings
@@ -127,6 +128,7 @@ function Ready() {
 
     window.setTimeout(function() {
         goToState("load");
+				//goToState("bazar");
     }, 1000);
 
 }

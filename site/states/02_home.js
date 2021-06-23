@@ -32,12 +32,14 @@ function State_Home() {
 
     window.app.view.button_explore.on("click", function(){
         window.app.view.popup_explore.show();
+				goToState("bazar");
         //alert("explore");
     });
 
     window.app.view.button_suggest.on("click", function(){
         window.app.view.popup_suggest.show();
         //alert("suggest");
+				
     });
 
     window.app.view.button_signup_popup.on("click", function(){

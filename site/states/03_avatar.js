@@ -27,13 +27,13 @@ function State_Avatar() {
         //creating a listener on carousel creation
         window.app.view.carousel_avatar.on('initialized.owl.carousel translate.owl.carousel', function(e) {
             idx = e.item.index;
-            $('.owl-item.big').removeClass('big');
-            $('.owl-item.medium').removeClass('medium');
-            $('.owl-item').eq(idx).addClass('big');
-            $('.owl-item').eq(idx - 1).addClass('medium');
-            $('.owl-item').eq(idx + 1).addClass('medium');
-            $('.owl-item').eq(idx - 2).addClass('medium');
-            $('.owl-item').eq(idx + 2).addClass('medium');
+            $('#avatar .owl-item.big').removeClass('big');
+            $('#avatar .owl-item.medium').removeClass('medium');
+            $('#avatar .owl-item').eq(idx).addClass('big');
+            $('#avatar .owl-item').eq(idx - 1).addClass('medium');
+            $('#avatar .owl-item').eq(idx + 1).addClass('medium');
+            $('#avatar .owl-item').eq(idx - 2).addClass('medium');
+            $('#avatar .owl-item').eq(idx + 2).addClass('medium');
         });
 
         //creation of the carousel

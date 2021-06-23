@@ -1,0 +1,90 @@
+#bazar {
+    display: block;
+    background-color: white;
+}
+
+#bazar .ht-80 {
+    height: 80%;
+}
+
+#bazar .ht-20 {
+    height: 20%;
+}
+
+#bazar #button_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#bazar #button_right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#bazar #centre_carousel {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#bazar .carousel-bazar {
+    height: 100%;
+}
+
+#bazar .owl-stage-outer {
+    height: 100%;
+}
+
+#bazar .owl-stage {
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#bazar .owl-item {
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#bazar .carousel-bazar .owl-item.big.active {
+    width: 200px !important;
+}
+
+#bazar .owl-item>div {
+    cursor: pointer;
+    margin: 6% 8%;
+    transition: margin 0.4s ease;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#bazar .carousel-bazar .owl-item.big div {
+    height: 200px !important;
+    width: 200px !important;
+    border: 4px solid black;
+    border-radius: 50% !important;
+    cursor: auto;
+    margin: 0;
+}
+
+#bazar .carousel-bazar .owl-item.medium div {
+    height: 100px !important;
+    width: 100px !important;
+    border: 4px solid black;
+    border-radius: 50% !important;
+    margin: 0;
+}

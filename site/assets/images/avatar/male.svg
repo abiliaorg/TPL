@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.34 47.02">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #272525;
+        stroke-width: 4px;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Chi_Siamo" data-name="Chi Siamo">
+      <g>
+        <circle class="cls-1" cx="19.64" cy="27.39" r="17.64"/>
+        <polyline class="cls-2" points="32.19 14.99 45.34 2 32.27 2"/>
+        <line class="cls-2" x1="45.34" y1="15.08" x2="45.34" y2="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.27 57.76">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #272525;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Chi_Siamo" data-name="Chi Siamo">
+      <g>
+        <circle class="cls-1" cx="19.64" cy="19.64" r="17.64"/>
+        <line class="cls-2" x1="19.64" y1="55.76" x2="19.64" y2="37.27"/>
+        <line class="cls-2" x1="28.88" y1="46.52" x2="10.39" y2="46.52"/>
+      </g>
+    </g>
+  </g>
+</svg>
