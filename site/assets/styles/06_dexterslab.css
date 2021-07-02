@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 12px;
 }
 
@@ -26,6 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 12px;
 }
 
@@ -45,13 +47,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 24px;
+    height: 33%;
 }
 
 #dexterslab .button_main {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 24px;
 }
 
@@ -61,10 +66,6 @@
 
 #dexterslab .panel_drawing {
     height: 20%;
-}
-
-#dexterslab .button_item {
-    height: 33%;
 }
 
 #dexterslab .button_main.selected {

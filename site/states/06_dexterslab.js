@@ -245,7 +245,7 @@ function State_DextersLab() {
             case "triangle":
 
                 var item = new fabric.Triangle({
-                    width: 120,
+                    width: 150,
                     height: 150,
                     left: 100,
                     top: 100,
@@ -289,7 +289,22 @@ function State_DextersLab() {
 
                 break;
 
+            case "touch":
 
+                console.log("here");
+                var img_url = './assets/images/dexterslab/' + type + '.svg';
+                console.log(img_url);
+                fabric.loadSVGFromURL(img_url, function(objects) {
+                    var group = new fabric.PathGroup(objects, {
+                        left: 165,
+                        top: 100,
+                        width: 80,
+                        height: 80
+                    });
+                    canvas.add(group);
+                    canvas.renderAll();
+                });
+                break;
 
             default:
                 break;

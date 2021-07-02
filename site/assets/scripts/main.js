@@ -10,8 +10,10 @@ var statesToLoad = [
     "03_avatar",
     "04_interest",
     "05_familytree",
-    "06_dexterslab",	
+    "06_dexterslab",
     "07_bazar",
+    "08_checkout",
+    "09_apartment",
 ];
 
 var NstatesToLoad = statesToLoad.length; //+2 for the 2 scripts of settings
@@ -26,11 +28,11 @@ $(document).ready(function() {
     loadScript("./states/settings.js", onMainLoaded, onStateError);
 });
 
-$(window).on("resize", function() {    
-	console.log("resizing");	
-	if(window.app.states[window.app.settings.currentState].Resize!==undefined){
-		window.app.states[window.app.settings.currentState].Resize();
-	}	
+$(window).on("resize", function() {
+    console.log("resizing");
+    if (window.app.states[window.app.settings.currentState].Resize !== undefined) {
+        window.app.states[window.app.settings.currentState].Resize();
+    }
 });
 
 
@@ -123,22 +125,22 @@ function onStateError() {
 
 function Ready() {
     console.log("🏁 Everything is loaded");
-	
-		Initialize();
+
+    Initialize();
 
     window.setTimeout(function() {
         goToState("load");
-				//goToState("bazar");
+        //goToState("bazar");
     }, 1000);
 
 }
 
-function Initialize(){
-	for(var s in window.app.states){
-		if(window.app.states[s].Init!==undefined){
-			window.app.states[s].Init();
-		}
-	}
+function Initialize() {
+    for (var s in window.app.states) {
+        if (window.app.states[s].Init !== undefined) {
+            window.app.states[s].Init();
+        }
+    }
 }
 
 function onStyleLoaded() {

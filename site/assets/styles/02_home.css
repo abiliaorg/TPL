@@ -175,10 +175,10 @@
     grid-row: row 6;
     background-color: black;
     color: white;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 

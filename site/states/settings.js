@@ -28,9 +28,10 @@ window.app.view.button_signup_popup = $("#button_signup_popup");
 window.app.view.button_avatar_done = $("#button_avatar_done");
 
 window.app.view.play_done = $("#play_done");
+window.app.view.explore_done = $("#explore_done");
+window.app.view.suggest_done = $("#suggest_done");
 
 window.app.view.button_interest_done = $("#button_interest_done");
-
 
 window.app.view.add_adult = $("#add_adult");
 window.app.view.popup_adult = $("#popup_adult");
@@ -56,5 +57,18 @@ window.app.view.popup_close.on("click", function() {
 
 window.app.view.dexters_draw = $("#dexters_draw");
 window.app.view.dexters_canvas = $("#dexters_canvas");
+
+window.app.view.bazar_game_over = $("#bazar_game_over");
+
+window.app.view.bazar_checkout = $("#bazar_checkout");
+window.app.view.bazar_checkout.on("click", function() {
+    window.app.view.bazar_game_over.hide();
+    goToState("checkout");
+});
+window.app.view.bazar_restart = $("#bazar_restart");
+window.app.view.bazar_restart.on("click", function() {
+    window.app.view.bazar_game_over.hide();
+    goToState("bazar");
+});
 
 //---------------------------------------------------------- END

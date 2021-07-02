@@ -3,8 +3,16 @@
     background-color: white;
 }
 
-#bazar .ht-80 {
-    height: 80%;
+#bazar .ht-65 {
+    height: 65%;
+}
+
+#bazar .ht-25 {
+    height: 25%;
+}
+
+#bazar .ht-10 {
+    height: 10%;
 }
 
 #bazar .ht-20 {
@@ -46,45 +54,154 @@
 }
 
 #bazar .owl-stage {
-    height: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #bazar .owl-item {
-    height: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #bazar .carousel-bazar .owl-item.big.active {
-    width: 200px !important;
+    width: 200px;
 }
 
 #bazar .owl-item>div {
     cursor: pointer;
     margin: 6% 8%;
     transition: margin 0.4s ease;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #bazar .carousel-bazar .owl-item.big div {
-    height: 200px !important;
-    width: 200px !important;
+    height: 150px;
+    width: 150px;
     border: 4px solid black;
-    border-radius: 50% !important;
+    border-radius: 50%;
     cursor: auto;
     margin: 0;
 }
 
 #bazar .carousel-bazar .owl-item.medium div {
-    height: 100px !important;
-    width: 100px !important;
+    height: 100px;
+    width: 100px;
     border: 4px solid black;
-    border-radius: 50% !important;
+    border-radius: 50%;
     margin: 0;
+}
+
+#bazar .button_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row]3fr [row]2fr;
+    background-color: white;
+    grid-gap: 4px;
+}
+
+#bazar .button_svg {
+    grid-column: col;
+    grid-row: row 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#bazar .button_text {
+    grid-column: col;
+    grid-row: row 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 12px;
+}
+
+#bazar #bazar_canvas {
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+}
+
+#bazar #bazar_canvas_container {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+#bazar_game_over .bazar_game_over_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col]1fr [col]1fr;
+    grid-template-rows: [row]4fr [row]1fr;
+    grid-gap: 4px;
+    background-color: black;
+}
+
+#bazar_game_over .bgog_item {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#bazar_game_over .i1 {
+    grid-column: col / span 2;
+    grid-row: row;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#bazar_game_over .i2 {
+    grid-column: col / span 1;
+    grid-row: row 2;
+    background-color: #6633FF;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bazar_game_over .i3 {
+    grid-column: col 2/ span 1;
+    grid-row: row 2;
+    background-color: #FFCC00;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#bazar_game_over .topic {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#bazar_game_over .para {
+    font-weight: bold;
+    font-size: 20px;
 }

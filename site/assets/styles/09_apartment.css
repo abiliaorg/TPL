@@ -1,0 +1,12 @@
+#apartment {
+    display: block;
+    background-color: white;
+}
+
+#apartment .ht-90 {
+    height: 90%;
+}
+
+#apartment .ht-10 {
+    height: 10%;
+}
