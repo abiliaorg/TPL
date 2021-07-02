@@ -301,8 +301,8 @@ function State_DextersLab() {
                         width: 80,
                         height: 80
                     });
-                    canvas.add(group);
-                    canvas.renderAll();
+                    window.app.dexterslab.canvas.add(group);
+                    window.app.dexterslab.canvas.renderAll();
                 });
                 break;
 
