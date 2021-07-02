@@ -289,24 +289,30 @@ function State_DextersLab() {
 
                 break;
 
-            case "touch":
+            default:
 
                 console.log("here");
+                //var img_url = 'http://fabricjs.com/assets/1.svg';
                 var img_url = './assets/images/dexterslab/' + type + '.svg';
                 console.log(img_url);
-                fabric.loadSVGFromURL(img_url, function(objects) {
-                    var item = new fabric.PathGroup(objects, {
-                        left: 165,
-                        top: 100,
-                        width: 80,
-                        height: 80
-                    });
-                });
-                break;
 
-            default:
-                break;
+                // fabric.loadSVGFromURL(img_url, function(objects) {
+                //     var item = new fabric.PathGroup(objects, {
+                //         left: 165,
+                //         top: 100,
+                //         width: 80,
+                //         height: 80
+                //     });
+                // });
 
+                new fabric.Image.fromURL(img_url, image => {
+                    //image.scale(1);
+                    image.scaleToHeight(100);
+                    image.scaleToWidth(100);
+                    window.app.dexterslab.canvas.add(image);
+                    window.app.dexterslab.canvas.renderAll();
+                })
+                break;
 
         }
 
