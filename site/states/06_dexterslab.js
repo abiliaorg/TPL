@@ -295,14 +295,12 @@ function State_DextersLab() {
                 var img_url = './assets/images/dexterslab/' + type + '.svg';
                 console.log(img_url);
                 fabric.loadSVGFromURL(img_url, function(objects) {
-                    var group = new fabric.PathGroup(objects, {
+                    var item = new fabric.PathGroup(objects, {
                         left: 165,
                         top: 100,
                         width: 80,
                         height: 80
                     });
-                    window.app.dexterslab.canvas.add(group);
-                    window.app.dexterslab.canvas.renderAll();
                 });
                 break;
 
