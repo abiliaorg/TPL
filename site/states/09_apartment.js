@@ -24,6 +24,11 @@ function State_Apartment() {
 
     }
 
+    window.app.view.guide = $("#apartment #guide");
+    window.app.view.guide.on("click", function() {
+        window.app.view.side_1.show();
+    });
+
 
     return _this;
 

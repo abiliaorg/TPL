@@ -10,3 +10,35 @@
 #apartment .ht-10 {
     height: 10%;
 }
+
+#apartment .ht-15 {
+    height: 15%;
+}
+
+#apartment .button_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row]3fr [row]2fr;
+    background-color: white;
+    grid-gap: 4px;
+}
+
+#apartment .button_svg {
+    grid-column: col;
+    grid-row: row 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#apartment .button_text {
+    grid-column: col;
+    grid-row: row 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 12px;
+}

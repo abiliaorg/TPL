@@ -54,6 +54,12 @@ window.app.view.popup_close.on("click", function() {
     $(".popup").hide();
 });
 
+window.app.view.sidepanel_left_close = $(".sidepanel_left .close");
+
+window.app.view.sidepanel_left_close.on("click", function() {
+    $(".sidepanel_left").hide();
+});
+
 
 window.app.view.dexters_draw = $("#dexters_draw");
 window.app.view.dexters_canvas = $("#dexters_canvas");
@@ -69,6 +75,12 @@ window.app.view.bazar_restart = $("#bazar_restart");
 window.app.view.bazar_restart.on("click", function() {
     window.app.view.bazar_game_over.hide();
     goToState("bazar");
+});
+
+window.app.view.side_1 = $("#side_1");
+window.app.view.guide = $("#apartment #guide");
+window.app.view.guide.on("click", function() {
+    window.app.view.side_1.show();
 });
 
 //---------------------------------------------------------- END
