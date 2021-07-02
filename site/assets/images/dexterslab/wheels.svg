@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 124.79 124.79"><defs><style>.cls-1,.cls-4,.cls-5{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4,.cls-5{stroke:#040504;stroke-linecap:round;stroke-miterlimit:10;}.cls-4{stroke-width:4px;}.cls-5{stroke-width:2px;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="124.79" height="124.79"/></clipPath></defs><title>Asset 10</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><g class="cls-2"><path class="cls-3" d="M2,62.39a60.4,60.4,0,1,1,60.39,60.4A60.39,60.39,0,0,1,2,62.39" transform="translate(0 0)"/><path class="cls-4" d="M2,62.39a60.4,60.4,0,1,1,60.39,60.4A60.39,60.39,0,0,1,2,62.39Z" transform="translate(0 0)"/><path class="cls-3" d="M33.65,62.39A28.74,28.74,0,1,1,62.39,91.13,28.74,28.74,0,0,1,33.65,62.39" transform="translate(0 0)"/><path class="cls-5" d="M33.65,62.39A28.74,28.74,0,1,1,62.39,91.13,28.74,28.74,0,0,1,33.65,62.39Z" transform="translate(0 0)"/><circle class="cls-5" cx="62.39" cy="62.39" r="48.77"/><line class="cls-5" x1="62.39" y1="62.39" x2="91.13" y2="62.39"/><line class="cls-5" x1="62.39" y1="62.39" x2="82.72" y2="42.07"/><line class="cls-5" x1="62.39" y1="62.39" x2="42.07" y2="42.07"/><line class="cls-5" x1="62.39" y1="62.39" x2="33.65" y2="62.39"/><line class="cls-5" x1="62.39" y1="62.39" x2="42.07" y2="82.72"/><line class="cls-5" x1="62.39" y1="33.65" x2="62.39" y2="91.13"/><line class="cls-5" x1="62.39" y1="62.39" x2="82.72" y2="82.72"/></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="124.79" height="124.79" viewBox="0 0 124.79 124.79">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #020302;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ACCESSORI">
+    <g id="Ruota">
+      <circle class="cls-1" cx="62.39" cy="62.39" r="60.39"/>
+      <circle class="cls-2" cx="62.39" cy="62.39" r="28.74"/>
+      <circle class="cls-3" cx="62.39" cy="62.39" r="48.77"/>
+      <g>
+        <line class="cls-3" x1="62.39" y1="62.39" x2="91.13" y2="62.39"/>
+        <line class="cls-3" x1="62.39" y1="62.39" x2="82.72" y2="42.07"/>
+        <line class="cls-3" x1="62.39" y1="62.39" x2="42.07" y2="42.07"/>
+        <line class="cls-3" x1="62.39" y1="62.39" x2="33.65" y2="62.39"/>
+        <line class="cls-3" x1="62.39" y1="62.39" x2="42.07" y2="82.72"/>
+        <line class="cls-3" x1="62.39" y1="33.65" x2="62.39" y2="91.13"/>
+        <line class="cls-3" x1="62.39" y1="62.39" x2="82.72" y2="82.72"/>
+      </g>
+    </g>
+  </g>
+</svg>

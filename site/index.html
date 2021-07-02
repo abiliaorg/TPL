@@ -488,7 +488,7 @@
 
             <div class="row main b-b">
                 <div class="col-1 menu_left">
-                    <div class="row b-b ht-20" id="back_home">
+                    <div class="row b-b ht-20" data-state="home">
                         <div class="button_grid">
                             <div class="button_svg">
                                 <img src="./assets/images/dexterslab/home.svg" alt="Home Icon" height="40" width="40">
@@ -542,7 +542,7 @@
 
             <div class="row ht-65 b-b">
                 <div class="col-1 menu_left">
-                    <div class="row ht-20" id="back_home">
+                    <div class="row ht-50" id="back_home" data-goto="home">
                         <div class="button_grid">
                             <div class="button_svg">
                                 <img src="./assets/images/bazar/home.svg" alt="Home Icon" height="40" width="40">
@@ -550,7 +550,7 @@
                             <div class="button_text">Torna a casa</div>
                         </div>
                     </div>
-                    <div class="row ht-20" id="guide">
+                    <div class="row ht-50" id="guide">
                         <div class="button_grid">
                             <div class="button_svg">
                                 <img src="./assets/images/bazar/quest.svg" alt="Q Icon" height="40" width="40">
@@ -559,10 +559,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-10">
-                    <div id="bazar_canvas_container">
-                        <canvas id="bazar_canvas"></canvas>
-                    </div>
+                <div class="col-12" id="bazar_canvas_container">
+                    <canvas id="bazar_canvas"></canvas>
                 </div>
             </div>
 
@@ -609,7 +607,7 @@
 
             <div class="row ht-40 b-b">
                 <div class="col-1 menu_left">
-                    <div class="row ht-30" id="back_home">
+                    <div class="row ht-30" id="back_home" data-goto="home">
                         <div class="button_grid">
                             <div class="button_svg">
                                 <img src="./assets/images/checkout/home.svg" alt="Home Icon" height="40" width="40">
@@ -631,7 +629,7 @@
                     <p class="cblack">Questo è il tuo carrello e puoi procedere ad acquistare veramente i tuoi prodotti preferiti e accedere ai nostri sconti!</p>
                 </div>
                 <div class="col-2 b-l">
-                    <div class="row b-b" id="back_to_bazar">Torna al gioco</div>
+                    <div class="row b-b" id="back_to_bazar" data-goto="bazar">Torna al gioco</div>
                     <div class="row" id="share_with_friends">Condividi con un amico/a</div>
                 </div>
             </div>
@@ -648,7 +646,7 @@
 
             <div class="row ht-90 b-b">
                 <div class="col-1 menu_left">
-                    <div class="row ht-15" id="back_home">
+                    <div class="row ht-50" data-goto="home">
                         <div class="button_grid">
                             <div class="button_svg">
                                 <img src="./assets/images/apartment/home.svg" alt="Home Icon" height="40" width="40">
@@ -656,7 +654,7 @@
                             <div class="button_text">Torna a casa</div>
                         </div>
                     </div>
-                    <div class="row ht-15" id="guide">
+                    <div class="row ht-50" id="guide">
                         <div class="button_grid">
                             <div class="button_svg">
                                 <img src="./assets/images/apartment/quest.svg" alt="Q Icon" height="40" width="40">
@@ -664,6 +662,9 @@
                             <div class="button_text">Guida</div>
                         </div>
                     </div>
+                </div>
+								<div class="col-12" id="nursery">
+                    <!--<img src="filename.svg">-->
                 </div>
             </div>
 

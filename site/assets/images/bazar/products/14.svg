@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.21 273.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="OGGETTI-GRANDI">
+    <g id="Lampada2">
+      <line class="cls-1" x1="136.6" x2="136.6" y2="162.44"/>
+      <g>
+        <circle class="cls-2" cx="136.6" cy="158.81" r="18.02"/>
+        <polygon class="cls-3" points="136.6 100.94 136.6 112.77 235.75 158.81 136.6 158.81 37.46 158.81 136.6 112.77 136.6 100.94"/>
+        <rect class="cls-3" x="130.77" y="96.37" width="11.67" height="32.8"/>
+      </g>
+    </g>
+  </g>
+</svg>

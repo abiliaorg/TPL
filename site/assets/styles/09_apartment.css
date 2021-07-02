@@ -1,44 +1,64 @@
 #apartment {
-    display: block;
-    background-color: white;
+	display: block;
+	background-color: white;
 }
 
 #apartment .ht-90 {
-    height: 90%;
+	height: 90%;
 }
 
 #apartment .ht-10 {
-    height: 10%;
+	height: 10%;
 }
 
 #apartment .ht-15 {
-    height: 15%;
+	height: 15%;
+}
+
+#apartment .ht-50 {
+	height: 50%;
+}
+
+#apartment .menu_left {
+	position: relative;
+	top: 10px;
+	width: 100px;
+	z-index: 999;
+	height: 150px;
+}
+
+#apartment #nursery {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	display: flex;
+	align-items: flex-end;
 }
 
 #apartment .button_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col] 1fr;
-    grid-template-rows: [row]3fr [row]2fr;
-    background-color: white;
-    grid-gap: 4px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col] 1fr;
+	grid-template-rows: [row]3fr [row]2fr;
+	background-color: white;
+	grid-gap: 4px;
 }
 
 #apartment .button_svg {
-    grid-column: col;
-    grid-row: row 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	grid-column: col;
+	grid-row: row 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 #apartment .button_text {
-    grid-column: col;
-    grid-row: row 2;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    font-size: 12px;
+	grid-column: col;
+	grid-row: row 2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	font-size: 12px;
 }

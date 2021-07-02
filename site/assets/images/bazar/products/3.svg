@@ -1,0 +1,24 @@
+<svg id="CESTA" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690.76 345.87">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #272525;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M345.38,2H2.13L21.28,307.89a38.38,38.38,0,0,0,38.3,36h571.6a38.38,38.38,0,0,0,38.3-36L688.63,2Z"/>
+    <rect class="cls-2" x="239.15" y="37.48" width="212.46" height="16.08" rx="8.04"/>
+  </g>
+</svg>

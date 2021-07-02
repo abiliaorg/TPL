@@ -7,7 +7,6 @@ window.app.view = {};
 window.app.view.state = $(".state");
 window.app.view.info = $(".info");
 
-
 window.app.view.button_signup = $("#button_signup");
 window.app.view.popup_signup = $("#popup_signup");
 
@@ -50,16 +49,7 @@ window.app.view.popup_home = $("#popup_home");
 
 window.app.view.popup_close = $(".popup .close");
 
-window.app.view.popup_close.on("click", function() {
-    $(".popup").hide();
-});
-
 window.app.view.sidepanel_left_close = $(".sidepanel_left .close");
-
-window.app.view.sidepanel_left_close.on("click", function() {
-    $(".sidepanel_left").hide();
-});
-
 
 window.app.view.dexters_draw = $("#dexters_draw");
 window.app.view.dexters_canvas = $("#dexters_canvas");
@@ -67,20 +57,43 @@ window.app.view.dexters_canvas = $("#dexters_canvas");
 window.app.view.bazar_game_over = $("#bazar_game_over");
 
 window.app.view.bazar_checkout = $("#bazar_checkout");
-window.app.view.bazar_checkout.on("click", function() {
-    window.app.view.bazar_game_over.hide();
-    goToState("checkout");
-});
+
 window.app.view.bazar_restart = $("#bazar_restart");
-window.app.view.bazar_restart.on("click", function() {
-    window.app.view.bazar_game_over.hide();
-    goToState("bazar");
-});
 
 window.app.view.side_1 = $("#side_1");
 window.app.view.guide = $("#apartment #guide");
-window.app.view.guide.on("click", function() {
-    window.app.view.side_1.show();
-});
+
+function RunListeners(){//global buttons listeners here
+	
+	/*$(staticAncestors).on(eventName, dynamicChild, function() {});*/
+	$(document).on("click", "[data-goto]", function() {		
+		var state = $(this).attr("data-goto");
+		goToState(state);		
+	})
+	
+	window.app.view.popup_close.on("click", function() {
+		$(".popup").hide();
+	});
+
+	window.app.view.sidepanel_left_close.on("click", function() {
+		$(".sidepanel_left").hide();
+	});
+
+	window.app.view.bazar_checkout.on("click", function() {
+		window.app.view.bazar_game_over.hide();
+		goToState("checkout");
+	});
+
+	window.app.view.bazar_restart.on("click", function() {
+		window.app.view.bazar_game_over.hide();
+		goToState("bazar");
+	});
+
+	window.app.view.guide.on("click", function() {
+		window.app.view.side_1.show();
+	});
+
+
+}
 
 //---------------------------------------------------------- END

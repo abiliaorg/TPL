@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.6 138.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #272525;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="OGGETTI-PICCOLI">
+    <g id="Costruzione">
+      <rect class="cls-1" x="15.66" y="55.14" width="107.29" height="8.01" rx="4" transform="translate(10.16 128.45) rotate(-90)"/>
+      <rect class="cls-1" x="23.47" y="105.65" width="91.66" height="20.22" rx="10.11"/>
+      <rect class="cls-1" x="15.66" y="125.1" width="107.29" height="8.01" rx="4"/>
+      <rect class="cls-1" x="28.27" y="85.72" width="82.06" height="20.22" rx="10.11"/>
+      <rect class="cls-1" x="32.34" y="65.51" width="73.92" height="20.22" rx="10.11"/>
+      <rect class="cls-1" x="37.27" y="45.29" width="64.06" height="20.22" rx="10.11"/>
+      <rect class="cls-1" x="40.36" y="25.36" width="57.88" height="20.22" rx="10.11"/>
+    </g>
+  </g>
+</svg>

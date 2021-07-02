@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96.77 105.45"><defs><style>.cls-1,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}.cls-4{font-size:28.65px;font-family:CircularStd-Black, CircularStd Black;font-weight:800;}.cls-5{letter-spacing:-0.02em;}</style><clipPath id="clip-path" transform="translate(-3.99 -0.15)"><rect class="cls-1" width="106.74" height="105.74"/></clipPath></defs><title>Asset 6</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><g class="cls-2"><polygon class="cls-3" points="79.33 16.81 48.39 16.81 17.44 16.81 2 103.45 48.39 103.45 94.77 103.45 79.33 16.81"/><path class="cls-3" d="M37.57,17a14.81,14.81,0,1,1,29.62,0" transform="translate(-3.99 -0.15)"/></g><text class="cls-4" transform="translate(25.77 68.53)">1<tspan class="cls-5" x="14.7" y="0">k</tspan><tspan x="27.56" y="0">g</tspan></text></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="106.74" height="105.74" viewBox="0 0 106.74 105.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="MATERIALI">
+    <g id="Metallo">
+      <polygon class="cls-1" points="83.32 16.95 52.38 16.95 21.43 16.95 5.99 103.6 52.38 103.6 98.76 103.6 83.32 16.95"/>
+      <path class="cls-1" d="M37.57,17a14.81,14.81,0,1,1,29.62,0"/>
+      <g>
+        <path d="M36.52,52.4h-.06l-3.23,1.75-.49-1.92,4.07-2.18H39V68.68H36.52Z"/>
+        <path d="M49,61.17h.06c.34-.49.83-1.09,1.23-1.58l4.07-4.78h3l-5.36,5.7,6.1,8.17H55.11L50.33,62,49,63.46v5.22H46.55V48.33H49Z"/>
+        <path d="M71.93,54.81c-.05,1-.11,2.12-.11,3.81v8.05c0,3.18-.63,5.13-2,6.33a7.31,7.31,0,0,1-5,1.67,8.88,8.88,0,0,1-4.61-1.15l.63-1.92a7.79,7.79,0,0,0,4.06,1.09c2.58,0,4.48-1.35,4.48-4.84V66.3H69.3a5,5,0,0,1-4.42,2.32c-3.43,0-5.9-2.92-5.9-6.76,0-4.7,3.07-7.37,6.25-7.37a4.62,4.62,0,0,1,4.33,2.41h0l.12-2.09Zm-2.6,5.47a3.39,3.39,0,0,0-.15-1.14,3.63,3.63,0,0,0-3.52-2.67c-2.41,0-4.13,2-4.13,5.24,0,2.73,1.38,5,4.1,5a3.69,3.69,0,0,0,3.5-2.58,4.51,4.51,0,0,0,.2-1.35Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

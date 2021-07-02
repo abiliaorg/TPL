@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.21 273.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3fc;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #000;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="OGGETTI-GRANDI">
+    <g id="Radio">
+      <g>
+        <g>
+          <line class="cls-1" x1="194.47" y1="96.14" x2="69.85" y2="58.26"/>
+          <path class="cls-2" d="M205.43,99.85h0A7.45,7.45,0,0,0,198,92.42h-7.09a7.45,7.45,0,0,0-7.42,7.43h0"/>
+          <rect class="cls-2" x="45.54" y="99.85" width="194.57" height="121.67" rx="18.06"/>
+          <g>
+            <g>
+              <circle class="cls-3" cx="183.84" cy="172.48" r="6.92"/>
+              <circle class="cls-3" cx="205.09" cy="172.48" r="6.92"/>
+            </g>
+            <rect class="cls-4" x="175.47" y="141.96" width="37.99" height="11.78" rx="5.23"/>
+            <line class="cls-4" x1="194.47" y1="153.74" x2="194.47" y2="141.96"/>
+          </g>
+          <line class="cls-5" x1="234.28" y1="216.74" x2="51.36" y2="216.74"/>
+          <line class="cls-5" x1="237.48" y1="212.83" x2="48.16" y2="212.83"/>
+          <path class="cls-2" d="M43.39,117.8h0A10.33,10.33,0,0,0,33.1,128.1h0a10.32,10.32,0,0,0,10.29,10.29h0"/>
+          <circle class="cls-2" cx="69.82" cy="58.29" r="6.6"/>
+        </g>
+        <circle cx="76.81" cy="159.64" r="2.4"/>
+        <circle cx="86.06" cy="159.64" r="2.4"/>
+        <circle cx="95.3" cy="159.64" r="2.4"/>
+        <circle cx="104.55" cy="159.64" r="2.4"/>
+        <circle cx="113.79" cy="159.64" r="2.4"/>
+        <circle cx="123.04" cy="159.64" r="2.4"/>
+        <circle cx="86.06" cy="150.39" r="2.4"/>
+        <circle cx="95.3" cy="150.39" r="2.4"/>
+        <circle cx="113.79" cy="150.39" r="2.4"/>
+        <circle cx="123.04" cy="150.39" r="2.4"/>
+        <circle cx="95.3" cy="141.15" r="2.4"/>
+        <circle cx="113.79" cy="141.15" r="2.4"/>
+        <circle cx="132.28" cy="159.64" r="2.4"/>
+        <circle cx="104.55" cy="131.9" r="2.4"/>
+        <circle cx="104.55" cy="141.15" r="2.4"/>
+        <circle cx="104.55" cy="150.39" r="2.4"/>
+        <circle cx="123.04" cy="168.88" r="2.4"/>
+        <circle cx="113.79" cy="168.88" r="2.4"/>
+        <circle cx="95.3" cy="168.88" r="2.4"/>
+        <circle cx="86.06" cy="168.88" r="2.4"/>
+        <circle cx="113.79" cy="178.13" r="2.4"/>
+        <circle cx="95.3" cy="178.13" r="2.4"/>
+        <circle cx="104.55" cy="187.37" r="2.4"/>
+        <circle cx="104.55" cy="178.13" r="2.4"/>
+        <circle cx="104.55" cy="168.88" r="2.4"/>
+        <circle class="cls-4" cx="104.55" cy="159.64" r="39.31"/>
+      </g>
+    </g>
+  </g>
+</svg>

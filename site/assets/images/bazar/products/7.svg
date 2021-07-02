@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.6 138.6">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="OGGETTI-PICCOLI">
+    <g id="Vasetto">
+      <g>
+        <line class="cls-1" x1="63.09" y1="119.92" x2="81.37" y2="5.47"/>
+        <line class="cls-1" x1="72.66" y1="120.5" x2="64.34" y2="4.89"/>
+        <line class="cls-1" x1="76.49" y1="120.05" x2="54.57" y2="6.24"/>
+        <path class="cls-2" d="M101.37,109.37v16c0,4.6-3.26,8.36-7.23,8.36H44.46c-4,0-7.22-3.76-7.22-8.36v-16A45.53,45.53,0,0,1,48.09,79.44c4-4.57,7.41-6.8,7.41-13.23V43.32a2,2,0,0,1,1.86-2.15H81.25a2,2,0,0,1,1.85,2.15V66.21c0,8,3.39,8.66,7.41,13.23A45.48,45.48,0,0,1,101.37,109.37Z"/>
+      </g>
+      <line class="cls-3" x1="37.24" y1="116.87" x2="101.37" y2="116.87"/>
+    </g>
+  </g>
+</svg>

@@ -1,132 +1,137 @@
 #checkout {
-    display: block;
-    background-color: white;
+	display: block;
+	background-color: white;
 }
 
 #checkout .ht-40 {
-    height: 40%;
+	height: 40%;
 }
 
 #checkout .ht-60 {
-    height: 60%;
+	height: 60%;
 }
 
 #checkout .ht-30 {
-    height: 30%;
+	height: 30%;
 }
 
 #checkout .ht-75 {
-    height: 75%;
+	height: 75%;
 }
 
 #checkout p.cblack {
-    color: black;
+	color: black;
 }
 
 #checkout #info_checkout {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 24px;
-    padding: 45px;
-    padding-left: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-size: 24px;
+	padding: 45px;
+	padding-left: 90px;
 }
 
 #checkout #back_to_bazar {
-    height: 50%;
-    background-color: #F7524A;
-    color: black;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
+	height: 50%;
+	background-color: #F7524A;
+	color: black;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 24px;
 }
 
 #checkout #share_with_friends {
-    height: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
+	height: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 24px;
 }
 
 #checkout .button_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col] 1fr;
-    grid-template-rows: [row]3fr [row]2fr;
-    background-color: white;
-    grid-gap: 4px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col] 1fr;
+	grid-template-rows: [row]3fr [row]2fr;
+	background-color: white;
+	grid-gap: 4px;
 }
 
 #checkout .button_svg {
-    grid-column: col;
-    grid-row: row 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	grid-column: col;
+	grid-row: row 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 #checkout .button_text {
-    grid-column: col;
-    grid-row: row 2;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    font-size: 12px;
+	grid-column: col;
+	grid-row: row 2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	font-size: 12px;
 }
 
 #checkout .products {
-    overflow-y: auto;
+	overflow-y: auto;
+	display: inline-flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 #checkout .button_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
 }
 
 #checkout .item_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col] 1fr;
-    grid-template-rows: [row]3fr [row]1fr [row]1fr;
-    background-color: white;
-    grid-gap: 4px;
-    padding: 15px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col] 1fr;
+	grid-template-rows: [row]3fr [row]1fr [row]1fr;
+	background-color: white;
+	grid-gap: 4px;
+	padding: 15px;
 }
 
 #checkout .item_svg {
-    grid-column: col;
-    grid-row: row 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	grid-column: col;
+	grid-row: row 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #checkout .item_text {
-    grid-column: col;
-    grid-row: row 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 24px;
+	grid-column: col;
+	grid-row: row 2;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 24px;
 }
 
 #checkout .item_description {
-    grid-column: col;
-    grid-row: row 3;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 12px;
+	grid-column: col;
+	grid-row: row 3;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	font-size: 12px;
 }

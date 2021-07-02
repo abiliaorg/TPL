@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.21 273.21">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="OGGETTI-GRANDI">
+    <g id="Computer">
+      <rect class="cls-1" x="7.06" y="24.26" width="259.09" height="180.49" rx="9.98"/>
+      <rect class="cls-2" x="19.68" y="41.94" width="233.85" height="126.89"/>
+      <line class="cls-3" x1="266.15" y1="168.83" x2="7.06" y2="168.83"/>
+      <circle class="cls-2" cx="136.6" cy="33.58" r="3.85"/>
+      <path d="M154.93,176.44a.86.86,0,0,0-.86.84h0a17.47,17.47,0,0,1-34.94,0v0a.84.84,0,0,0-.85-.83.85.85,0,0,0-.85.82v.08a19.07,19.07,0,0,0,5.62,13.31,19.14,19.14,0,0,0,27.11,0,19.07,19.07,0,0,0,5.62-13.31v-.08a.85.85,0,0,0-.85-.82"/>
+      <polygon class="cls-1" points="171.16 240.79 102.05 240.79 109.97 204.75 163.24 204.75 171.16 240.79"/>
+      <rect class="cls-1" x="87.2" y="240.79" width="98.8" height="8.15" rx="4.08"/>
+      <line class="cls-3" x1="19.41" y1="161.32" x2="253.53" y2="161.32"/>
+    </g>
+  </g>
+</svg>

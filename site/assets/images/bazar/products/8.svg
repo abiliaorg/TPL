@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 138.6 138.6">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-6 {
+        stroke: #000;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4, .cls-6 {
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #036;
+        stroke: #fff;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-6 {
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path class="cls-1" d="M46.93,80.26A12.93,12.93,0,0,1,46.21,62l.15-.15L81.2,19.09a12.93,12.93,0,0,1,18.11.12l20.83,20A12.93,12.93,0,0,1,121,57.3L79.67,93.85l-.15.16a12.92,12.92,0,0,1-18.24,0Z"/>
+    </clipPath>
+  </defs>
+  <g id="OGGETTI-PICCOLI">
+    <g id="Specchio">
+      <path class="cls-2" d="M123.77,35.43l-20.84-20c-7.29-7-18.83-6.93-25.65.17L42.43,58.4C35.62,65.5,36,77,43.3,84l2.81,2.7L16.28,112.84A7.57,7.57,0,0,0,15,114.26c-2.29,3.4-1.58,8.4,1.85,11.7s8.45,3.79,11.76,1.36A7.55,7.55,0,0,0,30,126L54.84,95.11l2.81,2.7c7.29,7,18.84,6.92,25.65-.17l41.34-36.57C131.46,54,131.06,42.44,123.77,35.43Z"/>
+      <path class="cls-3" d="M46.93,80.26A12.93,12.93,0,0,1,46.21,62l.15-.15L81.2,19.09a12.93,12.93,0,0,1,18.11.12l20.83,20A12.93,12.93,0,0,1,121,57.3L79.67,93.85l-.15.16a12.92,12.92,0,0,1-18.24,0Z"/>
+      <circle class="cls-4" cx="23.85" cy="118.65" r="2.46"/>
+      <g class="cls-5">
+        <polygon class="cls-6" points="24.9 65.57 116.65 28.37 126.52 33.47 24.17 74.96 24.9 65.57"/>
+      </g>
+    </g>
+  </g>
+</svg>

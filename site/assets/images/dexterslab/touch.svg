@@ -1,1 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 172.3 123.5"><defs><style>.cls-1,.cls-4,.cls-6,.cls-7{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4{stroke:#000;}.cls-4,.cls-6,.cls-7{stroke-miterlimit:10;}.cls-4,.cls-6{stroke-width:4px;}.cls-5{clip-path:url(#clip-path-3);}.cls-6,.cls-7{stroke:#fff;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="172.3" height="123.5"/></clipPath><clipPath id="clip-path-3" transform="translate(0 0)"><rect class="cls-1" x="11.69" y="10.84" width="148.92" height="101.81"/></clipPath></defs><title>Asset 14</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><g class="cls-2"><path class="cls-3" d="M9.47,2H162.83a7.47,7.47,0,0,1,7.47,7.46V114a7.48,7.48,0,0,1-7.47,7.47H9.47A7.47,7.47,0,0,1,2,114V9.46A7.46,7.46,0,0,1,9.47,2" transform="translate(0 0)"/><path class="cls-4" d="M9.47,2H162.83a7.46,7.46,0,0,1,7.46,7.46V114a7.46,7.46,0,0,1-7.46,7.46H9.47A7.47,7.47,0,0,1,2,114V9.47A7.47,7.47,0,0,1,9.47,2Z"/><rect x="11.69" y="10.84" width="148.92" height="101.81"/></g><g class="cls-5"><line class="cls-6" x1="39.02" y1="115.25" x2="147.21" y2="7.07"/><line class="cls-7" x1="51.32" y1="115.25" x2="159.5" y2="7.07"/></g></g></g></g></svg>
+<svg id="TECNOLOGIA" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172.3" height="123.5" viewBox="0 0 172.3 123.5">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #000;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="11.69" y="10.84" width="148.92" height="101.81"/>
+    </clipPath>
+  </defs>
+  <g id="Touchscreen">
+    <rect class="cls-2" x="2" y="2" width="168.3" height="119.5" rx="7.47"/>
+    <rect x="11.69" y="10.84" width="148.92" height="101.81"/>
+    <g class="cls-3">
+      <line class="cls-4" x1="39.02" y1="115.25" x2="147.21" y2="7.07"/>
+      <line class="cls-5" x1="51.32" y1="115.25" x2="159.5" y2="7.07"/>
+    </g>
+  </g>
+</svg>

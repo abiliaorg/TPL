@@ -1,207 +1,224 @@
 #bazar {
-    display: block;
-    background-color: white;
+	display: block;
+	background-color: white;
 }
 
 #bazar .ht-65 {
-    height: 65%;
+	height: 65%;
 }
 
 #bazar .ht-25 {
-    height: 25%;
+	height: 25%;
 }
 
 #bazar .ht-10 {
-    height: 10%;
+	height: 10%;
 }
 
 #bazar .ht-20 {
-    height: 20%;
+	height: 20%;
+}
+
+#bazar .ht-50 {
+	height: 50%;
 }
 
 #bazar #button_left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 #bazar #button_right {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 #bazar #centre_carousel {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 #bazar .carousel-bazar {
-    height: 100%;
+	height: 100%;
 }
 
 #bazar .owl-stage-outer {
-    height: 100%;
+	height: 100%;
 }
 
 #bazar .owl-stage {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #bazar .owl-item {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #bazar .carousel-bazar .owl-item.big.active {
-    width: 200px;
+	width: 200px;
 }
 
 #bazar .owl-item>div {
-    cursor: pointer;
-    margin: 6% 8%;
-    transition: margin 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	cursor: pointer;
+	margin: 6% 8%;
+	transition: margin 0.4s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #bazar .carousel-bazar .owl-item.big div {
-    height: 150px;
-    width: 150px;
-    border: 4px solid black;
-    border-radius: 50%;
-    cursor: auto;
-    margin: 0;
+	height: 150px;
+	width: 150px;
+	border: 4px solid black;
+	border-radius: 50%;
+	cursor: auto;
+	margin: 0;
 }
 
 #bazar .carousel-bazar .owl-item.medium div {
-    height: 100px;
-    width: 100px;
-    border: 4px solid black;
-    border-radius: 50%;
-    margin: 0;
+	height: 100px;
+	width: 100px;
+	border: 4px solid black;
+	border-radius: 50%;
+	margin: 0;
+}
+
+#bazar .menu_left {
+	position: relative;
+	top: 10px;
+	width: 100px;
+	z-index: 999;
+	height: 150px;
 }
 
 #bazar .button_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col] 1fr;
-    grid-template-rows: [row]3fr [row]2fr;
-    background-color: white;
-    grid-gap: 4px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col] 1fr;
+	grid-template-rows: [row]3fr [row]2fr;
+	background-color: white;
+	grid-gap: 4px;
+	cursor: pointer;
 }
 
 #bazar .button_svg {
-    grid-column: col;
-    grid-row: row 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	grid-column: col;
+	grid-row: row 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 #bazar .button_text {
-    grid-column: col;
-    grid-row: row 2;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    font-size: 12px;
+	grid-column: col;
+	grid-row: row 2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	text-align: center;
+	font-size: 12px;
 }
 
 #bazar #bazar_canvas {
-    width: 100%;
-    height: 100%;
-    background: #f8f8f8;
-    padding: 0;
-    margin: 0 auto;
-    display: block;
+	width: 100%;
+	height: 100%;
+	background: #f8f8f8;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
 }
 
 #bazar #bazar_canvas_container {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
+	position: absolute;
+	width: 80%;
+	height: 57%;
+}
+
+#bazar .item img {
+	width: 80%;
 }
 
 #bazar_game_over .bazar_game_over_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col]1fr [col]1fr;
-    grid-template-rows: [row]4fr [row]1fr;
-    grid-gap: 4px;
-    background-color: black;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col]1fr [col]1fr;
+	grid-template-rows: [row]4fr [row]1fr;
+	grid-gap: 4px;
+	background-color: black;
 }
 
 #bazar_game_over .bgog_item {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
+	background-color: white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 #bazar_game_over .i1 {
-    grid-column: col / span 2;
-    grid-row: row;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+	grid-column: col / span 2;
+	grid-row: row;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
 #bazar_game_over .i2 {
-    grid-column: col / span 1;
-    grid-row: row 2;
-    background-color: #6633FF;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	grid-column: col / span 1;
+	grid-row: row 2;
+	background-color: #6633FF;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 #bazar_game_over .i3 {
-    grid-column: col 2/ span 1;
-    grid-row: row 2;
-    background-color: #FFCC00;
-    color: black;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	grid-column: col 2/ span 1;
+	grid-row: row 2;
+	background-color: #FFCC00;
+	color: black;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 #bazar_game_over .topic {
-    font-weight: bold;
-    font-size: 35px;
+	font-weight: bold;
+	font-size: 35px;
 }
 
 #bazar_game_over .para {
-    font-weight: bold;
-    font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
