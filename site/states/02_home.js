@@ -55,16 +55,31 @@ function State_Home() {
             goToState("bazar");
         });
 
+        sidebarsResize();
+
     }
 
     _this.Resize = function() {
 
-        var width = $("#button_signup").width();
-        var left = $("#button_signup").offset().left;
-        $(".sidebar").css("left", width + left + 4 + "px");
+        sidebarsResize();
 
     }
 
+    function sidebarsResize() {
+
+        var width1 = $("#button_signup").width();
+        var left1 = $("#button_signup").offset().left;
+        $(".sidebar1").css("left", width1 + left1 + 4 + "px");
+        var ht1 = $("#button_signup").height();
+        var ht2 = $("#button_login").height();
+        $(".sidebar1").css("height", ht1 + ht2 + 8 + "px");
+
+        var left2 = $("#button_play").offset().left;
+        $(".sidebar2").css("left", left2 - 4 - 40 + "px");
+        var ht3 = $("#button_home").height();
+        $(".sidebar2").css("top", 100 + ht3 + "px");
+
+    }
 
     return _this;
 

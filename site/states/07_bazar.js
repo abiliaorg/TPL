@@ -212,6 +212,8 @@ function State_Bazar() {
             loop: true,
             dots: false,
             margin: 5,
+            touchDrag: false,
+            mouseDrag: false
         })
 
         $('.carousel-bazar-next').click(function() {

@@ -55,7 +55,7 @@ header {
     left: 0px;
     top: 0px;
     position: fixed;
-    background-color: #FFCC00;
+    background-color: #6633FF;
     border-bottom: 4px solid var(--border-color);
 }
 
@@ -274,6 +274,7 @@ header {
 .hg_item.i-1 {
     grid-column: col;
     grid-row: row 2;
+    color: #F5F5F5;
 }
 
 .hg_item.i-2 {

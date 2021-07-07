@@ -43,6 +43,8 @@ function State_Avatar() {
             loop: true,
             dots: false,
             margin: 5,
+            touchDrag: false,
+            mouseDrag: false
         })
 
         $('.carousel-avatar-next').click(function() {
