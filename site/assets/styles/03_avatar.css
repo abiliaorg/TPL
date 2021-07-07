@@ -3,22 +3,6 @@
     background-color: white;
 }
 
-#avatar .ht-40 {
-    height: 40%;
-}
-
-#avatar .ht-50 {
-    height: 50%;
-}
-
-#avatar .ht-25 {
-    height: 25%;
-}
-
-#avatar .ht-10 {
-    height: 10%;
-}
-
 #avatar .done_button {
     background-color: black;
     color: white;

@@ -3,22 +3,6 @@
     background-color: white;
 }
 
-#interest .ht-40 {
-    height: 40%;
-}
-
-#interest .ht-50 {
-    height: 50%;
-}
-
-#interest .ht-10 {
-    height: 10%;
-}
-
-#interest .ht-0 {
-    height: 0%;
-}
-
 #interest .done_button {
     background-color: black;
     color: white;

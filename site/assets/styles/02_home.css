@@ -3,14 +3,6 @@
     background-color: white;
 }
 
-#home .ht-40 {
-    height: 40%;
-}
-
-#home .ht-60 {
-    height: 60%;
-}
-
 #home .big_button {
     cursor: pointer;
     display: flex;
