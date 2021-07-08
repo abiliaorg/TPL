@@ -44,7 +44,6 @@
     height: 100%;
     grid-template-columns: [col] 1fr;
     grid-template-rows: [row]3fr [row]2fr;
-    background-color: white;
     grid-gap: 4px;
 }
 
@@ -89,7 +88,6 @@
     height: 100%;
     grid-template-columns: [col] 1fr;
     grid-template-rows: [row]3fr [row]1fr [row]1fr;
-    background-color: white;
     grid-gap: 4px;
     padding: 15px;
 }

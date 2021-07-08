@@ -3,6 +3,19 @@
     background-color: #6633FF;
 }
 
+#home .homepage_banner{
+    background-image: url(../images/homepage/homepage.png);	    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+	
+		height: 500px;
+    width: 1150px;
+    left: 90px;
+	
+		pointer-events: none;
+}
+
 #home .big_button {
     cursor: pointer;
     display: flex;
@@ -54,6 +67,7 @@
     align-items: center;
     font-size: 25px;
     background-color: #FFCC00;
+		height: 100%;
 }
 
 #home #info_home {
@@ -63,6 +77,10 @@
     align-items: flex-start;
     font-size: 24px;
     padding: 45px;
+}
+
+#home #registersignup_home {
+		height: 100%;
 }
 
 #home p.cblack {

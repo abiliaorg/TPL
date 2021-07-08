@@ -56,12 +56,14 @@ function State_Home() {
         });
 
         sidebarsResize();
+				bannerResize();
 
     }
 
     _this.Resize = function() {
 
         sidebarsResize();
+				bannerResize();
 
     }
 
@@ -80,6 +82,20 @@ function State_Home() {
         $(".sidebar2").css("top", 100 + ht3 + "px");
 
     }
+	
+		function bannerResize(){
+			
+			var increment = 120;			
+			var width = $("#home .container").width();		
+			
+			$(".homepage_banner").css(
+				{
+					"width": width + increment + "px",
+					"left": (window.innerWidth-width)/2-increment/2+"px"
+				}
+			);
+			console.log(width);
+		}
 
     return _this;
 
