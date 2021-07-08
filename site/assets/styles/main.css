@@ -255,8 +255,8 @@ header {
 }
 
 .sidepanel_left .body {
-    height: 400px;
     border-left: 4px solid var(--border-color);
+    border-right: 4px solid var(--border-color);
     background-color: var(--background-color);
 }
 

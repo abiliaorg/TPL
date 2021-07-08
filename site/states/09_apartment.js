@@ -25,10 +25,9 @@ function State_Apartment() {
         window.app.view.guide = $("#apartment #guide");
         window.app.view.guide.on("click", function() {
             window.app.view.sidepanel_1.show();
+            SidePanel1_Resize();
             startSide1Carousel1();
         });
-
-        SidePanel1_Resize();
 
     }
 
@@ -39,7 +38,7 @@ function State_Apartment() {
 
     function SidePanel1_Resize() {
 
-        var wd2 = $("#apartment #nursery").width();
+        var wd2 = $("#apartment #wrapper_row").width();
         var wd1 = wd2 * 0.4;
         var ht1 = $("#apartment #nursery").height();
         var right1 = $("#apartment #nursery").offset().right;
@@ -55,16 +54,17 @@ function State_Apartment() {
         window.app.view.side1_carousel1 = $('.side1_carousel1');
 
         //inserting html elements of products
-        for (g in window.app.apartment_nursery_list["CREME_group"]) {
-            var el = '<div class="item" data-id="' + g.id + '"><img src="' + g.image + '"></div>';
+        for (g of window.app.apartment_nursery_list["CULLE_group"]) {
+            console.log(g.id);
+            var el = '<div class="item" data-id="' + g.id + '">' + g.image + '</div>';
             window.app.view.side1_carousel1.append(el);
         }
 
         //creating a listener on carousel creation
         window.app.view.side1_carousel1.on('initialized.owl.carousel translate.owl.carousel', function(e) {
             idx = e.item.index;
-            $('#apartment .owl-item.big').removeClass('big');
-            $('#apartment .owl-item').eq(idx).addClass('big');
+            $('#sidepanel_1 .owl-item.big').removeClass('big');
+            $('#sidepanel_1 .owl-item').eq(idx).addClass('big');
         });
 
         //creation of the carousel
@@ -85,10 +85,10 @@ function State_Apartment() {
             window.app.view.side1_carousel1.trigger('prev.owl.carousel');
         });
 
-        $('#apartment .owl-item').click(function() {
+        $('#sidepanel_1 .owl-item').click(function() {
             var id = $(this).find(".item").attr("data-id");
             console.log(id);
-
+            showItem(id);
         });
     }
 

@@ -114,10 +114,18 @@
 }
 
 #sidepanel_1 .side1_carousel1 .owl-item.big div {
-    height: 75px;
-    width: 75px;
+    height: 100px;
+    width: 100px;
     border: 4px solid black;
     border-radius: 50%;
     cursor: auto;
     margin: 0;
+}
+
+#sidepanel_1 .titletext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
 }
