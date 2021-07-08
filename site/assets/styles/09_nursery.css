@@ -1,9 +1,9 @@
-#apartment {
+#nursery {
 	display: block;
 	background-color: white;
 }
 
-#apartment .menu_left {
+#nursery .menu_left {
 	position: relative;
 	top: 10px;
 	width: 100px;
@@ -11,7 +11,7 @@
 	height: 150px;
 }
 
-#apartment #nursery {
+#nursery #nursery_inside {
 	position: absolute;
 	width: 80%;
 	height: 80%;
@@ -19,7 +19,7 @@
 	align-items: flex-end;
 }
 
-#apartment .button_grid {
+#nursery .button_grid {
 	display: grid;
 	height: 100%;
 	grid-template-columns: [col] 1fr;
@@ -28,7 +28,7 @@
 	grid-gap: 4px;
 }
 
-#apartment .button_svg {
+#nursery .button_svg {
 	grid-column: col;
 	grid-row: row 1;
 	display: flex;
@@ -36,7 +36,7 @@
 	align-items: flex-end;
 }
 
-#apartment .button_text {
+#nursery .button_text {
 	grid-column: col;
 	grid-row: row 2;
 	cursor: pointer;
@@ -47,12 +47,12 @@
 	font-size: 12px;
 }
 
-#apartment g[id$='_group']{
+#nursery g[id$='_group']{
 	cursor: pointer;
 }
 
 
-#sidepanel_apartment {
+#sidepanel_nursery {
 	position: absolute;
 	top: var(--header-height);
 	right: 10%;
@@ -62,14 +62,14 @@
 	background-color: transparent;
 }
 
-#sidepanel_apartment .sidepanel_apartment_button {
+#sidepanel_nursery .sidepanel_nursery_button {
 	position: absolute;
 	height: 50px;
 	width: 50px;
 	left: 0px;
 }
 
-#sidepanel_apartment .close {
+#sidepanel_nursery .close {
 	border-left: 4px solid var(--border-color);
 	border-bottom: 4px solid var(--border-color);
 	background-color: white;
@@ -78,7 +78,7 @@
 	height: 50px;
 }
 
-#sidepanel_apartment .close:after {
+#sidepanel_nursery .close:after {
 	display: inline-block;
 	content: "\2713";
 	font-size: 40px;
@@ -88,19 +88,19 @@
 	color: black;
 }
 
-#sidepanel_apartment .body {
+#sidepanel_nursery .body {
 	border-left: 4px solid var(--border-color);
 	border-right: 4px solid var(--border-color);
 	background-color: var(--background-color);
 	float: right;
 }
 
-#sidepanel_apartment .body .row {
+#sidepanel_nursery .body .row {
 	padding-bottom: 20px;
 }
 
 
-#sidepanel_apartment #sidepanel_apartment_itemleft {
+#sidepanel_nursery #sidepanel_nursery_itemleft {
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -109,7 +109,7 @@
 	margin-top: 10px;
 }
 
-#sidepanel_apartment #sidepanel_apartment_itemright {
+#sidepanel_nursery #sidepanel_nursery_itemright {
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -118,7 +118,7 @@
 	margin-top: 10px;
 }
 
-#sidepanel_apartment #sidepanel_apartment_itemcarousel {
+#sidepanel_nursery #sidepanel_nursery_itemcarousel {
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -127,29 +127,29 @@
 	font-size: 20px;
 }
 
-#sidepanel_apartment #sidepanel_apartment_itemcarousel .owl-carousel {
+#sidepanel_nursery #sidepanel_nursery_itemcarousel .owl-carousel {
 	height: 100%;
 }
 
-#sidepanel_apartment .owl-stage-outer {
+#sidepanel_nursery .owl-stage-outer {
 	height: 100%;
 }
 
-#sidepanel_apartment .owl-stage {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#sidepanel_apartment .owl-item {
+#sidepanel_nursery .owl-stage {
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#sidepanel_apartment .owl-item>div {
+#sidepanel_nursery .owl-item {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sidepanel_nursery .owl-item>div {
 	cursor: pointer;
 	transition: margin 0.4s ease;
 	display: flex;
@@ -157,7 +157,7 @@
 	align-items: center;
 }
 
-#sidepanel_apartment .titletext {
+#sidepanel_nursery .titletext {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -168,7 +168,7 @@
 }
 
 
-#sidepanel_apartment .owl-item img {
+#sidepanel_nursery .owl-item img {
 	width: auto;
 	max-height: 90px;
 

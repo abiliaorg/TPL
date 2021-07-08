@@ -15,6 +15,11 @@ function State_Home() {
     };
 
     _this.Init = function() {
+			
+				$("#home #button_home").on("click", function() {
+            goToState("apartment");
+        });
+			
         window.app.view.button_signup.on("click", function() {
             window.app.view.popup_signup.show();
         });
@@ -47,7 +52,7 @@ function State_Home() {
 
         window.app.view.suggest_done.on("click", function() {
             window.app.view.popup_suggest.hide();
-            goToState("apartment");
+            goToState("nursery");
         });
 
         window.app.view.explore_done.on("click", function() {

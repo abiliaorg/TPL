@@ -10,17 +10,28 @@ function State_Checkout() {
 		console.log("⛳ ------> Checkout state");
 
 		var listofproducts = window.app.checkout.products;
+		
+		var groupedlistofproducts = groupBy(window.app.checkout.products, "id");
+		
 		var prod_string = "";
-		for (i = 0; i < listofproducts.length; i++) {
-			if (i % 4 == 0) {
+		//i < Object.keys(groupedlistofproducts).length
+		
+		var c=0;
+		for (i in groupedlistofproducts) {
+			
+			var name = groupedlistofproducts[i].length+" x "+groupedlistofproducts[i][0].name;
+			
+			if (c % 4 == 0) {
 				prod_string += '<div class="row b-b ht-75">';
-				prod_string += '<div class="col-3 button_item" data-id="' + listofproducts[i].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + listofproducts[i].id + '.svg" height="80" width="80"></div><div class="item_text">' + listofproducts[i].name + '</div><div class="item_description">' + listofproducts[i].description + '</div></div></div>';
+				prod_string += '<div class="col-3 button_item" data-id="' + groupedlistofproducts[i][0].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + groupedlistofproducts[i][0].id + '.svg" height="80" width="80"></div><div class="item_text">' + name + '</div><div class="item_description">' + groupedlistofproducts[i][0].description + '</div></div></div>';
 			} else {
-				prod_string += '<div class="col-3 b-l button_item" data-id="' + listofproducts[i].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + listofproducts[i].id + '.svg" height="80" width="80"></div><div class="item_text">' + listofproducts[i].name + '</div><div class="item_description">' + listofproducts[i].description + '</div></div></div>';
+				prod_string += '<div class="col-3 b-l button_item" data-id="' + groupedlistofproducts[i][0].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + groupedlistofproducts[i][0].id + '.svg" height="80" width="80"></div><div class="item_text">' + name + '</div><div class="item_description">' + groupedlistofproducts[i][0].description + '</div></div></div>';
 			}
-			if (i % 4 == 3) {
+			if (c % 4 == 3) {
 				prod_string += '</div>';
 			}
+			
+			c++;
 		}
 
 		window.app.view.products.html(prod_string);
@@ -42,7 +53,7 @@ function State_Checkout() {
 
 	}
 
-
+	
 
 	return _this;
 
@@ -50,5 +61,17 @@ function State_Checkout() {
 }
 
 window.app.states.checkout = State_Checkout();
+
+var groupBy = (array, key) => {
+  // Return the end result
+  return array.reduce((result, currentValue) => {
+    // If an array already present for key, push it to the array. Else create an array and push the object
+    (result[currentValue[key]] = result[currentValue[key]] || []).push(
+      currentValue
+    );
+    // Return the current iteration `result` value, this will be taken as next iteration `result` value and accumulate
+    return result;
+  }, {}); // empty object is the initial value for result object
+};
 
 //---------------------------------------------------------- END

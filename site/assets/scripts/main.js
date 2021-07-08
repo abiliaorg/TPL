@@ -13,7 +13,8 @@ var statesToLoad = [
 	"06_dexterslab",
 	"07_bazar",
 	"08_checkout",
-	"09_apartment",
+	"09_nursery",
+	"10_apartment",
 ];
 
 var NstatesToLoad = statesToLoad.length; //+2 for the 2 scripts of settings

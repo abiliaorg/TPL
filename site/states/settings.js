@@ -61,7 +61,7 @@ window.app.view.bazar_checkout = $("#bazar_checkout");
 window.app.view.bazar_restart = $("#bazar_restart");
 
 window.app.view.sidepanel_1 = $("#sidepanel_1");
-window.app.view.guide = $("#apartment #guide");
+window.app.view.guide = $("#nursery #guide");
 
 function RunListeners() { //global buttons listeners here
 
