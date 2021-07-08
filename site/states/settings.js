@@ -60,38 +60,38 @@ window.app.view.bazar_checkout = $("#bazar_checkout");
 
 window.app.view.bazar_restart = $("#bazar_restart");
 
-window.app.view.side_1 = $("#side_1");
+window.app.view.sidepanel_1 = $("#sidepanel_1");
 window.app.view.guide = $("#apartment #guide");
 
-function RunListeners(){//global buttons listeners here
-	
-	/*$(staticAncestors).on(eventName, dynamicChild, function() {});*/
-	$(document).on("click", "[data-goto]", function() {		
-		var state = $(this).attr("data-goto");
-		goToState(state);		
-	})
-	
-	window.app.view.popup_close.on("click", function() {
-		$(".popup").hide();
-	});
+function RunListeners() { //global buttons listeners here
 
-	window.app.view.sidepanel_left_close.on("click", function() {
-		$(".sidepanel_left").hide();
-	});
+    /*$(staticAncestors).on(eventName, dynamicChild, function() {});*/
+    $(document).on("click", "[data-goto]", function() {
+        var state = $(this).attr("data-goto");
+        goToState(state);
+    })
 
-	window.app.view.bazar_checkout.on("click", function() {
-		window.app.view.bazar_game_over.hide();
-		goToState("checkout");
-	});
+    window.app.view.popup_close.on("click", function() {
+        $(".popup").hide();
+    });
 
-	window.app.view.bazar_restart.on("click", function() {
-		window.app.view.bazar_game_over.hide();
-		goToState("bazar");
-	});
+    window.app.view.sidepanel_left_close.on("click", function() {
+        $(".sidepanel_left").hide();
+    });
 
-	window.app.view.guide.on("click", function() {
-		window.app.view.side_1.show();
-	});
+    window.app.view.bazar_checkout.on("click", function() {
+        window.app.view.bazar_game_over.hide();
+        goToState("checkout");
+    });
+
+    window.app.view.bazar_restart.on("click", function() {
+        window.app.view.bazar_game_over.hide();
+        goToState("bazar");
+    });
+
+    window.app.view.guide.on("click", function() {
+        window.app.view.sidepanel_1.show();
+    });
 
 
 }
