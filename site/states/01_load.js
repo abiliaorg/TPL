@@ -9,7 +9,7 @@ function State_Load() {
 	_this.Run = function() {
 		console.log("⛳ ------> Load state");
 		
-		goToState("home");
+		goToState("bazar");
 		
 
 	};

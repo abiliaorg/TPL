@@ -120,7 +120,6 @@
 
 #bazar #bazar_canvas {
     width: 100%;
-    height: 100%;
     background: #f8f8f8;
     padding: 0;
     margin: 0 auto;
@@ -128,9 +127,10 @@
 }
 
 #bazar #bazar_canvas_container {
-    position: absolute;
-    width: 80%;
-    height: 57%;
+    position: relative;
+    width: 84%;
+    margin-left: 8%;
+    margin-top: -150px;
 }
 
 #bazar .item img {
