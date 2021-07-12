@@ -8,6 +8,8 @@ function State_Avatar() {
 
     _this.Init = function() {
 
+        sidebarsResize();
+
         window.app.avatar_faces = [];
 
         //fake creation of a list of avatar faces
@@ -57,12 +59,38 @@ function State_Avatar() {
 
     _this.Run = function() {
         console.log("⛳ ------> Avatar state");
+        sidebarsResize();
     };
+
+    _this.Resize = function() {
+        sidebarsResize();
+    }
 
 
     window.app.view.button_avatar_done.on("click", function() {
         goToState("interest");
     });
+
+    function sidebarsResize() {
+
+        var left1 = $("#come_ti_chiami").offset().left;
+        $(".sidebar_colour").css("left", left1 - 4 - 40 + "px");
+        var ht1 = $("#come_ti_chiami").height();
+        $(".sidebar_colour").css("height", ht1 + 4 + "px");
+
+        var left2 = $("#come_ti_chiami").offset().left;
+        $(".sidebar_name").css("left", left2 - 4 - 40 + "px");
+        var ht2 = $("#come_ti_chiami").height();
+        $(".sidebar_name").css("top", 100 + ht2 + "px");
+
+        var width3 = $("#button_data_di_nascita").width();
+        var left3 = $("#button_data_di_nascita").offset().left;
+        $(".sidebar_plain").css("left", width3 + left3 + 41 + "px");
+        var ht34 = $("#button_data_di_nascita").height();
+        $(".sidebar_plain").css("height", ht34 + ht34 + ht34 + ht34 + 20 + "px");
+
+    }
+
 
     return _this;
 

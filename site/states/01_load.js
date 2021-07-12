@@ -1,21 +1,21 @@
 function State_Load() {
 
-	var _this = {};
+    var _this = {};
 
-	_this.Iam = function() {
-		return "load";
-	};
+    _this.Iam = function() {
+        return "load";
+    };
 
-	_this.Run = function() {
-		console.log("⛳ ------> Load state");
-		
-		goToState("bazar");
-		
+    _this.Run = function() {
+        console.log("⛳ ------> Load state");
 
-	};
+        goToState("home");
 
 
-	return _this;
+    };
+
+
+    return _this;
 
 
 }
