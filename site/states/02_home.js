@@ -15,11 +15,11 @@ function State_Home() {
     };
 
     _this.Init = function() {
-			
-				$("#home #button_home").on("click", function() {
+
+        $("#home #button_home").on("click", function() {
             goToState("apartment");
         });
-			
+
         window.app.view.button_signup.on("click", function() {
             window.app.view.popup_signup.show();
         });
@@ -61,14 +61,14 @@ function State_Home() {
         });
 
         sidebarsResize();
-				bannerResize();
+        bannerResize();
 
     }
 
     _this.Resize = function() {
 
         sidebarsResize();
-				bannerResize();
+        bannerResize();
 
     }
 
@@ -87,20 +87,18 @@ function State_Home() {
         $(".sidebar2").css("top", 100 + ht3 + "px");
 
     }
-	
-		function bannerResize(){
-			
-			var increment = 120;			
-			var width = $("#home .container").width();		
-			
-			$(".homepage_banner").css(
-				{
-					"width": width + increment + "px",
-					"left": (window.innerWidth-width)/2-increment/2+"px"
-				}
-			);
-			console.log(width);
-		}
+
+    function bannerResize() {
+
+        var increment = 120;
+        var width = $("#home .container").width();
+
+        $(".homepage_banner").css({
+            "width": width + increment + "px",
+            "left": (window.innerWidth - width) / 2 - increment / 2 + "px"
+        });
+        //console.log(width);
+    }
 
     return _this;
 

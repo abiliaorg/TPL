@@ -206,3 +206,13 @@
     justify-content: center;
     align-items: flex-start;
 }
+
+#avatar .sidebar_colour {
+    z-index: 77;
+}
+
+#avatar .sidebar_name {
+    height: 200px;
+    transform: rotate(180deg);
+    z-index: 70;
+}

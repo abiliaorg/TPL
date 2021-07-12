@@ -1,175 +1,188 @@
 #nursery {
-	display: block;
-	background-color: white;
+    display: block;
+    background-color: white;
 }
 
 #nursery .menu_left {
-	position: relative;
-	top: 10px;
-	width: 100px;
-	z-index: 999;
-	height: 150px;
+    position: relative;
+    top: 10px;
+    width: 100px;
+    z-index: 999;
+    height: 150px;
 }
 
 #nursery #nursery_inside {
-	position: absolute;
-	width: 80%;
-	height: 80%;
-	display: flex;
-	align-items: flex-end;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
 }
 
 #nursery .button_grid {
-	display: grid;
-	height: 100%;
-	grid-template-columns: [col] 1fr;
-	grid-template-rows: [row]3fr [row]2fr;
-	background-color: white;
-	grid-gap: 4px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row]3fr [row]2fr;
+    background-color: white;
+    grid-gap: 4px;
 }
 
 #nursery .button_svg {
-	grid-column: col;
-	grid-row: row 1;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+    grid-column: col;
+    grid-row: row 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #nursery .button_text {
-	grid-column: col;
-	grid-row: row 2;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	text-align: center;
-	font-size: 12px;
+    grid-column: col;
+    grid-row: row 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 12px;
 }
 
-#nursery g[id$='_group']{
-	cursor: pointer;
+#nursery g[id$='_group'] {
+    cursor: pointer;
 }
 
+#nursery .vis {
+    display: flex;
+}
+
+#nursery .hid {
+    display: none;
+}
+
+#nursery .sidebar_colour {
+    z-index: 77;
+}
+
+#nursery .sidebar_name {
+    height: 200px;
+    z-index: 70;
+}
 
 #sidepanel_nursery {
-	position: absolute;
-	top: var(--header-height);
-	right: 10%;
-	width: 30%;
-	height: 80%;
-	display: none;
-	background-color: transparent;
+    position: absolute;
+    top: var(--header-height);
+    right: 10%;
+    width: 30%;
+    height: 80%;
+    display: none;
+    background-color: transparent;
 }
 
 #sidepanel_nursery .sidepanel_nursery_button {
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	left: 0px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 0px;
 }
 
 #sidepanel_nursery .close {
-	border-left: 4px solid var(--border-color);
-	border-bottom: 4px solid var(--border-color);
-	background-color: white;
-	float: left;
-	width: 50px;
-	height: 50px;
+    border-left: 4px solid var(--border-color);
+    border-bottom: 4px solid var(--border-color);
+    background-color: white;
+    float: left;
+    width: 50px;
+    height: 50px;
 }
 
 #sidepanel_nursery .close:after {
-	display: inline-block;
-	content: "\2713";
-	font-size: 40px;
-	line-height: 50px;
-	margin-left: 4px;
-	cursor: pointer;
-	color: black;
+    display: inline-block;
+    content: "\2713";
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 4px;
+    cursor: pointer;
+    color: black;
 }
 
 #sidepanel_nursery .body {
-	border-left: 4px solid var(--border-color);
-	border-right: 4px solid var(--border-color);
-	background-color: var(--background-color);
-	float: right;
+    border-left: 4px solid var(--border-color);
+    border-right: 4px solid var(--border-color);
+    background-color: var(--background-color);
+    float: right;
 }
 
 #sidepanel_nursery .body .row {
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-
 #sidepanel_nursery #sidepanel_nursery_itemleft {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	margin-top: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 #sidepanel_nursery #sidepanel_nursery_itemright {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	margin-top: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 #sidepanel_nursery #sidepanel_nursery_itemcarousel {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #sidepanel_nursery #sidepanel_nursery_itemcarousel .owl-carousel {
-	height: 100%;
+    height: 100%;
 }
 
 #sidepanel_nursery .owl-stage-outer {
-	height: 100%;
+    height: 100%;
 }
 
 #sidepanel_nursery .owl-stage {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sidepanel_nursery .owl-item {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sidepanel_nursery .owl-item>div {
-	cursor: pointer;
-	transition: margin 0.4s ease;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    cursor: pointer;
+    transition: margin 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sidepanel_nursery .titletext {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-size: 25px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-
 #sidepanel_nursery .owl-item img {
-	width: auto;
-	max-height: 90px;
-
+    width: auto;
+    max-height: 90px;
 }
