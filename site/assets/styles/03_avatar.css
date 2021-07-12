@@ -216,3 +216,26 @@
     transform: rotate(180deg);
     z-index: 70;
 }
+
+#avatar .titletext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#avatar .button_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#avatar .button_main.selected {
+    background-color: #FFCC00 !important;
+}

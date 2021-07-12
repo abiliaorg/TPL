@@ -17,8 +17,6 @@ function State_Nursery() {
         window.app.view.nursery_nursery = $('#nursery #nursery_inside');
 
         window.app.view.nursery_sidepanel = $('#sidepanel_nursery');
-        window.app.sidebar_colour = $('#nursery_sidebar_colour');
-        window.app.sidebar_name = $('#nursery_sidebar_name');
 
         window.app.view.nursery_sidepanel_itemcarousel = $('#sidepanel_nursery_itemcarousel');
 
@@ -131,7 +129,7 @@ function State_Nursery() {
     function NurseryCarouselChanged() {
 
         window.setTimeout(function() {
-            var el = $("#sidepanel_nursery_itemcarousel .owl-item.active .item");
+            var el = $("#sidepanel_nursery_itemcarousel .owl-item.big.active .item");
             var id = el.attr("data-id");
             var name = el.attr("data-name");
 
