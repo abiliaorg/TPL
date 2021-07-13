@@ -1,0 +1,38 @@
+<svg id="TECNOLOGIA" xmlns="http://www.w3.org/2000/svg" width="94.2" height="122.81" viewBox="0 0 94.2 122.81">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #fc0;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #f7524a;
+      }
+    </style>
+  </defs>
+  <g id="Joystick">
+    <polyline class="cls-1" points="42.59 78.08 42.59 29.7 51.61 29.7 51.61 78.08"/>
+    <path class="cls-2" d="M11.15,78.08a7.84,7.84,0,1,1,15.67,0"/>
+    <rect class="cls-1" x="2" y="78.08" width="90.2" height="42.73" rx="5.96"/>
+    <polyline class="cls-3" points="2 99.44 92.2 99.44 92.2 99.44"/>
+    <circle class="cls-4" cx="47.1" cy="21.24" r="19.24"/>
+  </g>
+</svg>

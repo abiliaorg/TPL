@@ -59,7 +59,7 @@ function ApartmentUpdateCircles() {
 
         //console.log(pos);
 
-        el += '<div class="pulsating-circle" style="' + style + '" data-goto="' + state + '"></div>';
+        el += '<div class="pulsating-circle" style="' + style + '" popup-goto="enter_' + state + '"></div>';
 
 
     }
