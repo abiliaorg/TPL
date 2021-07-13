@@ -2,6 +2,8 @@ window.app.settings = {};
 
 window.app.settings.currentState = "load";
 
+window.app.settings.colors=["#33FFCC","#99CC66","#99CCFF","#003366","#006633","#6633FF","#9900FF","#663300","#CF4B5A","#F7524A","#FF99CC","#FFCC00","#FFCCCC","#000000"];
+
 window.app.view = {};
 
 window.app.view.state = $(".state");
@@ -67,43 +69,43 @@ window.app.view.enter_game = $(".enter_game");
 
 function RunListeners() { //global buttons listeners here
 
-    /*$(staticAncestors).on(eventName, dynamicChild, function() {});*/
-    $(document).on("click", "[data-goto]", function() {
-        var state = $(this).attr("data-goto");
-        goToState(state);
-    });
+	/*$(staticAncestors).on(eventName, dynamicChild, function() {});*/
+	$(document).on("click", "[data-goto]", function() {
+		var state = $(this).attr("data-goto");
+		goToState(state);
+	});
 
-    $(document).on("click", "[popup-goto]", function() {
-        var popup = $(this).attr("popup-goto");
-        window.app.view.thispopup = $("#" + popup);
-        window.app.view.thispopup.show();
-    });
+	$(document).on("click", "[popup-goto]", function() {
+		var popup = $(this).attr("popup-goto");
+		window.app.view.thispopup = $("#" + popup);
+		window.app.view.thispopup.show();
+	});
 
-    window.app.view.enter_game.on("click", function() {
-        window.app.view.thispopup.hide();
-    });
+	window.app.view.enter_game.on("click", function() {
+		window.app.view.thispopup.hide();
+	});
 
-    window.app.view.popup_close.on("click", function() {
-        $(".popup").hide();
-    });
+	window.app.view.popup_close.on("click", function() {
+		$(".popup").hide();
+	});
 
-    window.app.view.sidepanel_left_close.on("click", function() {
-        $(".sidepanel_left").hide();
-    });
+	window.app.view.sidepanel_left_close.on("click", function() {
+		$(".sidepanel_left").hide();
+	});
 
-    window.app.view.bazar_checkout.on("click", function() {
-        window.app.view.bazar_game_over.hide();
-        goToState("checkout");
-    });
+	window.app.view.bazar_checkout.on("click", function() {
+		window.app.view.bazar_game_over.hide();
+		goToState("checkout");
+	});
 
-    window.app.view.bazar_restart.on("click", function() {
-        window.app.view.bazar_game_over.hide();
-        goToState("bazar");
-    });
+	window.app.view.bazar_restart.on("click", function() {
+		window.app.view.bazar_game_over.hide();
+		goToState("bazar");
+	});
 
-    window.app.view.guide.on("click", function() {
-        window.app.view.sidepanel_1.show();
-    });
+	window.app.view.guide.on("click", function() {
+		window.app.view.sidepanel_1.show();
+	});
 
 
 }
@@ -113,33 +115,38 @@ function RunListeners() { //global buttons listeners here
 window.app.view.pigeon = $("#pigeon");
 
 window.app.view.pigeon.load('./assets/images/pigeon.svg', function() {
-    console.log("pigeon ready");
+	console.log("pigeon ready");
+
+	for (line=1; line<5; line++) {
+		$("#pigeonbox #text" + line).text("")
+	}
+	
+	showPigeon("Caricamento in corso...");
 });
 
 function showPigeon(text = "") {
 
-    const lineMaxLen = 16;
-    const wsLookup = 6; // Look backwards n characters for a whitespace
-    const regex = new RegExp(String.raw `\s*(?:(\S{${lineMaxLen}})|([\s\S]{${lineMaxLen - wsLookup},${lineMaxLen}})(?!\S))`, 'g');
+	const lineMaxLen = 16;
+	const wsLookup = 6; // Look backwards n characters for a whitespace
+	const regex = new RegExp(String.raw `\s*(?:(\S{${lineMaxLen}})|([\s\S]{${lineMaxLen - wsLookup},${lineMaxLen}})(?!\S))`, 'g');
 
+	var newtext = text.replace(regex, (_, x, y) => x ? `${x}-\n` : `${y}\n`);
+	//console.log(newtext);
 
-    var newtext = text.replace(regex, (_, x, y) => x ? `${x}-\n` : `${y}\n`);
-    //console.log(newtext);
+	var listoftexts = newtext.split("\n");
 
-    var listoftexts = newtext.split("\n");
+	for (line in listoftexts) {
+		if (line < 4) {
+			//console.log(listoftexts[line])
+			$("#pigeonbox #text" + (line * 1 + 1)).text(listoftexts[line])
+		}
+	}
 
-    for (line in listoftexts) {
-        if (line < 4) {
-            //console.log(listoftexts[line])
-            $("#pigeonbox #text" + (line * 1 + 1)).text(listoftexts[line])
-        }
-    }
-
-    window.app.view.pigeon.show();
+	window.app.view.pigeon.show();
 }
 
 function hidePigeon() {
-    window.app.view.pigeon.hide();
+	window.app.view.pigeon.hide();
 }
 
 
@@ -150,52 +157,63 @@ function hidePigeon() {
 dragElement(window.app.view.pigeon[0]);
 
 function dragElement(elmnt) {
-    var pos1 = 0,
-        pos2 = 0,
-        pos3 = 0,
-        pos4 = 0;
+	var pos1 = 0,
+			pos2 = 0,
+			pos3 = 0,
+			pos4 = 0;
 
-    elmnt.onmousedown = dragMouseDown;
+	elmnt.onmousedown = dragMouseDown;
 
-    function dragMouseDown(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // get the mouse cursor position at startup:
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        document.onmouseup = closeDragElement;
-        // call a function whenever the cursor moves:
-        document.onmousemove = elementDrag;
-    }
+	function dragMouseDown(e) {
+		e = e || window.event;
+		e.preventDefault();
+		// get the mouse cursor position at startup:
+		pos3 = e.clientX;
+		pos4 = e.clientY;
+		document.onmouseup = closeDragElement;
+		// call a function whenever the cursor moves:
+		document.onmousemove = elementDrag;
+	}
 
-    function elementDrag(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // calculate the new cursor position:
-        pos1 = pos3 - e.clientX;
-        pos2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        // set the element's new position:
-        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-    }
+	function elementDrag(e) {
+		e = e || window.event;
+		e.preventDefault();
+		// calculate the new cursor position:
+		pos1 = pos3 - e.clientX;
+		pos2 = pos4 - e.clientY;
+		pos3 = e.clientX;
+		pos4 = e.clientY;
+		// set the element's new position:
+		elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+		elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+	}
 
-    function closeDragElement() {
-        // stop moving when mouse button is released:
-        document.onmouseup = null;
-        document.onmousemove = null;
-    }
+	function closeDragElement() {
+		// stop moving when mouse button is released:
+		document.onmouseup = null;
+		document.onmousemove = null;
+	}
 }
 
 //WITH TOUCH
 window.app.view.pigeon[0].addEventListener('touchmove', function(event) {
-    var touch = event.targetTouches[0];
+	var touch = event.targetTouches[0];
 
-    // Place element where the finger is
-    window.app.view.pigeon[0].style.left = touch.pageX + 'px';
-    window.app.view.pigeon[0].style.top = touch.pageY + 'px';
-    event.preventDefault();
+	// Place element where the finger is
+	window.app.view.pigeon[0].style.left = touch.pageX + 'px';
+	window.app.view.pigeon[0].style.top = touch.pageY + 'px';
+	event.preventDefault();
 }, false);
 
 //---------------------------------------------------------- END
+
+
+var loadSvg = function(url) {
+	return fetch(url)
+		.then(function(response) { return response.text(); })
+		.then(function(raw) { return (new window.DOMParser()).parseFromString(raw, 'image/svg+xml'); });
+};
+
+var select = function(root, selector) {
+	return Array.prototype.slice.call(root.querySelectorAll(selector));
+};

@@ -313,156 +313,26 @@ header {
 .sbcgrid_item {
 	font-style: italic;
 	z-index: 88;
-}
-
-.sbcgrid_item .i1 {
-	z-index: 98;
-	grid-column: col 1;
-	grid-row: row;
-	background-color: #33FFCC !important;
-}
-
-.sbcgrid_item .i2 {
-	grid-column: col 2;
-	grid-row: row;
-	background-color: #99CC66 !important;
-}
-
-.sbcgrid_item .i3 {
-	grid-column: col 3;
-	grid-row: row;
-	background-color: #99CCFF;
-}
-
-.sbcgrid_item .i4 {
-	grid-column: col 4;
-	grid-row: row;
-	background-color: #003366;
-}
-
-.sbcgrid_item .i5 {
-	grid-column: col 5;
-	grid-row: row;
-	background-color: #006633;
-}
-
-.sbcgrid_item .i6 {
-	grid-column: col 6;
-	grid-row: row;
-	background-color: #6633FF;
-}
-
-.sbcgrid_item .i7 {
-	grid-column: col 7;
-	grid-row: row;
-	background-color: #9900FF;
-}
-
-.sbcgrid_item .i8 {
-	grid-column: col 8;
-	grid-row: row;
-	background-color: #663300;
-}
-
-.sbcgrid_item .i9 {
-	grid-column: col 9;
-	grid-row: row;
-	background-color: #CF4B5A;
-}
-
-.sbcgrid_item .i10 {
-	grid-column: col 10;
-	grid-row: row;
-	background-color: #F7524A;
-}
-
-.sbcgrid_item .i11 {
-	grid-column: col 11;
-	grid-row: row;
-	background-color: #FF99CC;
-}
-
-.sbcgrid_item .i12 {
-	grid-column: col 12;
-	grid-row: row;
-	background-color: #FFCC00;
-}
-
-.sbcgrid_item .i13 {
-	grid-column: col 13;
-	grid-row: row;
-	background-color: #FFCCCC;
-}
-
-.sbcgrid_item .i14 {
-	grid-column: col 14;
-	grid-row: row;
-	background-color: #000000;
-}
-
-.c1 {
-	background-color: #33FFCC !important;
-}
-
-.c2 {
-	background-color: #99CC66 !important;
-}
-
-.c3 {
-	background-color: #99CCFF;
-}
-
-.c4 {
-	background-color: #003366;
-}
-
-.c5 {
-	background-color: #006633;
-}
-
-.c6 {
-	background-color: #6633FF;
-}
-
-.c7 {
-	background-color: #9900FF;
-}
-
-.c8 {
-	background-color: #663300;
-}
-
-.c9 {
-	background-color: #CF4B5A;
-}
-
-.c10 {
-	background-color: #F7524A;
-}
-
-.c11 {
-	background-color: #FF99CC;
-}
-
-.c12 {
-	background-color: #FFCC00;
-}
-
-.c13 {
-	background-color: #FFCCCC;
-}
-
-.c14 {
-	background-color: #000000;
+	cursor: pointer;
 }
 
 #pigeon{
-	position: absolute;
+	position: fixed;
 	width: 150px;
-	height: 190px;
+	height: 195px;
 	animation: pigeon-anim 2s ease 0s infinite normal forwards;
 	z-index: 99999999999999999999;
 	cursor: move;
+	right: 20px;
+	bottom: 20px;
+}
+
+#pigeon #text text{
+	text-anchor: middle;
+}
+
+.fly{
+	animation: pigeon-anim 2s ease 0s infinite normal forwards;
 }
 
 @keyframes pigeon-anim {

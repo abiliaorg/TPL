@@ -130,7 +130,7 @@
     font-size: 20px;
 }
 
-#avatar .carousel-avatar {
+#avatar .centre_carousel {
     height: 100%;
 }
 
@@ -152,7 +152,7 @@
     align-items: center !important;
 }
 
-#avatar .carousel-avatar .owl-item.big.active {
+#avatar .centre_carousel .owl-item.big.active {
     width: 200px !important;
 }
 
@@ -165,7 +165,7 @@
     align-items: center !important;
 }
 
-#avatar .carousel-avatar .owl-item.big div {
+#avatar .centre_carousel .owl-item.big div {
     height: 200px !important;
     width: 200px !important;
     border: 4px solid black;
@@ -174,7 +174,7 @@
     margin: 0;
 }
 
-#avatar .carousel-avatar .owl-item.medium div {
+#avatar .centre_carousel .owl-item.medium div {
     height: 100px !important;
     width: 100px !important;
     border: 4px solid black;

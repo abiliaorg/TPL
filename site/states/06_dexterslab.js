@@ -9,6 +9,7 @@ function State_DextersLab() {
 	_this.Run = function() {
 		console.log("⛳ ------> DextersLab state");
 
+		showPigeon("Benvenuto nel Laboratorio di Dexter ...")
 
 	};
 
@@ -20,19 +21,19 @@ function State_DextersLab() {
 				id: "sounds",
 				title: "Suono Musica",
 			},
-											{
-												id: "wheels",
-												title: "Ruote",
-											},
-											{
-												id: "lights",
-												title: "Luci",
-											},
-											{
-												id: "flags",
-												title: "Bandierina",
-											},
-										 ],
+			{
+				id: "wheels",
+				title: "Ruote",
+			},
+			{
+				id: "lights",
+				title: "Luci",
+			},
+			{
+				id: "flags",
+				title: "Bandierina",
+			},
+		 ],
 			"constructivelements": [{
 				id: "circle",
 				title: "Cerchio",

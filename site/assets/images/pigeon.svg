@@ -97,9 +97,9 @@
 <path id="cloud" class="st12" d="M269.4,2H13.1C7,2,2,7,2,13.1v132.1c0,6.1,5,11.1,11.1,11.1h115.1l8.1,14.1c2.2,3.8,7.6,3.8,9.8,0
 	l8.1-14.1h115.1c6.1,0,11.1-5,11.1-11.1V13.1C280.5,7,275.5,2,269.4,2z"/>
 <g id="text">
-	<text id="text1" transform="matrix(1 0 0 1 25.0973 38.4913)" class="st13 st14">Line 1 - text text text</text>
-	<text id="text2" transform="matrix(1 0 0 1 25.0975 69.904)" class="st13 st14">Line 2 - text text text</text>
-	<text id="text3" transform="matrix(1 0 0 1 25.0974 101.3161)" class="st13 st14">Line 3 - text text text</text>
-	<text id="text4" transform="matrix(1 0 0 1 25.0979 132.7289)" class="st13 st14">Line 4 - text text text</text>
+	<text id="text1" transform="matrix(1 0 0 1 141.2496 40.4914)" class="st13 st14">Line 1 - text text text</text>
+	<text id="text2" transform="matrix(1 0 0 1 141.2498 71.9041)" class="st13 st14">Line 2 - text text text</text>
+	<text id="text3" transform="matrix(1 0 0 1 141.2497 103.3162)" class="st13 st14">Line 3 - text text text</text>
+	<text id="text4" transform="matrix(1 0 0 1 141.2502 134.729)" class="st13 st14">Line 4 - text text text</text>
 </g>
 </svg>
