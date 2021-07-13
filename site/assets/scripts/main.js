@@ -197,6 +197,8 @@ function updateView() {
 	$("#" + window.app.settings.currentState).fadeIn("slow");
 	window.app.view.info.text("State: " + window.app.settings.currentState);
 	document.title = window.app.settings.currentState;
+	
+	$("body").attr("data-state", window.app.settings.currentState);
 }
 
 function goToState(state) {

@@ -26,7 +26,7 @@ function State_Bazar() {
 			Vertices = Matter.Vertices,
 			Svg = Matter.Svg,
 			myCanvas = window.app.bazar.canvas.get(0);
-	
+
 	/*console.log(require('poly-decomp'));
 
 	Common.setDecomp(require(['./assets/vendors/decomp'], function(d) {
@@ -70,24 +70,7 @@ function State_Bazar() {
 
 	_this.Init = function() {
 
-		window.app.bazar.products = [
-			{
-				id: "simplehorse",
-				name: "Horse",
-				description: "Description for product 1",
-				size: "small"
-			},{
-				id: "iconmonstr-puzzle-icon",
-				name: "SVG TEXT",
-				description: "Description for product 1",
-				size: "small"
-			},
-			{
-				id: "iconmonstr-user-icon",
-				name: "SVG TEXT",
-				description: "Description for product 1",
-				size: "small"
-			},
+		window.app.bazar.products = [			
 			{
 				id: "rocket",
 				name: "Rocket",
@@ -246,8 +229,8 @@ function State_Bazar() {
 			loop: true,
 			dots: false,
 			margin: 5,
-			touchDrag: false,
-			mouseDrag: false
+			touchDrag: true,
+			mouseDrag: true
 		})
 
 		$('.carousel-bazar-next').click(function() {
@@ -277,18 +260,16 @@ function State_Bazar() {
 				yball = 0.5;
 			}
 
-			/*var ball = Matter.Bodies.fromVertices(
-				100, 80, Matter.Svg.pathToVertices(), {}, true
-			);*/
-
+			/*
+			//VERSION WITH PATHS
 			var path = './assets/images/bazar/products/' + id + '.svg';
 			loadSvg(path).then(function(root) {
-				
+
 				//var color = Common.choose(['#f19648', '#f5d259', '#f55a3c', '#063e7b', '#ececd1']);
 				var color = Common.choose(['#000000']);
 
 				var vertexSets = select(root, 'path').map(function(path) { return Svg.pathToVertices(path, 60); });
-				
+
 				var body = Matter.Bodies.fromVertices(400, 80, vertexSets, {
 					render: {
 						fillStyle: color,
@@ -299,38 +280,29 @@ function State_Bazar() {
 
 				Matter.Composite.add(engine.world, body);		
 				Matter.Body.scale(body, xball, yball);
-				
-			});
-			
+
+			});*/
+
 
 			//Matter.Body.scale(body, xball, yball);
 
-			// var ball = [
-			//     Matter.Bodies.rectangle(400, 210, 810, 60, { isStatic: true }),
-			//     ...[...document.querySelectorAll("svg > path")].map(path => {
-			//         const body = Matter.Bodies.fromVertices(
-			//             100, 80, Matter.Svg.pathToVertices(path), {}, true
-			//         );
-			//         Matter.Body.scale(body, 0.2, 0.2);
-			//         return body;
-			//     })
-			// ];
+			var ball = Matter.Bodies.circle(x, y, radius, {
+				density: 0.04,
+				friction: 0.01,
+				frictionAir: 0.00001,
+				restitution: 0.8,
+				render: {
+					strokeStyle: "#000000",
+					lineWidth: 4,
+					sprite: {
+						texture: './assets/images/bazar/products/' + id + '.svg',
+						xScale: xball,
+						yScale: yball
+					}
+				}
+			});
 
-			// var ball = Matter.Bodies.circle(x, y, radius, {
-			//     density: 0.04,
-			//     friction: 0.01,
-			//     frictionAir: 0.00001,
-			//     restitution: 0.8,
-			//     render: {
-			//         strokeStyle: "#000000",
-			//         lineWidth: 4,
-			//         sprite: {
-			//             texture: './assets/images/bazar/products/' + id + '.svg',
-			//             xScale: xball,
-			//             yScale: yball
-			//         }
-			//     }
-			// });
+			Matter.Composite.add(engine.world, ball);
 
 			/*
 			// Making a composite "ball" element with outline 
@@ -363,7 +335,7 @@ function State_Bazar() {
             }); 
 			*/
 
-			//Matter.Composite.add(engine.world, ball);
+
 
 			for (item of window.app.bazar.products) {
 
@@ -387,13 +359,26 @@ function State_Bazar() {
 		var runner = Runner.create();
 		Runner.run(runner, engine);
 
-		// add bodies
-		Composite.add(world, [
-			// walls
+		/*var basket = Bodies.rectangle(400, 325, 400, 225, {		
+			isStatic: true,
+			render: {
+				sprite: {
+					visible: true,
+					texture: './assets/images/bazar/basket.svg',	
+					xScale: 1.5,
+					yScale: 1.5
+				}
+			}
+		});		
+
+		Matter.Composite.add(world, basket);*/
+
+		// walls
+		Composite.add(world, [			
 			//Bodies.rectangle(200, 0, 400, 10, { isStatic: true }), //top
-			Bodies.rectangle(400, 435, 400, 10, { isStatic: true }), //bottom
-			Bodies.rectangle(600, 315, 10, 250, { isStatic: true }), //right
-			Bodies.rectangle(200, 315, 10, 250, { isStatic: true }), //left
+			Bodies.rectangle(400, 435, 400, 10, { isStatic: true, render: { fillStyle: 'transparent', strokeStyle: 'transparent'}}), //bottom
+			Bodies.rectangle(600, 315, 10, 250, { isStatic: true, render: { fillStyle: 'transparent', strokeStyle: 'transparent'}}), //right
+			Bodies.rectangle(200, 315, 10, 250, { isStatic: true, render: { fillStyle: 'transparent', strokeStyle: 'transparent'}}), //left
 		]);
 
 		var collider1 = Bodies.rectangle(50, 435, 250, 10, {
@@ -438,10 +423,10 @@ function State_Bazar() {
 
 				if (pair.bodyA === collider1 || pair.bodyA === collider2 || pair.bodyA === collider3 || pair.bodyA === collider4) {
 					//window.app.view.carousel_bazar.hide();
-					//window.app.view.bazar_game_over.show();
+					window.app.view.bazar_game_over.show();
 				} else if (pair.bodyB === collider1 || pair.bodyB === collider2 || pair.bodyB === collider3 || pair.bodyB === collider4) {
 					//window.app.view.carousel_bazar.hide();
-					//window.app.view.bazar_game_over.show();
+					window.app.view.bazar_game_over.show();
 				}
 			}
 		});

@@ -121,7 +121,16 @@ window.app.view.pigeon.load('./assets/images/pigeon.svg', function() {
 		$("#pigeonbox #text" + line).text("")
 	}
 	
+	window.app.view.pigeon.css({
+		left: window.innerWidth/2 - 150,
+		top: window.innerHeight/2 - 200,
+		width: 300,
+		height: 400,
+	})
+	
 	showPigeon("Caricamento in corso...");
+	
+	
 });
 
 function showPigeon(text = "") {

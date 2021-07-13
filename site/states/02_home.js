@@ -9,10 +9,19 @@ function State_Home() {
 	_this.Run = function() {
 		console.log("⛳ ------> Home state");
 
+		window.setTimeout(function(){
+			showPigeon("Benvenuti su The Playful Home");
 
-		showPigeon("Benvenuti su The Playful Home");
+			window.app.view.pigeon.animate({
+				left: window.innerWidth - 170,
+				top: window.innerHeight - 220,
+				width: 150,
+				height: 200,
+			}, 1500);
+		}, 1500)
 
-	};
+
+	}
 
 	_this.Init = function() {
 

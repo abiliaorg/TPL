@@ -72,7 +72,7 @@ function State_Avatar() {
 
 		for (g of window.app.avatar_list[window.app.avatar_selectedgroup]) {
 			console.log(g.id);
-			var el = '<div class="item" data-id="' + g.id + '" data-name="' + g.name + '">' + g.image + '</div>';
+			var el = '<div class="item" data-id="' + g.id + '" data-name="' + g.name + '" style="background: url(\'' + g.image + '\')"></div>';
 			window.app.view.centre_carousel_inside.append(el);
 		}
 
@@ -144,9 +144,9 @@ function State_Avatar() {
 				if (name === undefined) {
 					name = itemid;
 				}
-				var image = "<img src='./assets/images/avatar/items/" + name + ".png'/>";
+				var url = "./assets/images/avatar/items/" + name + ".png";
 
-				var fields = { id: itemid, image: image, name: name };
+				var fields = { id: itemid, image: url, name: name };
 				window.app.avatar_list[id].push(fields);
 			}
 
