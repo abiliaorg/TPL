@@ -1,147 +1,173 @@
 #dexterslab {
-    display: block;
-    background-color: white;
+	display: block;
+	background-color: white;
 }
 
 #dexterslab .container div {
-    background-color: white;
+	background-color: white;
 }
 
 #dexterslab .main {
-    height: 85%;
+	height: 85%;
 }
 
 #dexterslab .menu_bottom {
-    height: 15%;
+	height: 15%;
 }
 
 #dexterslab #back_home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 12px;
 }
 
 #dexterslab #guide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 12px;
 }
 
 #dexterslab .panel_left {
-    overflow-y: auto;
+	overflow-y: auto;
 }
 
 #dexterslab .panel_right {
-    overflow-y: auto;
+	overflow-y: auto;
 }
 
 #dexterslab .button_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
-    height: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 24px;
+	height: 33%;
 }
 
 #dexterslab .button_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 24px;
 }
 
 #dexterslab .panel_canvas {
-    height: 80%;
+	height: 80%;
 }
 
 #dexterslab .panel_drawing {
-    height: 20%;
+	height: 20%;
 }
 
 #dexterslab .button_main.selected {
-    background-color: #FFCC00 !important;
+	background-color: #FFCC00 !important;
 }
 
 #dexterslab #button_draw {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #dexterslab #button_draw.active {
-    background-color: lightgray;
+	background-color: lightgray;
+}
+
+#dexterslab #button_erase {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#dexterslab #button_materials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #dexterslab #dexters_canvas {
-    width: 100%;
-    height: 100%;
-    background: #f8f8f8;
-    padding: 0;
-    margin: 0 auto;
-    display: block;
+	width: 100%;
+	height: 100%;
+	background: #f8f8f8;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+}
+
+#dexterslab #buttoners1 {
+	background: url(../images/dexterslab/pulsantiera1.svg) white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#dexterslab #buttoners2 {
+	background: url(../images/dexterslab/pulsantiera2.svg) white;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #dexterslab #dexters_canvas_container {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    /* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✍️</text></svg>") 16 0, auto; */
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	/* cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>✍️</text></svg>") 16 0, auto; */
 }
 
 #dexterslab .button_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col] 1fr;
-    grid-template-rows: [row]3fr [row]2fr;
-    background-color: white;
-    grid-gap: 4px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col] 1fr;
+	grid-template-rows: [row]3fr [row]2fr;
+	background-color: white;
+	grid-gap: 4px;
 }
 
 #dexterslab .button_svg {
-    grid-column: col;
-    grid-row: row 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	grid-column: col;
+	grid-row: row 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 #dexterslab .button_text {
-    grid-column: col;
-    grid-row: row 2;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+	grid-column: col;
+	grid-row: row 2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 #dexterslab .item_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col] 1fr;
-    grid-template-rows: [row]3fr [row]2fr;
-    background-color: white;
-    grid-gap: 4px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col] 1fr;
+	grid-template-rows: [row]3fr [row]2fr;
+	background-color: white;
+	grid-gap: 4px;
 }
 
 #dexterslab .item_svg {
-    grid-column: col;
-    grid-row: row 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	grid-column: col;
+	grid-row: row 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 #dexterslab .item_text {
-    grid-column: col;
-    grid-row: row 2;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+	grid-column: col;
+	grid-row: row 2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }

@@ -1,0 +1,61 @@
+<svg id="PULSANTIERA_SX" data-name="PULSANTIERA SX" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 138 646.22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="18.89" y="292.07" width="98.34" height="110.01" rx="12" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <g>
+    <rect x="1" y="1" width="136" height="644.22" style="fill: #f7524a"/>
+    <rect x="-248.11" y="260.11" width="634.22" height="126" transform="translate(392.11 254.11) rotate(90)" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <g>
+      <circle cx="24.92" cy="31.6" r="8.44" style="fill: #f7524a;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="54.31" cy="31.6" r="8.44" style="fill: #fc0;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="83.69" cy="31.6" r="8.44" style="fill: #fff;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="113.08" cy="31.6" r="8.44" style="fill: #63f;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </g>
+    <g>
+      <circle cx="24.92" cy="61.05" r="8.44" style="fill: #fff;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="54.31" cy="61.05" r="8.44" style="fill: #63f;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="83.69" cy="61.05" r="8.44" style="fill: #f7524a;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="113.08" cy="61.05" r="8.44" style="fill: #fc0;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </g>
+    <g>
+      <circle cx="24.92" cy="90.51" r="8.44" style="fill: #63f;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="54.31" cy="90.51" r="8.44" style="fill: #fff;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="83.69" cy="90.51" r="8.44" style="fill: #fc0;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="113.08" cy="90.51" r="8.44" style="fill: #f7524a;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </g>
+    <g>
+      <circle cx="24.92" cy="119.97" r="8.44" style="fill: #fc0;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="54.31" cy="119.97" r="8.44" style="fill: #f7524a;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="83.69" cy="119.97" r="8.44" style="fill: #63f;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <circle cx="113.08" cy="119.97" r="8.44" style="fill: #fff;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </g>
+    <g>
+      <path d="M28.37,192.56a40.63,40.63,0,0,1,81.26,0Z" style="fill: #fff;stroke: #272525;stroke-miterlimit: 10;stroke-width: 4px"/>
+      <path d="M48.69,192.56a20.31,20.31,0,0,1,40.62,0Z" style="fill: #f7524a;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <path d="M37.53,192.56a31.47,31.47,0,0,1,62.94,0" style="fill: none;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <path d="M62.76,188.65c-1.82-3.15-3.5-17.17-4-21.52a.57.57,0,0,1,.91-.52c3.52,2.6,14.81,11.06,16.63,14.21a7.82,7.82,0,1,1-13.55,7.83Z" style="fill: #fc0;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </g>
+    <g>
+      <path d="M28.37,256.72a40.63,40.63,0,0,1,81.26,0Z" style="fill: #fff;stroke: #272525;stroke-miterlimit: 10;stroke-width: 4px"/>
+      <path d="M37.53,256.72a31.47,31.47,0,1,1,62.94,0" style="fill: none;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <path d="M48.69,256.72a20.31,20.31,0,1,1,40.62,0Z" style="fill: #f7524a;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <path d="M61.18,248.89c0-3.63,5.54-16.61,7.29-20.63a.58.58,0,0,1,1.06,0c1.75,4,7.29,17,7.29,20.63a7.82,7.82,0,1,1-15.64,0Z" style="fill: #63f;stroke: #272525;stroke-miterlimit: 10;stroke-width: 2px"/>
+    </g>
+    <rect x="8.06" y="292.91" width="120.01" height="108.34" rx="17" transform="translate(-279.02 415.14) rotate(-90)" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <rect x="18.89" y="292.07" width="98.34" height="110.01" rx="12"/>
+    <g style="clip-path: url(#clip-path)">
+      <line x1="18.89" y1="406.6" x2="122.64" y2="302.85" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2px"/>
+      <line x1="28.51" y1="416.21" x2="132.26" y2="312.46" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 8px"/>
+    </g>
+    <line x1="100.47" y1="614.57" x2="37.53" y2="614.57" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <line x1="100.47" y1="606.46" x2="37.53" y2="606.46" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <line x1="100.47" y1="598.35" x2="37.53" y2="598.35" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <polyline points="36.42 454.23 89.12 482.72 98.02 462.79 53.7 430.82" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <g>
+      <circle cx="46.56" cy="443.64" r="14.67" style="fill: #fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 4px"/>
+      <circle cx="93.3" cy="472.63" r="10.92" style="fill: #fc0;stroke: #000;stroke-miterlimit: 10;stroke-width: 4px"/>
+    </g>
+  </g>
+</svg>

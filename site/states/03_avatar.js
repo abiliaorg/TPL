@@ -16,7 +16,7 @@ function State_Avatar() {
 
         window.app.avatar_list = {};
 
-        window.app.view.avatar_img.load('./assets/images/avatar/avatar_everything.svg', function() {
+        window.app.view.avatar_img.load('./assets/images/avatar/avatar.svg', function() {
             createListOfItems();
         });
 

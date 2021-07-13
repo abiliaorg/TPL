@@ -30,6 +30,8 @@
     <div class="state" id="load">
         hello
     </div>
+	
+		<div class="bounce" id="pigeon"></div>
 
     <div class="state" id="home">
         <div class="sidebar b-b b-t b-r sidebar2">
@@ -125,7 +127,7 @@
 
             <div class="login_grid">
                 <div class="log_item i1" id="login_first">Hello!</div>
-                <div class="log_item i2" id="login_pic">Picture</div>
+                <div class="log_item i2" id="login_pic"></div>
                 <div class="log_item i3" id="login_username">User Name</div>
                 <div class="log_item i4" id="login_pass">Password</div>
                 <div class="log_item i5" id="login_forgotpass">Forgot Password?</div>
@@ -543,6 +545,7 @@
                             <div class="button_text">Guida</div>
                         </div>
                     </div>
+										<div class="row b-b ht-60" id="buttoners1"></div>
                 </div>
                 <div class="col-2 b-l panel_left">
                     <!--automatically populated-->
@@ -553,24 +556,28 @@
                             <canvas id="dexters_canvas"></canvas>
                         </div>
                     </div>
-                    <div class="row panel_drawing">
-                        <div class="col-8"></div>
-                        <div class="col-4 b-l" id="button_draw">
+                    <div class="row panel_drawing">												
+                        <div class="col-4" id="button_draw">
                             <img src="./assets/images/dexterslab/pen.svg" alt="Draw" height="100" width="100">
                         </div>
+												<div class="col-4 b-l" id="button_erase">
+                            <img src="./assets/images/dexterslab/erase.svg" alt="Erase" height="100" width="100">
+                        </div>
+												<div class="col-4 b-l" data-info="materials" id="button_materials">
+													<img src="./assets/images/dexterslab/materials.svg" alt="Materials" height="100" width="100">
+												</div>
                     </div>
                 </div>
                 <div class="col-2 b-l panel_right">
                     <!--automatically populated-->
                 </div>
-                <div class="col-1 b-l menu_right"></div>
+                <div class="col-1 b-l menu_right" id="buttoners2"></div>
             </div>
 
             <div class="row menu_bottom">
-                <div class="col-3 button_main selected" data-info="accessories">Accessori</div>
-                <div class="col-3 b-l button_main" data-info="constructivelements">Elementi Costruttivi</div>
-                <div class="col-3 b-l button_main" data-info="technologies">Tecnologia</div>
-                <div class="col-3 b-l button_main" data-info="materials">Materiali</div>
+                <div class="col-4 button_main selected" data-info="accessories">Accessori</div>
+                <div class="col-4 b-l button_main" data-info="constructivelements">Elementi Costruttivi</div>
+                <div class="col-4 b-l button_main" data-info="technologies">Tecnologia</div>
             </div>
 
         </div>
