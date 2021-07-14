@@ -184,6 +184,8 @@ function State_Bazar() {
 		console.log("⛳ ------> Bazar state");
 
 		console.log(Matter.Composite);
+		
+		showPigeon("Clicca e riempi la cesta con gli oggetti che desideri")
 
 	};
 

@@ -24,7 +24,7 @@
     height: 100%;
     grid-template-columns: [col] 1fr;
     grid-template-rows: [row]3fr [row]2fr;
-    background-color: white;
+    background-color: transparent;
     grid-gap: 4px;
 }
 

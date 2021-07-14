@@ -120,17 +120,17 @@ window.app.view.pigeon.load('./assets/images/pigeon.svg', function() {
 	for (line=1; line<5; line++) {
 		$("#pigeonbox #text" + line).text("")
 	}
-	
+
 	window.app.view.pigeon.css({
 		left: window.innerWidth/2 - 150,
 		top: window.innerHeight/2 - 200,
 		width: 300,
 		height: 400,
 	})
-	
+
 	showPigeon("Caricamento in corso...");
-	
-	
+
+
 });
 
 function showPigeon(text = "") {
@@ -143,11 +143,25 @@ function showPigeon(text = "") {
 	//console.log(newtext);
 
 	var listoftexts = newtext.split("\n");
+	
+	for (line in listoftexts) {		
+		if(listoftexts[line]=="") listoftexts.splice(line, 1);
+	}
+	
+	for (line=1; line<5; line++) {
+		$("#pigeonbox #text" + line).text("")
+	}
 
-	for (line in listoftexts) {
-		if (line < 4) {
-			//console.log(listoftexts[line])
-			$("#pigeonbox #text" + (line * 1 + 1)).text(listoftexts[line])
+	if(listoftexts.length==2){
+		$("#pigeonbox #text2").text(listoftexts[0])
+		$("#pigeonbox #text3").text(listoftexts[1])
+	}
+	else{
+		for (line in listoftexts) {
+			if (line < 4) {
+				//console.log(listoftexts[line])
+				$("#pigeonbox #text" + (line * 1 + 1)).text(listoftexts[line])
+			}
 		}
 	}
 

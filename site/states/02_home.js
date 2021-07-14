@@ -10,7 +10,7 @@ function State_Home() {
 		console.log("⛳ ------> Home state");
 
 		window.setTimeout(function(){
-			showPigeon("Benvenuti su The Playful Home");
+			showPigeon("Benvenuti in The Playful Home");
 
 			window.app.view.pigeon.animate({
 				left: window.innerWidth - 170,

@@ -30,7 +30,7 @@ function State_Avatar() {
 
 		window.app.avatar_selectedgroup = "CAPELLI_group";
 
-		console.log(window.app.avatar_list);
+		//console.log(window.app.avatar_list);
 
 		$('.carousel-avatar-next').click(function() {
 			window.app.view.centre_carousel_inside.trigger('next.owl.carousel');
@@ -71,7 +71,7 @@ function State_Avatar() {
 		window.app.view.centre_carousel_inside = $('#centre_carousel .owl-carousel');
 
 		for (g of window.app.avatar_list[window.app.avatar_selectedgroup]) {
-			console.log(g.id);
+			//console.log(g.id);
 			var el = '<div class="item" data-id="' + g.id + '" data-name="' + g.name + '" style="background: url(\'' + g.image + '\')"></div>';
 			window.app.view.centre_carousel_inside.append(el);
 		}
@@ -116,7 +116,7 @@ function State_Avatar() {
 
 			$("#avatar .titletext").html(name);
 
-			console.log(id);
+			//console.log(id);
 
 			if (id !== undefined) {
 				showItem(id);
@@ -208,15 +208,15 @@ function State_Avatar() {
 	function showItem(itemid) {
 
 		for (var g in window.app.avatar_list) {
-			console.log("g avatar list " + g);
+			//console.log("g avatar list " + g);
 			var group = window.app.avatar_list[g];
-			console.log("grp " + group);
+			//console.log("grp " + group);
 			for (var i in group) {
 				if (group[i].id == itemid) {
-					console.log("grp[i] " + group[i].id);
-					console.log("itemid " + itemid);
+					//console.log("grp[i] " + group[i].id);
+					//console.log("itemid " + itemid);
 					hideGroupItems(g);
-					console.log("show element " + group[i].id);
+					//console.log("show element " + group[i].id);
 					window.app.view.avatar_svg.find("#" + group[i].id).show();
 				}
 			}
@@ -226,7 +226,7 @@ function State_Avatar() {
 
 
 	function hideGroupItems(groupindex) {
-		console.log("hide all elements of " + groupindex)
+		//console.log("hide all elements of " + groupindex)
 		var group = window.app.avatar_list[groupindex];
 		for (var gi in group) {
 			window.app.view.avatar_svg.find("#" + group[gi].id).hide();

@@ -10,6 +10,8 @@ function State_Apartment() {
         console.log("⛳ ------> Apartment state");
 
         ApartmentUpdateCircles();
+			
+				showPigeon("Clicca sulle stanze ed esplora la casa TPL");
     };
 
     _this.Init = function() {

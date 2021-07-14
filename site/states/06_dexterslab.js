@@ -9,7 +9,7 @@ function State_DextersLab() {
 	_this.Run = function() {
 		console.log("⛳ ------> DextersLab state");
 
-		showPigeon("Benvenuto nel Laboratorio di Dexter ...")
+		showPigeon("Progetta il giocattolo dei tuoi sogni")
 
 	};
 

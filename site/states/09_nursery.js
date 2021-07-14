@@ -8,7 +8,8 @@ function State_Nursery() {
 
 	_this.Run = function() {
 		console.log("⛳ ------> Nursery state");
-
+		
+		showPigeon("Clicca gli oggetti e personalizza la stanza");
 
 	};
 
