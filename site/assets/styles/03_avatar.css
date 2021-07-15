@@ -65,6 +65,17 @@
     font-size: 20px;
 }
 
+#avatar #come_ti_chiami {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #e6e6e6;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 #avatar #button_left {
     display: flex;
     justify-content: center;
