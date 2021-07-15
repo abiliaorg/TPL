@@ -60,12 +60,12 @@
 }
 
 #nursery .sidebar_colour {
-    z-index: 77;
+    z-index: 99999;
 }
 
 #nursery .sidebar_name {
     height: 200px;
-    z-index: 70;
+    z-index: 99998;
 }
 
 #sidepanel_nursery {

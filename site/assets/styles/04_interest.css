@@ -3,6 +3,20 @@
     background-color: white;
 }
 
+#interest .back_button {
+    background-color: #6633FF;
+    color: white;
+    cursor: pointer;
+}
+
+#interest #button_interest_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 #interest .done_button {
     background-color: black;
     color: white;

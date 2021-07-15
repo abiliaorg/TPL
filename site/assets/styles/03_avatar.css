@@ -1,168 +1,128 @@
 #avatar {
-	display: block;
-	background-color: white;
+    display: block;
+    background-color: white;
+}
+
+#avatar .back_button {
+    background-color: #6633FF;
+    color: white;
+    cursor: pointer;
+}
+
+#avatar #button_avatar_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #avatar .done_button {
-	background-color: black;
-	color: white;
-	cursor: pointer;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 #avatar #button_avatar_done {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#avatar #come_ti_chiami {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
-	background-color: #e6e6e6;
+#avatar .button_gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#avatar #button_donna {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
+#avatar .button_gender.selected {
+    background-color: #FFCC00 !important;
 }
 
-#avatar #button_uomo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
+#avatar .button_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-#avatar #button_capelli {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-#avatar #button_abbigliamento {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-#avatar #button_posture {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
+#avatar .button_main.selected {
+    background-color: #FFCC00 !important;
 }
 
 #avatar #button_data_di_nascita {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-#avatar #button_accessori {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-#avatar #button_segni_particolari {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-#avatar #button_professione {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #avatar #button_left {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #avatar #button_right {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #avatar #centre_carousel {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-	font-size: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #avatar .centre_carousel {
-	height: 100%;
+    height: 100%;
 }
 
 #avatar #centre_carousel .owl-stage-outer {
-	height: 100%;
+    height: 100%;
 }
 
 #avatar #centre_carousel .owl-stage {
-	height: 100% !important;
-	display: flex !important;
-	justify-content: center !important;
-	align-items: center !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 #avatar #centre_carousel .owl-item {
-	height: 100% !important;
-	display: flex !important;
-	justify-content: center !important;
-	align-items: center !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 #avatar #centre_carousel .owl-item .item {
-	cursor: pointer;
-	background-position: center !important;
-	background-size: 70% !important;
-	background-repeat: no-repeat !important;
-	width: 100px;
-	height: 100px;
-	border: 3px solid black;
-	border-radius: 50%;
-	/*margin: 6% 8%;
+    cursor: pointer;
+    background-position: center !important;
+    background-size: 70% !important;
+    background-repeat: no-repeat !important;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+    /*margin: 6% 8%;
 	transition: margin 0.4s ease;
 	display: flex !important;
 	justify-content: center !important;
@@ -170,65 +130,52 @@
 }
 
 #avatar #centre_carousel .owl-item.big .item {
-	height: 130px !important;
-	width: 130px !important;
-	border: 6px solid black;
+    height: 130px !important;
+    width: 130px !important;
+    border: 6px solid black;
 }
 
 #avatar .button_grid {
-	display: grid;
-	height: 100%;
-	grid-template-columns: [col] 1fr;
-	grid-template-rows: [row]3fr [row]2fr;
-	grid-gap: 2px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row]3fr [row]2fr;
+    grid-gap: 2px;
 }
 
 #avatar .button_svg {
-	grid-column: col;
-	grid-row: row 1;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+    grid-column: col;
+    grid-row: row 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #avatar .button_text {
-	grid-column: col;
-	grid-row: row 2;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+    grid-column: col;
+    grid-row: row 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 #avatar .sidebar_colour {
-	z-index: 77;
+    z-index: 77;
 }
 
 #avatar .sidebar_name {
-	height: 200px;
-	transform: rotate(180deg);
-	z-index: 70;
+    height: 200px;
+    transform: rotate(180deg);
+    z-index: 70;
 }
 
 #avatar .titletext {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-size: 25px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
-
-#avatar .button_main {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	padding-left: 25px;
-	font-weight: bold;
-	font-size: 20px;
-}
-
-#avatar .button_main.selected {
-	background-color: #FFCC00 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

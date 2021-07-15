@@ -11,8 +11,8 @@
 </head>
 
 <body data-state="load">
-	
-		
+
+
 
     <header>
         <div class="hgrid">
@@ -28,12 +28,12 @@
     </header>
 
     <div class="info">State: load</div>
-	
-		<div class="bounce" id="pigeon"></div>
+
+    <div class="bounce" id="pigeon"></div>
 
     <div class="state" id="load">
-        
-    </div>    
+
+    </div>
 
     <div class="state" id="home">
         <div class="sidebar b-b b-t b-r sidebar2">
@@ -199,20 +199,6 @@
 
         <div class="sidebar b-b b-l sidebar_colour">
             <div class="sidebar_colour_grid">
-                <div class="sbcgrid_item i1 c1"></div>
-                <div class="sbcgrid_item i2 c2"></div>
-                <div class="sbcgrid_item i3 c3"></div>
-                <div class="sbcgrid_item i4 c4"></div>
-                <div class="sbcgrid_item i5 c5"></div>
-                <div class="sbcgrid_item i6 c6"></div>
-                <div class="sbcgrid_item i7 c7"></div>
-                <div class="sbcgrid_item i8 c8"></div>
-                <div class="sbcgrid_item i9 c9"></div>
-                <div class="sbcgrid_item i10 c10"></div>
-                <div class="sbcgrid_item i11 c11"></div>
-                <div class="sbcgrid_item i12 c12"></div>
-                <div class="sbcgrid_item i13 c13"></div>
-                <div class="sbcgrid_item i14 c14"></div>
             </div>
         </div>
         <div class="sidebar b-t b-r sidebar_name">
@@ -225,7 +211,7 @@
                 <div class="col-4" id="come_ti_chiami">Come ti chiami?</div>
                 <div class="col-4 b-l">
                     <div class="row b-b ht-25">
-                        <div class="col-6" id="button_donna">
+                        <div class="col-6 button_gender selected" id="button_donna">
                             <div class="button_grid">
                                 <div class="button_svg">
                                     <img src="./assets/images/avatar/female.svg" alt="Female" height="40" width="50">
@@ -233,7 +219,7 @@
                                 <div class="button_text">Donna</div>
                             </div>
                         </div>
-                        <div class="col-6 b-l" id="button_uomo">
+                        <div class="col-6 b-l button_gender" id="button_uomo">
                             <div class="button_grid">
                                 <div class="button_svg">
                                     <img src="./assets/images/avatar/male.svg" alt="Male" height="40" width="40">
@@ -283,7 +269,8 @@
             </div>
 
             <div class="row ht-10">
-                <div class="col-12 done_button" id="button_avatar_done">Fatto!</div>
+                <div class="col-6 back_button" id="button_avatar_back">Tornare</div>
+                <div class="col-6 done_button" id="button_avatar_done">Fatto!</div>
             </div>
 
         </div>
@@ -338,7 +325,8 @@
             </div>
 
             <div class="row ht-10">
-                <div class="col-12 done_button" id="button_interest_done">Fatto!</div>
+                <div class="col-6 back_button" id="button_interest_back">Tornare</div>
+                <div class="col-6 done_button" id="button_interest_done">Fatto!</div>
             </div>
 
         </div>
@@ -349,7 +337,26 @@
 
             <div class="row ht-100 b-b">
 
-                <div class="col-10" id="main">Main Play Area</div>
+                <div class="col-1 menu_left">
+                    <div class="row ht-50" id="back_home" data-goto="home">
+                        <div class="left_button_grid">
+                            <div class="left_button_svg">
+                                <img src="./assets/images/apartment/home.svg" alt="Home Icon" height="40" width="40">
+                            </div>
+                            <div class="left_button_text">Torna a casa</div>
+                        </div>
+                    </div>
+                    <div class="row ht-50" id="guide">
+                        <div class="left_button_grid">
+                            <div class="left_button_svg">
+                                <img src="./assets/images/apartment/quest.svg" alt="Q Icon" height="40" width="40">
+                            </div>
+                            <div class="left_button_text">Guida</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-9" id="main"></div>
 
                 <div class="col-2" id="side_panel">
 
@@ -647,9 +654,9 @@
     </div>
 
     <div class="state" id="checkout">
-        <div class="container b-l b-r">
+        <div class="container b-l b-r no-padding">
 
-            <div class="row ht-40 b-b">
+            <div class="row ht-40 b-b no-gutters">
                 <div class="col-1 menu_left">
                     <div class="row ht-30" id="back_home" data-goto="home">
                         <div class="button_grid">
@@ -678,7 +685,7 @@
                 </div>
             </div>
 
-            <div class="row ht-60 products">
+            <div class="row ht-60 products no-gutters">
 
             </div>
 
@@ -719,20 +726,6 @@
 
         <div class="sidebar b-b b-r sidebar_colour">
             <div class="sidebar_colour_grid">
-                <div class="sbcgrid_item i1 c1"></div>
-                <div class="sbcgrid_item i2 c2"></div>
-                <div class="sbcgrid_item i3 c3"></div>
-                <div class="sbcgrid_item i4 c4"></div>
-                <div class="sbcgrid_item i5 c5"></div>
-                <div class="sbcgrid_item i6 c6"></div>
-                <div class="sbcgrid_item i7 c7"></div>
-                <div class="sbcgrid_item i8 c8"></div>
-                <div class="sbcgrid_item i9 c9"></div>
-                <div class="sbcgrid_item i10 c10"></div>
-                <div class="sbcgrid_item i11 c11"></div>
-                <div class="sbcgrid_item i12 c12"></div>
-                <div class="sbcgrid_item i13 c13"></div>
-                <div class="sbcgrid_item i14 c14"></div>
             </div>
         </div>
         <div class="sidebar b-b b-r sidebar_name">
@@ -849,8 +842,8 @@
 
         </div>
     </div>
-	
-		<script src="./assets/vendors/jquery.js"></script>
+
+    <script src="./assets/vendors/jquery.js"></script>
     <script src="./assets/scripts/main.js"></script>
 
 </body>

@@ -28,6 +28,46 @@
     text-align: center;
 }
 
+#familytree .menu_left {
+    position: relative;
+    top: 10px;
+    z-index: 999;
+    height: 150px;
+}
+
+#familytree .side_panel {
+    position: relative;
+    top: 10px;
+}
+
+#familytree .left_button_grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: [col] 1fr;
+    grid-template-rows: [row]3fr [row]2fr;
+    background-color: white;
+    grid-gap: 4px;
+}
+
+#familytree .left_button_svg {
+    grid-column: col;
+    grid-row: row 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#familytree .left_button_text {
+    grid-column: col;
+    grid-row: row 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 12px;
+}
+
 #popup_home .ht-reg {
     height: calc(100%/6);
 }
