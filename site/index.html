@@ -1,851 +1,851 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-
-    <link href="./assets/vendors/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/vendors/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="./assets/vendors/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-    <link href="./assets/styles/main.css" rel="stylesheet">
-
-</head>
-
-<body data-state="load">
-
-
-
-    <header>
-        <div class="hgrid">
-            <div class="hg_item i-1" id="title_tpl">
-                <img src="./assets/images/cc.svg" alt="CC" height="12" width="12"> 2021 The Playful Living - All rights reserved
-            </div>
-            <div class="hg_item i-2 b-t b-b b-l lang_button" id="IT">IT</div>
-            <div class="hg_item i-3 b-t b-b b-r lang_button" id="EN">EN</div>
-            <div class="hg_item i-4" id="side_menu_button">
-                <img src="./assets/images/menubars.svg" alt="Menu" height="100%" width="80%">
-            </div>
-        </div>
-    </header>
-
-    <div class="info">State: load</div>
-
-    <div class="bounce" id="pigeon"></div>
-
-    <div class="state" id="load">
-
-    </div>
-
-    <div class="state" id="home">
-        <div class="sidebar b-b b-t b-r sidebar2">
-            <div>La piattaforma</div>
-        </div>
-        <div class="container b-l b-r">
-
-            <div class="row ht-40 b-b">
-                <div class="col-3" id="button_home">
-                    <div class="button_grid">
-                        <div class="button_svg">
-                            <img src="./assets/images/homelogo.svg" alt="Home Icon" height="90" width="90">
-                        </div>
-                        <div class="button_text">Torna a Casa</div>
-                    </div>
-                </div>
-                <div class="col-7 b-l" id="info_home">
-                    <p class="cblack">The Playful Home è una piattaforma dove puoi giocare, scoprire tanti nuovi prodotti pensati per te, leggere e condividere consigli con una community “playful” e approfondire temi sulla casa e sulla famiglia.</p>
-                    <!--<p class="cpurple">Giochiamo insieme!</p>-->
-                </div>
-                <div class="col-2 b-l" id="registersignup_home">
-                    <div class="row b-b" id="button_signup">Registrati ora</div>
-                    <div class="row" id="button_login">Accedi</div>
-                </div>
-            </div>
-
-            <div class="homepage_banner"></div>
-
-            <div class="row ht-60">
-                <div class="col-4 big_button" id="button_play">
-                    <!--<img src="./assets/images/play.svg" alt="Play" height="100%" width="100%">-->
-                </div>
-                <div class="col-4 big_button" id="button_explore">
-                    <!--<img src="./assets/images/explore.svg" alt="Explore" height="100%" width="100%">-->
-                </div>
-                <div class="col-4 big_button" id="button_suggest">
-                    <!--<img src="./assets/images/suggest.svg" alt="Suggest" height="100%" width="100%">-->
-                </div>
-            </div>
-
-        </div>
-        <!--<div class="sidebar b-b b-r sidebar1">
-            <div>Shortcuts</div>
-        </div>-->
-    </div>
-
-    <div class="popup" id="popup_signup">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-
-            <div class="signup_grid">
-                <div class="sup_item i1" id="signup_first">REGISTRATI ORA!</div>
-                <div class="sup_item i2" id="signup_name">Nome</div>
-                <div class="sup_item i3" id="signup_sirname">Cognome</div>
-                <div class="sup_item i4" id="signup_email">Email</div>
-                <div class="sup_item i5" id="signup_pass">Password</div>
-                <div class="sup_item i6" id="signup_confirmpass">Confirm Password</div>
-                <div class="sup_item i7" id="signup_last">Tick Boxes here</div>
-                <div class="sup_item i8" id="button_signup_popup">Registrati ora!</div>
-            </div>
-
-            <!-- <div class="row ht-reg b-b">
-                <div class="col-12" id="signup_first">REGISTRATI ORA!</div>
-            </div>
-            <div class="row ht-reg b-b">
-                <div class="col-6" id="signup_name">Nome</div>
-                <div class="col-6 b-l" id="signup_sirname">Cognome</div>
-            </div>
-            <div class="row ht-reg b-b">
-                <div class="col-12" id="signup_email">Email</div>
-            </div>
-            <div class="row ht-reg b-b">
-                <div class="col-6" id="signup_pass">Password</div>
-                <div class="col-6 b-l" id="signup_confirmpass">Confirm Password</div>
-            </div>
-            <div class="row ht-reg">
-                <div class="col-12" id="signup_last">Tick Boxes here</div>
-            </div>
-            <div class="row ht-reg done_button">
-                <div class="col-12" id="button_signup_popup">Registrati ora!</div>
-            </div> -->
-
-        </div>
-    </div>
-
-    <div class="popup" id="popup_login">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-
-            <div class="login_grid">
-                <div class="log_item i1" id="login_first">Hello!</div>
-                <div class="log_item i2" id="login_pic"></div>
-                <div class="log_item i3" id="login_username">User Name</div>
-                <div class="log_item i4" id="login_pass">Password</div>
-                <div class="log_item i5" id="login_forgotpass">Forgot Password?</div>
-                <div class="log_item i6" id="button_login_popup">Accedi!</div>
-            </div>
-
-            <!-- <div class="row ht-5reg">
-                <div class="col-6">
-                    <div class="row ht-20 b-b">
-                        <div class="col-12" id="login_first">Hello!</div>
-                    </div>
-                    <div class="row ht-20 b-b">
-                        <div class="col-12" id="login_username">User Name</div>
-                    </div>
-                    <div class="row ht-20 b-b">
-                        <div class="col-12" id="login_password">Password</div>
-                    </div>
-                    <div class="row ht-40">
-                        <div class="col-12" id="login_forgotpass">Forgot Password</div>
-                    </div>
-                </div>
-                <div class="col-6 b-l" id="login_pic">
-                    Picture
-                </div>
-            </div>
-            <div class="row ht-reg done_button">
-                <div class="col-12" id="button_login_popup">Accedi!</div>
-            </div> -->
-
-        </div>
-    </div>
-
-    <div class="popup" id="popup_play">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <h1 class="topic">GIOCA</h1>
-            <p class="para">Esplora la nostra casa e divertiti a personalizzare le stanze, a progettare giocattoli, a sfidare i tuoi amici e molto altro ancora!</p>
-            <a id="play_done">GIOCA!</a>
-        </div>
-    </div>
-
-    <div class="popup" id="popup_explore">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <h1 class="topic">SCOPRI</h1>
-            <p class="para">Scopri i tanti prodotti, servizi e contenuti speciali pensati per te ogni giorno che animano la nostra casa.</p>
-            <a id="explore_done">SCOPRI!</a>
-        </div>
-    </div>
-
-    <div class="popup" id="popup_suggest">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <h1 class="topic">SUGGERISCI</h1>
-            <p class="para">Condividi le tue esperienze ed entra in contatto con una community sempre pronta ad aiutarti nelle sfide di tutti i giorni.</p>
-            <a id="suggest_done">SUGGERISCI!</a>
-        </div>
-    </div>
-
-    <div class="state" id="avatar">
-
-        <div class="sidebar b-b b-l sidebar_colour">
-            <div class="sidebar_colour_grid">
-            </div>
-        </div>
-        <div class="sidebar b-t b-r sidebar_name">
-            <div>Choose Color</div>
-        </div>
-
-        <div class="container b-l b-r">
-
-            <div class="row ht-50 b-b">
-                <div class="col-4" id="come_ti_chiami">Come ti chiami?</div>
-                <div class="col-4 b-l">
-                    <div class="row b-b ht-25">
-                        <div class="col-6 button_gender selected" id="button_donna">
-                            <div class="button_grid">
-                                <div class="button_svg">
-                                    <img src="./assets/images/avatar/female.svg" alt="Female" height="40" width="50">
-                                </div>
-                                <div class="button_text">Donna</div>
-                            </div>
-                        </div>
-                        <div class="col-6 b-l button_gender" id="button_uomo">
-                            <div class="button_grid">
-                                <div class="button_svg">
-                                    <img src="./assets/images/avatar/male.svg" alt="Male" height="40" width="40">
-                                </div>
-                                <div class="button_text">Uomo</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row b-b ht-25">
-                        <div class="col-12 button_main selected" data-info="CAPELLI_group" id="button_capelli">Capelli</div>
-                    </div>
-                    <div class="row b-b ht-25">
-                        <div class="col-12 button_main" data-info="ABBIGLIAMENTO_group" id="button_abbigliamento">Abbigliamento</div>
-                    </div>
-                    <div class="row ht-25">
-                        <div class="col-12 button_main" data-info="POSE_group" id="button_posture">Posture</div>
-                    </div>
-                </div>
-                <div class="col-4 b-l">
-                    <div class="row b-b ht-25">
-                        <div class="col-12" id="button_data_di_nascita">Data di nascita</div>
-                    </div>
-                    <div class="row b-b ht-25">
-                        <div class="col-12 button_main" data-info="ACCESSORI_group" id="button_accessori">Accessori</div>
-                    </div>
-                    <div class="row b-b ht-25">
-                        <div class="col-12 button_main" data-info="SEGNI_PARTICOLARI_group" id="button_segni_particolari">Segni particolari</div>
-                    </div>
-                    <div class="row ht-25">
-                        <div class="col-12 button_main" data-info="PROFESSIONI_group" id="button_professione">Professione</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row ht-40 b-b">
-                <div class="col-1 carousel-avatar-prev" id="button_left">
-                    <img src="./assets/images/avatar/leftarrow.svg" alt="Left" height="80" width="30">
-                </div>
-                <div class="col-10" id="centre_carousel">
-                    <div class="loop owl-carousel carousel-avatar">
-                        <!--automatically populated-->
-                    </div>
-                </div>
-                <div class="col-1 carousel-avatar-next" id="button_right">
-                    <img src="./assets/images/avatar/rightarrow.svg" alt="Right" height="80" width="30">
-                </div>
-            </div>
-
-            <div class="row ht-10">
-                <div class="col-6 back_button" id="button_avatar_back">Tornare</div>
-                <div class="col-6 done_button" id="button_avatar_done">Fatto!</div>
-            </div>
-
-        </div>
-
-        <div class="sidebar b-b b-r sidebar_plain">
-            <div>Your Avatar</div>
-        </div>
-
-    </div>
-
-    <div class="state" id="interest">
-        <div class="container b-l b-r">
-
-            <div class="row ht-50 b-b">
-                <div class="col-4" id="nome">Nome</div>
-                <div class="col-4 b-l">
-                    <div class="row ht-50 b-b int_button">
-                        <div class="col-12" id="button_interessi_1">Interessi 1</div>
-                    </div>
-                    <div class="row ht-50 int_button">
-                        <div class="col-12" id="button_interessi_2">Interessi 2</div>
-                    </div>
-                </div>
-                <div class="col-4 b-l">
-                    <div class="row ht-50 b-b int_button">
-                        <div class="col-12" id="button_interessi_3">Interessi 3</div>
-                    </div>
-                    <div class="row ht-50 int_button">
-                        <div class="col-12" id="button_interessi_4">Interessi 4</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row ht-40 b-b">
-                <div class="col ht-50 interesse" id="int1">Interesse 1</div>
-                <div class="col ht-50 b-l interesse" id="int2">Interesse 2</div>
-                <div class="col ht-50 b-l interesse" id="int3">Interesse 3</div>
-                <div class="col ht-50 b-l interesse" id="int4">Interesse 4</div>
-                <div class="col ht-50 b-l interesse" id="int5">Interesse 5</div>
-                <div class="col ht-50 b-l interesse" id="int6">Interesse 6</div>
-                <div class="col ht-50 b-l interesse" id="int7">Interesse 7</div>
-                <div class="col ht-50 b-l interesse" id="int8">Interesse 8</div>
-                <div class="w-100 ht-0 b-b"></div>
-                <div class="col ht-50 interesse" id="int9">Interesse 1</div>
-                <div class="col ht-50 b-l interesse" id="int10">Interesse 2</div>
-                <div class="col ht-50 b-l interesse" id="int11">Interesse 3</div>
-                <div class="col ht-50 b-l interesse" id="int12">Interesse 4</div>
-                <div class="col ht-50 b-l interesse" id="int13">Interesse 5</div>
-                <div class="col ht-50 b-l interesse" id="int14">Interesse 6</div>
-                <div class="col ht-50 b-l interesse" id="int15">Interesse 7</div>
-                <div class="col ht-50 b-l interesse" id="int16">Interesse 8</div>
-            </div>
-
-            <div class="row ht-10">
-                <div class="col-6 back_button" id="button_interest_back">Tornare</div>
-                <div class="col-6 done_button" id="button_interest_done">Fatto!</div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="state" id="familytree">
-        <div class="container b-l b-r">
-
-            <div class="row ht-100 b-b">
-
-                <div class="col-1 menu_left">
-                    <div class="row ht-50" id="back_home" data-goto="home">
-                        <div class="left_button_grid">
-                            <div class="left_button_svg">
-                                <img src="./assets/images/apartment/home.svg" alt="Home Icon" height="40" width="40">
-                            </div>
-                            <div class="left_button_text">Torna a casa</div>
-                        </div>
-                    </div>
-                    <div class="row ht-50" id="guide">
-                        <div class="left_button_grid">
-                            <div class="left_button_svg">
-                                <img src="./assets/images/apartment/quest.svg" alt="Q Icon" height="40" width="40">
-                            </div>
-                            <div class="left_button_text">Guida</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-9" id="main"></div>
-
-                <div class="col-2" id="side_panel">
-
-                    <div class="row ht-15" id="add_adult">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <svg width="70" height="70">
-                                      <g>
-                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                      </g>
-                                </svg>
-                            </div>
-                            <div class="button_text">
-                                <p>Aggiungi un adulto (14+)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row ht-15" id="add_child">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <svg width="70" height="70">
-                                      <g>
-                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                      </g>
-                                </svg>
-                            </div>
-                            <div class="button_text">
-                                <p>Aggiungi un bambino (1+)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row ht-15" id="add_baby">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <svg width="70" height="70">
-                                      <g>
-                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                      </g>
-                                </svg>
-                            </div>
-                            <div class="button_text">
-                                <p>Aggiungi un bebe</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row ht-15" id="add_animal">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <svg width="70" height="70">
-                                      <g>
-                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                        <line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
-                                        <line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
-                                      </g>
-                                </svg>
-                            </div>
-                            <div class="button_text">
-                                <p>Aggiungi un animale</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row ht-15" id="add_home">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <svg width="70" height="70">
-                                    <g>
-                                        <circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
-                                        <circle cx=40% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
-                                        <circle cx=50% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
-                                        <circle cx=60% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="button_text">
-                                <p>La tua casa dove vivi?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="popup" id="popup_adult">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <div class="row ht-reg cent">Come si chiama?</div>
-            <div class="row ht-4reg b-b"></div>
-            <div class="row ht-reg done_button">
-                <div class="col-12" id="button_popup_adult_done">Fatto!</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup_child">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <div class="row ht-reg cent">Come si chiama?</div>
-            <div class="row ht-4reg b-b"></div>
-            <div class="row ht-reg done_button">
-                <div class="col-12" id="button_popup_child_done">Fatto!</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup_baby">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <div class="row ht-reg cent">Come si chiama?</div>
-            <div class="row ht-4reg b-b"></div>
-            <div class="row ht-reg done_button">
-                <div class="col-12" id="button_popup_baby_done">Fatto!</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup_animal">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <div class="row ht-reg cent">Come si chiama?</div>
-            <div class="row ht-4reg b-b"></div>
-            <div class="row ht-reg done_button">
-                <div class="col-12" id="button_popup_animal_done">Fatto!</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup_home">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <div class="row ht-5reg b-b">
-                <div class="col-3">
-                    <div class="row ht-33 b-b" id="popup_home_1">Appartamento</div>
-                    <div class="row ht-33 b-b" id="popup_home_2">Villa/Villetta</div>
-                    <div class="row ht-33" id="popup_home_3">Casa Indipendente</div>
-                </div>
-                <div class="col-3 b-l">
-                    <div class="row ht-33 b-b" id="popup_home_4">Attico/Mansarda</div>
-                    <div class="row ht-33 b-b" id="popup_home_5">Loft</div>
-                    <div class="row ht-33" id="popup_home_6">Rustico Casale</div>
-                </div>
-                <div class="col-6 b-l" id="home_map">
-                    Picture
-                </div>
-            </div>
-            <div class="row ht-reg done_button">
-                <div class="col-12" id="button_popup_home_done">Fatto!</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="state" id="dexterslab">
-        <div class="container b-l b-r">
-
-            <div class="row main b-b">
-                <div class="col-1 menu_left">
-                    <div class="row b-b ht-20" id="back_home" data-goto="home">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/dexterslab/home.svg" alt="Home Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Torna a casa</div>
-                        </div>
-                    </div>
-                    <div class="row b-b ht-20" id="guide">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/dexterslab/quest.svg" alt="Q Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Guida</div>
-                        </div>
-                    </div>
-                    <div class="row b-b ht-60" id="buttoners1"></div>
-                </div>
-                <div class="col-2 b-l panel_left">
-                    <!--automatically populated-->
-                </div>
-                <div class="col-6 b-l panel_center">
-                    <div class="row b-b panel_canvas">
-                        <div id="dexters_canvas_container">
-                            <canvas id="dexters_canvas"></canvas>
-                        </div>
-                    </div>
-                    <div class="row panel_drawing">
-                        <div class="col-4" id="button_draw">
-                            <img src="./assets/images/dexterslab/pen.svg" alt="Draw" height="100" width="100">
-                        </div>
-                        <div class="col-4 b-l" id="button_erase">
-                            <img src="./assets/images/dexterslab/bin.svg" alt="Erase" height="100" width="100">
-                        </div>
-                        <div class="col-4 b-l" data-info="materials" id="button_materials">
-                            <img src="./assets/images/dexterslab/materials.svg" alt="Materials" height="100" width="100">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 b-l panel_right">
-                    <!--automatically populated-->
-                </div>
-                <div class="col-1 b-l menu_right" id="buttoners2"></div>
-            </div>
-
-            <div class="row menu_bottom">
-                <div class="col-4 button_main selected" data-info="accessories">Accessori</div>
-                <div class="col-4 b-l button_main" data-info="constructivelements">Elementi Costruttivi</div>
-                <div class="col-4 b-l button_main" data-info="technologies">Tecnologia</div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="state" id="bazar">
-        <div class="container b-l b-r">
-
-            <div class="row ht-65 b-b">
-                <div class="col-1 menu_left">
-                    <div class="row ht-50" id="back_home" data-goto="home">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/bazar/home.svg" alt="Home Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Torna a casa</div>
-                        </div>
-                    </div>
-                    <div class="row ht-50" id="guide">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/bazar/quest.svg" alt="Q Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Guida</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12" id="bazar_canvas_container">
-                    <canvas id="bazar_canvas"></canvas>
-                </div>
-            </div>
-
-            <div class="row ht-25 b-b">
-                <div class="col-1 carousel-bazar-prev" id="button_left">
-                    <img src="./assets/images/bazar/leftarrow.svg" alt="Left" height="80" width="30">
-                </div>
-                <div class="col-10" id="centre_carousel">
-                    <div class="loop owl-carousel carousel-bazar">
-                        <!--automatically populated-->
-                    </div>
-                </div>
-                <div class="col-1 carousel-bazar-next" id="button_right">
-                    <img src="./assets/images/bazar/rightarrow.svg" alt="Right" height="80" width="30">
-                </div>
-            </div>
-
-            <div class="row ht-10" id="game_progress">
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="popup" id="bazar_game_over">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <div class="bazar_game_over_grid">
-                <div class="bgog_item i1" id="bazar_popup_textarea">
-                    <h1 class="topic">Oh no il carello è pieno!</h1>
-                    <!--<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul lamcorper suscipit lobortisnisl ut aliquip ex ea commodo consequat.</p>-->
-                </div>
-                <div class="bgog_item i2" id="bazar_restart">Ricomincia la sfida</div>
-                <div class="bgog_item i3" id="bazar_checkout">Vai alla cassa</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="state" id="checkout">
-        <div class="container b-l b-r no-padding">
-
-            <div class="row ht-40 b-b no-gutters">
-                <div class="col-1 menu_left">
-                    <div class="row ht-30" id="back_home" data-goto="home">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/checkout/home.svg" alt="Home Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Torna a casa</div>
-                        </div>
-                    </div>
-                    <div class="row ht-30" id="guide">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/checkout/quest.svg" alt="Q Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Guida</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-9" id="info_checkout">
-                    <p class="cblack">PERCHÉ ACQUISTARE SOLO PER GIOCO?</p>
-                    <p class="cblack">Questo è il tuo carrello e puoi procedere ad acquistare veramente i tuoi prodotti preferiti e accedere ai nostri sconti!</p>
-                </div>
-                <div class="col-2 b-l">
-                    <div class="row b-b" id="back_to_bazar" data-goto="bazar">Torna al gioco</div>
-                    <div class="row" id="share_with_friends">Condividi con un amico/a</div>
-                </div>
-            </div>
-
-            <div class="row ht-60 products no-gutters">
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="state" id="nursery">
-        <div class="container b-l b-r">
-
-            <div class="row ht-90 b-b" id="wrapper_row">
-                <div class="col-1 menu_left">
-                    <div class="row ht-50" id="back_home" data-goto="home">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/nursery/home.svg" alt="Home Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Torna a casa</div>
-                        </div>
-                    </div>
-                    <div class="row ht-50" id="guide">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/nursery/quest.svg" alt="Q Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Guida</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12" id="nursery_inside">
-                    <!--<img src="filename.svg">-->
-                </div>
-            </div>
-
-            <div class="row ht-10">
-            </div>
-
-        </div>
-
-        <div class="sidebar b-b b-r sidebar_colour">
-            <div class="sidebar_colour_grid">
-            </div>
-        </div>
-        <div class="sidebar b-b b-r sidebar_name">
-            <div>Choose Color</div>
-        </div>
-
-    </div>
-
-    <div class="sidepanel" id="sidepanel_nursery">
-        <div class="sidepanel_nursery_button">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-            <div class="row ht-30 b-b">
-                <div class="titletext">Name</div>
-                <div class="col-2 carousel-side-prev" id="sidepanel_nursery_itemleft">
-                    <img src="./assets/images/leftarrow.svg" alt="Left" height="50" width="25">
-                </div>
-                <div class="col-8" id="sidepanel_nursery_itemcarousel">
-                    <!--<div class="loop owl-carousel"></div>-->
-                </div>
-                <div class="col-2 carousel-side-next" id="sidepanel_nursery_itemright">
-                    <img src="./assets/images/rightarrow.svg" alt="Right" height="50" width="25">
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="state" id="apartment">
-        <div class="container b-l b-r">
-
-            <div class="row ht-90 b-b" id="wrapper_row">
-
-                <div class="col-1 menu_left">
-                    <div class="row ht-50" id="back_home" data-goto="home">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/apartment/home.svg" alt="Home Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Torna a casa</div>
-                        </div>
-                    </div>
-                    <div class="row ht-50" id="guide">
-                        <div class="button_grid">
-                            <div class="button_svg">
-                                <img src="./assets/images/apartment/quest.svg" alt="Q Icon" height="40" width="40">
-                            </div>
-                            <div class="button_text">Guida</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12" id="apartment_inside">
-                    <!--<img src="filename.svg">-->
-                </div>
-            </div>
-
-            <div class="row ht-10">
-            </div>
-
-        </div>
-    </div>
-
-    <div class="popup" id="enter_dexterslab">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-
-            <div class="enter_grid">
-                <div class="enter_item i1">
-                    <p class="cpurple">Il laboratorio di Dexter</p>
-                    <p class="cblack">Ha un’anima da designer? Esprimi la tua creatività e progetta il giocattolo che hai sempre sognato.</p>
-                </div>
-                <div class="enter_item i2" id="dex_pic"></div>
-                <div class="enter_item i3 enter_game" id="dex_enter" data-goto="dexterslab">Entra nella stanza</div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="popup" id="enter_bazar">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-
-            <div class="enter_grid">
-                <div class="enter_item i1">
-                    <p class="cpurple">Il bazar</p>
-                    <p class="cblack">Fare shopping è un lavoro serio e spesso più complesso di quanto possa sembrare. Clicca gli oggetti che più ti piacciono ma fai attenzione, la cesta non riuscirà a contenerli tutti!</p>
-                </div>
-                <div class="enter_item i2" id="baz_pic"></div>
-                <div class="enter_item i3 enter_game" id="baz_enter" data-goto="bazar">Entra nella stanza</div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="popup" id="enter_nursery">
-        <div class="header">
-            <a class="close"></a>
-        </div>
-        <div class="body">
-
-            <div class="enter_grid">
-                <div class="enter_item i1">
-                    <p class="cpurple">La nursery</p>
-                    <p class="cblack">Personalizza la stanza per il nuovo arrivato: clicca sugli oggetti e divertiti nel realizzare la nursery dei tuoi sogni.</p>
-                </div>
-                <div class="enter_item i2" id="nur_pic"></div>
-                <div class="enter_item i3 enter_game" id="nur_enter" data-goto="nursery">Entra nella stanza</div>
-            </div>
-
-        </div>
-    </div>
-
-    <script src="./assets/vendors/jquery.js"></script>
-    <script src="./assets/scripts/main.js"></script>
-
-</body>
+	<head>
+
+		<link href="./assets/vendors/bootstrap.min.css" rel="stylesheet">
+		<link href="./assets/vendors/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+		<link href="./assets/vendors/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+		<link href="./assets/styles/main.css" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+		<link rel="manifest" href="./assets/icons/manifest.json">
+		<meta name="msapplication-TileColor" content="#6633FF">
+		<meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#6633FF">
+
+	</head>
+
+	<body data-state="load">
+
+
+
+		<header>
+			<div class="hgrid">
+				<div class="hg_item i-1" id="title_tpl">
+					<img src="./assets/images/cc.svg" alt="CC" height="12" width="12"> 2021 The Playful Living - All rights reserved
+				</div>
+				<div class="hg_item i-2 b-t b-b b-l lang_button" id="IT">IT</div>
+				<div class="hg_item i-3 b-t b-b b-r lang_button" id="EN">EN</div>
+				<div class="hg_item i-4" id="side_menu_button">
+					<img src="./assets/images/menubars.svg" alt="Menu" height="100%" width="80%">
+				</div>
+			</div>
+		</header>
+
+		<div class="info">State: load</div>
+
+		<div class="bounce" id="pigeon"></div>
+
+		<div class="state" id="load">
+
+		</div>
+
+		<div class="state" id="home">pen
+			<div class="sidebar b-b b-t b-r sidebar2">
+				<div>La piattaforma</div>
+			</div>
+			<div class="container b-l b-r">
+
+				<div class="row ht-40 b-b">
+					<div class="col-3" id="button_home">
+						<div class="button_grid">
+							<div class="button_svg">
+								<img src="./assets/images/homelogo.svg" alt="Home Icon" height="90" width="90">
+							</div>
+							<div class="button_text">Torna a Casa</div>
+						</div>
+					</div>
+					<div class="col-7 b-l" id="info_home">
+						<p class="cblack">The Playful Home è una piattaforma dove puoi giocare, scoprire tanti nuovi prodotti pensati per te, leggere e condividere consigli con una community “playful” e approfondire temi sulla casa e sulla famiglia.</p>
+						<!--<p class="cpurple">Giochiamo insieme!</p>-->
+					</div>
+					<div class="col-2 b-l" id="registersignup_home">
+						<div class="row b-b" id="button_signup">Registrati ora</div>
+						<div class="row" id="button_login">Accedi</div>
+					</div>
+				</div>
+
+				<div class="homepage_banner"></div>
+
+				<div class="row ht-60">
+					<div class="col-4 big_button" id="button_play">
+						<!--<img src="./assets/images/play.svg" alt="Play" height="100%" width="100%">-->
+					</div>
+					<div class="col-4 big_button" id="button_explore">
+						<!--<img src="./assets/images/explore.svg" alt="Explore" height="100%" width="100%">-->
+					</div>
+					<div class="col-4 big_button" id="button_suggest">
+						<!--<img src="./assets/images/suggest.svg" alt="Suggest" height="100%" width="100%">-->
+					</div>
+				</div>
+
+			</div>
+			<!--<div class="sidebar b-b b-r sidebar1">
+<div>Shortcuts</div>
+</div>-->
+		</div>
+
+		<div class="popup" id="popup_signup">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+
+				<div class="signup_grid">
+					<div class="sup_item i1" id="signup_first">REGISTRATI ORA!</div>
+					<div class="sup_item i2" id="signup_name"><input type="text" placeholder="Nome"/></div>
+					<div class="sup_item i3" id="signup_sirname"><input type="text" placeholder="Cognome"/></div>
+					<div class="sup_item i4" id="signup_email"><input type="email" placeholder="E-mail"/></div>
+					<div class="sup_item i5" id="signup_pass"><input type="password" placeholder="Password"/></div>
+					<div class="sup_item i6" id="signup_confirmpass"><input type="password" placeholder="Confirm password"/></div>
+					<div class="sup_item i7" id="signup_last">
+						<input type="checkbox"/> <label>Privacy Policy</label> 
+						<input type="checkbox"/> <label>Raccolta Dati</label>
+					</div>
+					<div class="sup_item i8" id="button_signup_popup">Registrati ora!</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup" id="popup_login">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+
+				<div class="login_grid">
+					<div class="log_item i1" id="login_first">Hello!</div>
+					<div class="log_item i2" id="login_pic"></div>
+					<div class="log_item i3" id="login_username"><input type="text" placeholder="Nome utente"/></div>
+					<div class="log_item i4" id="login_pass"><input type="password" placeholder="Password"/></div>
+					<div class="log_item i5" id="login_forgotpass">Forgot Password?</div>
+					<div class="log_item i6" id="button_login_popup">Accedi!</div>
+				</div>
+
+				<!-- <div class="row ht-5reg">
+<div class="col-6">
+<div class="row ht-20 b-b">
+<div class="col-12" id="login_first">Hello!</div>
+</div>
+<div class="row ht-20 b-b">
+<div class="col-12" id="login_username">User Name</div>
+</div>
+<div class="row ht-20 b-b">
+<div class="col-12" id="login_password">Password</div>
+</div>
+<div class="row ht-40">
+<div class="col-12" id="login_forgotpass">Forgot Password</div>
+</div>
+</div>
+<div class="col-6 b-l" id="login_pic">
+Picture
+</div>
+</div>
+<div class="row ht-reg done_button">
+<div class="col-12" id="button_login_popup">Accedi!</div>
+</div> -->
+
+			</div>
+		</div>
+
+		<div class="popup" id="popup_play">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<h1 class="topic">GIOCA</h1>
+				<p class="para">Esplora la nostra casa e divertiti a personalizzare le stanze, a progettare giocattoli, a sfidare i tuoi amici e molto altro ancora!</p>
+				<a id="play_done">GIOCA!</a>
+			</div>
+		</div>
+
+		<div class="popup" id="popup_explore">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<h1 class="topic">SCOPRI</h1>
+				<p class="para">Scopri i tanti prodotti, servizi e contenuti speciali pensati per te ogni giorno che animano la nostra casa.</p>
+				<a id="explore_done">SCOPRI!</a>
+			</div>
+		</div>
+
+		<div class="popup" id="popup_suggest">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<h1 class="topic">SUGGERISCI</h1>
+				<p class="para">Condividi le tue esperienze ed entra in contatto con una community sempre pronta ad aiutarti nelle sfide di tutti i giorni.</p>
+				<a id="suggest_done">SUGGERISCI!</a>
+			</div>
+		</div>
+
+		<div class="state" id="avatar">
+
+			<div class="sidebar b-b b-l sidebar_colour">
+				<div class="sidebar_colour_grid">
+				</div>
+			</div>
+			<div class="sidebar b-t b-r sidebar_name">
+				<div>Choose Color</div>
+			</div>
+
+			<div class="container b-l b-r">
+
+				<div class="row ht-50 b-b">
+					<div class="col-4" id="come_ti_chiami">Come ti chiami?</div>
+					<div class="col-4 b-l">
+						<div class="row b-b ht-25">
+							<div class="col-6 button_gender selected" id="button_donna">
+								<div class="button_grid">
+									<div class="button_svg">
+										<img src="./assets/images/avatar/female.svg" alt="Female" height="40" width="50">
+									</div>
+									<div class="button_text">Donna</div>
+								</div>
+							</div>
+							<div class="col-6 b-l button_gender" id="button_uomo">
+								<div class="button_grid">
+									<div class="button_svg">
+										<img src="./assets/images/avatar/male.svg" alt="Male" height="40" width="40">
+									</div>
+									<div class="button_text">Uomo</div>
+								</div>
+							</div>
+						</div>
+						<div class="row b-b ht-25">
+							<div class="col-12 button_main selected" data-info="CAPELLI_group" id="button_capelli">Capelli</div>
+						</div>
+						<div class="row b-b ht-25">
+							<div class="col-12 button_main" data-info="ABBIGLIAMENTO_group" id="button_abbigliamento">Abbigliamento</div>
+						</div>
+						<div class="row ht-25">
+							<div class="col-12 button_main" data-info="POSE_group" id="button_posture">Posture</div>
+						</div>
+					</div>
+					<div class="col-4 b-l">
+						<div class="row b-b ht-25">
+							<div class="col-12" id="button_data_di_nascita">Data di nascita</div>
+						</div>
+						<div class="row b-b ht-25">
+							<div class="col-12 button_main" data-info="ACCESSORI_group" id="button_accessori">Accessori</div>
+						</div>
+						<div class="row b-b ht-25">
+							<div class="col-12 button_main" data-info="SEGNI_PARTICOLARI_group" id="button_segni_particolari">Segni particolari</div>
+						</div>
+						<div class="row ht-25">
+							<div class="col-12 button_main" data-info="PROFESSIONI_group" id="button_professione">Professione</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ht-40 b-b">
+					<div class="col-1 carousel-avatar-prev" id="button_left">
+						<img src="./assets/images/avatar/leftarrow.svg" alt="Left" height="80" width="30">
+					</div>
+					<div class="col-10" id="centre_carousel">
+						<div class="loop owl-carousel carousel-avatar">
+							<!--automatically populated-->
+						</div>
+					</div>
+					<div class="col-1 carousel-avatar-next" id="button_right">
+						<img src="./assets/images/avatar/rightarrow.svg" alt="Right" height="80" width="30">
+					</div>
+				</div>
+
+				<div class="row ht-10">
+					<div class="col-6 back_button" id="button_avatar_back">Torna indietro</div>
+					<div class="col-6 done_button" id="button_avatar_done">Fatto!</div>
+				</div>
+
+			</div>
+
+			<div class="sidebar b-b b-r sidebar_plain">
+				<div>Your Avatar</div>
+			</div>
+
+		</div>
+
+		<div class="state" id="interest">
+			<div class="container b-l b-r">
+
+				<div class="row ht-50 b-b">
+					<div class="col-4" id="nome">Nome</div>
+					<div class="col-4 b-l">
+						<div class="row ht-50 b-b int_button">
+							<div class="col-12" id="button_interessi_1">Interessi 1</div>
+						</div>
+						<div class="row ht-50 int_button">
+							<div class="col-12" id="button_interessi_2">Interessi 2</div>
+						</div>
+					</div>
+					<div class="col-4 b-l">
+						<div class="row ht-50 b-b int_button">
+							<div class="col-12" id="button_interessi_3">Interessi 3</div>
+						</div>
+						<div class="row ht-50 int_button">
+							<div class="col-12" id="button_interessi_4">Interessi 4</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row ht-40 b-b">
+					<div class="col ht-50 interesse" id="int1">Interesse 1</div>
+					<div class="col ht-50 b-l interesse" id="int2">Interesse 2</div>
+					<div class="col ht-50 b-l interesse" id="int3">Interesse 3</div>
+					<div class="col ht-50 b-l interesse" id="int4">Interesse 4</div>
+					<div class="col ht-50 b-l interesse" id="int5">Interesse 5</div>
+					<div class="col ht-50 b-l interesse" id="int6">Interesse 6</div>
+					<div class="col ht-50 b-l interesse" id="int7">Interesse 7</div>
+					<div class="col ht-50 b-l interesse" id="int8">Interesse 8</div>
+					<div class="w-100 ht-0 b-b"></div>
+					<div class="col ht-50 interesse" id="int9">Interesse 1</div>
+					<div class="col ht-50 b-l interesse" id="int10">Interesse 2</div>
+					<div class="col ht-50 b-l interesse" id="int11">Interesse 3</div>
+					<div class="col ht-50 b-l interesse" id="int12">Interesse 4</div>
+					<div class="col ht-50 b-l interesse" id="int13">Interesse 5</div>
+					<div class="col ht-50 b-l interesse" id="int14">Interesse 6</div>
+					<div class="col ht-50 b-l interesse" id="int15">Interesse 7</div>
+					<div class="col ht-50 b-l interesse" id="int16">Interesse 8</div>
+				</div>
+
+				<div class="row ht-10">
+					<div class="col-6 back_button" id="button_interest_back">Torna indietro</div>
+					<div class="col-6 done_button" id="button_interest_done">Fatto!</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="state" id="familytree">
+			<div class="container b-l b-r">
+
+				<div class="row ht-100 b-b">
+
+					<div class="col-1 menu_left">
+						<div class="row ht-50" id="back_home" data-goto="home">
+							<div class="left_button_grid">
+								<div class="left_button_svg">
+									<img src="./assets/images/apartment/home.svg" alt="Home Icon" height="40" width="40">
+								</div>
+								<div class="left_button_text">Torna a casa</div>
+							</div>
+						</div>
+						<div class="row ht-50" id="guide">
+							<div class="left_button_grid">
+								<div class="left_button_svg">
+									<img src="./assets/images/apartment/quest.svg" alt="Q Icon" height="40" width="40">
+								</div>
+								<div class="left_button_text">Guida</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-9" id="main"></div>
+
+					<div class="col-2" id="side_panel">
+
+						<div class="row ht-15" id="add_adult">
+							<div class="button_grid">
+								<div class="button_svg">
+									<svg width="70" height="70">
+										<g>
+											<circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+											<line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+											<line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+										</g>
+									</svg>
+								</div>
+								<div class="button_text">
+									<p>Aggiungi un adulto (14+)</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row ht-15" id="add_child">
+							<div class="button_grid">
+								<div class="button_svg">
+									<svg width="70" height="70">
+										<g>
+											<circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+											<line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+											<line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+										</g>
+									</svg>
+								</div>
+								<div class="button_text">
+									<p>Aggiungi un bambino (1+)</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row ht-15" id="add_baby">
+							<div class="button_grid">
+								<div class="button_svg">
+									<svg width="70" height="70">
+										<g>
+											<circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+											<line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+											<line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+										</g>
+									</svg>
+								</div>
+								<div class="button_text">
+									<p>Aggiungi un bebe</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row ht-15" id="add_animal">
+							<div class="button_grid">
+								<div class="button_svg">
+									<svg width="70" height="70">
+										<g>
+											<circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+											<line x1=30% y1=50% x2=70% y2=50% style="stroke:black;stroke-width:4" />
+											<line x1=50% y1=30% x2=50% y2=70% style="stroke:black;stroke-width:4" />
+										</g>
+									</svg>
+								</div>
+								<div class="button_text">
+									<p>Aggiungi un animale</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row ht-15" id="add_home">
+							<div class="button_grid">
+								<div class="button_svg">
+									<svg width="70" height="70">
+										<g>
+											<circle cx=50% cy=50% r="30" stroke="black" stroke-width="4" fill="white"/>
+											<circle cx=40% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+											<circle cx=50% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+											<circle cx=60% cy=50% r="1" stroke="black" stroke-width="4" fill="black" />
+										</g>
+									</svg>
+								</div>
+								<div class="button_text">
+									<p>La tua casa dove vivi?</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup" id="popup_adult">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<div class="row ht-reg cent">Come si chiama?</div>
+				<div class="row ht-4reg b-b"></div>
+				<div class="row ht-reg done_button">
+					<div class="col-12" id="button_popup_adult_done">Fatto!</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="popup_child">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<div class="row ht-reg cent">Come si chiama?</div>
+				<div class="row ht-4reg b-b"></div>
+				<div class="row ht-reg done_button">
+					<div class="col-12" id="button_popup_child_done">Fatto!</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="popup_baby">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<div class="row ht-reg cent">Come si chiama?</div>
+				<div class="row ht-4reg b-b"></div>
+				<div class="row ht-reg done_button">
+					<div class="col-12" id="button_popup_baby_done">Fatto!</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="popup_animal">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<div class="row ht-reg cent">Come si chiama?</div>
+				<div class="row ht-4reg b-b"></div>
+				<div class="row ht-reg done_button">
+					<div class="col-12" id="button_popup_animal_done">Fatto!</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup" id="popup_home">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<div class="row ht-5reg b-b">
+					<div class="col-3">
+						<div class="row ht-33 b-b" id="popup_home_1">Appartamento</div>
+						<div class="row ht-33 b-b" id="popup_home_2">Villa/Villetta</div>
+						<div class="row ht-33" id="popup_home_3">Casa Indipendente</div>
+					</div>
+					<div class="col-3 b-l">
+						<div class="row ht-33 b-b" id="popup_home_4">Attico/Mansarda</div>
+						<div class="row ht-33 b-b" id="popup_home_5">Loft</div>
+						<div class="row ht-33" id="popup_home_6">Rustico Casale</div>
+					</div>
+					<div class="col-6 b-l" id="home_map">
+						Picture
+					</div>
+				</div>
+				<div class="row ht-reg done_button">
+					<div class="col-12" id="button_popup_home_done">Fatto!</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="state" id="dexterslab">
+			<div class="container b-l b-r">
+
+				<div class="row main b-b">
+					<div class="col-1 menu_left">
+						<div class="row b-b ht-20" id="back_home" data-goto="home">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/dexterslab/home.svg" alt="Home Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Torna a casa</div>
+							</div>
+						</div>
+						<div class="row b-b ht-20" id="guide">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/dexterslab/quest.svg" alt="Q Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Guida</div>
+							</div>
+						</div>
+						<div class="row b-b ht-60" id="buttoners1"></div>
+					</div>
+					<div class="col-2 b-l panel_left">
+						<!--automatically populated-->
+					</div>
+					<div class="col-6 b-l panel_center">
+						<div class="row b-b panel_canvas">
+							<div id="dexters_canvas_container">
+								<canvas id="dexters_canvas"></canvas>
+							</div>
+						</div>
+						<div class="row panel_drawing">
+							<div class="col-4" id="button_draw">
+								
+							</div>
+							<div class="col-4 b-l" id="button_erase">
+								<img src="./assets/images/dexterslab/bin.svg" alt="Erase" height="100" width="100">
+							</div>
+							<div class="col-4 b-l" data-info="materials" id="button_materials">
+								<img src="./assets/images/dexterslab/materials.svg" alt="Materials" height="100" width="100">
+							</div>
+						</div>
+					</div>
+					<div class="col-2 b-l panel_right">
+						<!--automatically populated-->
+					</div>
+					<div class="col-1 b-l menu_right" id="buttoners2"></div>
+				</div>
+
+				<div class="row menu_bottom">
+					<div class="col-4 button_main selected" data-info="accessories">Accessori</div>
+					<div class="col-4 b-l button_main" data-info="constructivelements">Elementi Costruttivi</div>
+					<div class="col-4 b-l button_main" data-info="technologies">Tecnologia</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="state" id="bazar">
+			<div class="container b-l b-r">
+
+				<div class="row ht-65 b-b">
+					<div class="col-1 menu_left">
+						<div class="row ht-50" id="back_home" data-goto="home">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/bazar/home.svg" alt="Home Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Torna a casa</div>
+							</div>
+						</div>
+						<div class="row ht-50" id="guide">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/bazar/quest.svg" alt="Q Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Guida</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12" id="bazar_canvas_container">
+						<canvas id="bazar_canvas"></canvas>
+					</div>
+				</div>
+
+				<div class="row ht-25 b-b">
+					<div class="col-1 carousel-bazar-prev" id="button_left">
+						<img src="./assets/images/bazar/leftarrow.svg" alt="Left" height="80" width="30">
+					</div>
+					<div class="col-10" id="centre_carousel">
+						<div class="loop owl-carousel carousel-bazar">
+							<!--automatically populated-->
+						</div>
+					</div>
+					<div class="col-1 carousel-bazar-next" id="button_right">
+						<img src="./assets/images/bazar/rightarrow.svg" alt="Right" height="80" width="30">
+					</div>
+				</div>
+
+				<div class="row ht-10" id="game_progress">
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup" id="bazar_game_over">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<div class="bazar_game_over_grid">
+					<div class="bgog_item i1" id="bazar_popup_textarea">
+						<h1 class="topic">Oh no il carello è pieno!</h1>
+						<!--<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ul lamcorper suscipit lobortisnisl ut aliquip ex ea commodo consequat.</p>-->
+					</div>
+					<div class="bgog_item i2" id="bazar_restart">Ricomincia la sfida</div>
+					<div class="bgog_item i3" id="bazar_checkout">Vai alla cassa</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="state" id="checkout">
+			<div class="container b-l b-r no-padding">
+
+				<div class="row ht-40 b-b no-gutters">
+					<div class="col-1 menu_left">
+						<div class="row ht-30" id="back_home" data-goto="home">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/checkout/home.svg" alt="Home Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Torna a casa</div>
+							</div>
+						</div>
+						<div class="row ht-30" id="guide">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/checkout/quest.svg" alt="Q Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Guida</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-9" id="info_checkout">
+						<p class="cblack">PERCHÉ ACQUISTARE SOLO PER GIOCO?</p>
+						<p class="cblack">Questo è il tuo carrello e puoi procedere ad acquistare veramente i tuoi prodotti preferiti e accedere ai nostri sconti!</p>
+					</div>
+					<div class="col-2 b-l">
+						<div class="row b-b" id="back_to_bazar" data-goto="bazar">Torna al gioco</div>
+						<div class="row" id="share_with_friends">Condividi con un amico/a</div>
+					</div>
+				</div>
+
+				<div class="row ht-60 products no-gutters">
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="state" id="nursery">
+			<div class="container b-l b-r">
+
+				<div class="row ht-90 b-b" id="wrapper_row">
+					<div class="col-1 menu_left">
+						<div class="row ht-50" id="back_home" data-goto="home">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/nursery/home.svg" alt="Home Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Torna a casa</div>
+							</div>
+						</div>
+						<div class="row ht-50" id="guide">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/nursery/quest.svg" alt="Q Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Guida</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12" id="nursery_inside">
+						<!--<img src="filename.svg">-->
+					</div>
+				</div>
+
+				<div class="row ht-10">
+				</div>
+
+			</div>
+
+			<div class="sidebar b-b b-r sidebar_colour">
+				<div class="sidebar_colour_grid">
+				</div>
+			</div>
+			<div class="sidebar b-b b-r sidebar_name">
+				<div>Choose Color</div>
+			</div>
+
+		</div>
+
+		<div class="sidepanel" id="sidepanel_nursery">
+			<div class="sidepanel_nursery_button">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+				<div class="row ht-30 b-b">
+					<div class="titletext">Name</div>
+					<div class="col-2 carousel-side-prev" id="sidepanel_nursery_itemleft">
+						<img src="./assets/images/leftarrow.svg" alt="Left" height="50" width="25">
+					</div>
+					<div class="col-8" id="sidepanel_nursery_itemcarousel">
+						<!--<div class="loop owl-carousel"></div>-->
+					</div>
+					<div class="col-2 carousel-side-next" id="sidepanel_nursery_itemright">
+						<img src="./assets/images/rightarrow.svg" alt="Right" height="50" width="25">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="state" id="apartment">
+			<div class="container b-l b-r">
+
+				<div class="row ht-90 b-b" id="wrapper_row">
+
+					<div class="col-1 menu_left">
+						<div class="row ht-50" id="back_home" data-goto="home">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/apartment/home.svg" alt="Home Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Torna a casa</div>
+							</div>
+						</div>
+						<div class="row ht-50" id="guide">
+							<div class="button_grid">
+								<div class="button_svg">
+									<img src="./assets/images/apartment/quest.svg" alt="Q Icon" height="40" width="40">
+								</div>
+								<div class="button_text">Guida</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12" id="apartment_inside">
+						<!--<img src="filename.svg">-->
+					</div>
+				</div>
+
+				<div class="row ht-10">
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup" id="enter_dexterslab">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+
+				<div class="enter_grid">
+					<div class="enter_item i1">
+						<p class="cpurple">Il laboratorio di Dexter</p>
+						<p class="cblack">Ha un’anima da designer? Esprimi la tua creatività e progetta il giocattolo che hai sempre sognato.</p>
+					</div>
+					<div class="enter_item i2" id="dex_pic"></div>
+					<div class="enter_item i3 enter_game" id="dex_enter" data-goto="dexterslab">Entra nella stanza</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup" id="enter_bazar">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+
+				<div class="enter_grid">
+					<div class="enter_item i1">
+						<p class="cpurple">Il bazar</p>
+						<p class="cblack">Fare shopping è un lavoro serio e spesso più complesso di quanto possa sembrare. Clicca gli oggetti che più ti piacciono ma fai attenzione, la cesta non riuscirà a contenerli tutti!</p>
+					</div>
+					<div class="enter_item i2" id="baz_pic"></div>
+					<div class="enter_item i3 enter_game" id="baz_enter" data-goto="bazar">Entra nella stanza</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup" id="enter_nursery">
+			<div class="header">
+				<a class="close"></a>
+			</div>
+			<div class="body">
+
+				<div class="enter_grid">
+					<div class="enter_item i1">
+						<p class="cpurple">La nursery</p>
+						<p class="cblack">Personalizza la stanza per il nuovo arrivato: clicca sugli oggetti e divertiti nel realizzare la nursery dei tuoi sogni.</p>
+					</div>
+					<div class="enter_item i2" id="nur_pic"></div>
+					<div class="enter_item i3 enter_game" id="nur_enter" data-goto="nursery">Entra nella stanza</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="./assets/vendors/jquery.js"></script>
+		<script src="./assets/scripts/main.js"></script>
+
+	</body>
 
 </html>

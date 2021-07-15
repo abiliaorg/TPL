@@ -72,10 +72,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-image: url(../images/dexterslab/pen.svg);
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #dexterslab #button_draw.active {
-	background-color: lightgray;
+	/*background-color: lightgray;*/
+	background-image: url(../images/dexterslab/hand.svg);
 }
 
 #dexterslab #button_erase {
