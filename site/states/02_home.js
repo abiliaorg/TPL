@@ -46,7 +46,7 @@ function State_Home() {
 
         var left2 = $("#button_play").offset().left;
         $(".sidebar2").css("left", left2 - 4 - 40 + "px");
-        var ht3 = $("#button_home").height();
+        var ht3 = $("#button_tpl").height();
         $(".sidebar2").css("top", 100 + ht3 + "px");
 
     }

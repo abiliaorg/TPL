@@ -38,7 +38,7 @@ window.app.view.play_done = $("#play_done");
 window.app.view.explore_done = $("#explore_done");
 window.app.view.suggest_done = $("#suggest_done");
 
-window.app.view.button_home = $("#button_home");
+window.app.view.button_tpl = $("#button_tpl");
 
 //avatar
 
@@ -111,8 +111,8 @@ function RunListeners() { //global buttons listeners here
 
     //home
 
-    window.app.view.button_home.on("click", function() {
-        goToState("apartment");
+    window.app.view.button_tpl.on("click", function() {
+        window.location.href = "http://www.theplayfulliving.com/";
     });
 
     window.app.view.button_signup.on("click", function() {
@@ -142,17 +142,17 @@ function RunListeners() { //global buttons listeners here
 
     window.app.view.play_done.on("click", function() {
         window.app.view.popup_play.hide();
-        goToState("dexterslab");
+        //goToState("dexterslab");
     });
 
     window.app.view.suggest_done.on("click", function() {
         window.app.view.popup_suggest.hide();
-        goToState("nursery");
+        //goToState("nursery");
     });
 
     window.app.view.explore_done.on("click", function() {
         window.app.view.popup_explore.hide();
-        goToState("bazar");
+        //goToState("bazar");
     });
 
     //bazar

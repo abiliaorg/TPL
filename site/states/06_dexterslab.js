@@ -19,7 +19,7 @@ function State_DextersLab() {
 
             "accessories": [{
                     id: "sounds",
-                    title: "Suono Musica",
+                    title: "Suono",
                 },
                 {
                     id: "wheels",
@@ -188,9 +188,9 @@ function State_DextersLab() {
         for (i = 0; i < listofitems.length; i++) {
 
             if (i % 2 == 0) { //even
-                left_elements += '<div class="row b-b button_item" data-id="' + listofitems[i].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/dexterslab/' + listofitems[i].id + '.svg" height="80" width="80"></div><div class="item_text">' + listofitems[i].title + '</div></div></div>';
+                left_elements += '<div class="row b-b button_item" data-id="' + listofitems[i].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/dexterslab/' + listofitems[i].id + '.svg" height="80%" width="auto"></div><div class="item_text">' + listofitems[i].title + '</div></div></div>';
             } else {
-                right_elements += '<div class="row b-b button_item" data-id="' + listofitems[i].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/dexterslab/' + listofitems[i].id + '.svg" height="80" width="80"></div><div class="item_text">' + listofitems[i].title + '</div></div></div>';
+                right_elements += '<div class="row b-b button_item" data-id="' + listofitems[i].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/dexterslab/' + listofitems[i].id + '.svg" height="80%" width="auto"></div><div class="item_text">' + listofitems[i].title + '</div></div></div>';
             }
 
         }

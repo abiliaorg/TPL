@@ -3,7 +3,8 @@
 	"name": "The Playful Living App",  
 	"start_url": "/",
 	"background_color": "#6633FF",
-	"display": "standalone",
+	"display": "fullscreen",
+	"orientation": "landscape",
 	"scope": "/",
 	"theme_color": "#6633FF",
 	"icons": [

@@ -43,6 +43,10 @@ $(document).ready(function() {
 	loadScript("./states/settings.js", onMainLoaded, onStateError);
 });
 
+$(document).one("click", "body", function(){
+    fullscreen();
+});
+
 $(window).on("resize", function() {
 	console.log("resizing");
 	if (window.app.states[window.app.settings.currentState].Resize !== undefined) {
@@ -126,7 +130,7 @@ function loadStyle(url, callback) {
 }
 
 function onMainLoaded() {
-	
+
 	LoadFirstScript();
 	//LoadAllScripts();
 }
@@ -170,10 +174,16 @@ function Ready() {
 	Initialize();
 
 	window.setTimeout(function() {
+		/*goToState("avatar");
+		$("#pigeon").hide();*/
 		goToState("load");
-		//goToState("avatar");
 	}, 1000);
 
+}
+
+async function fullscreen() {
+  await document.body.requestFullscreen();
+  await screen.orientation.lock("landscape");
 }
 
 function Initialize() {
@@ -197,7 +207,7 @@ function updateView() {
 	$("#" + window.app.settings.currentState).fadeIn("slow");
 	window.app.view.info.text("State: " + window.app.settings.currentState);
 	document.title = window.app.settings.currentState;
-	
+
 	$("body").attr("data-state", window.app.settings.currentState);
 }
 
@@ -205,6 +215,15 @@ function goToState(state) {
 	window.app.settings.currentState = state;
 	updateView();
 	window.app.states[state].Run();
+	
+	$(".popup").hide();
+
+	window.setTimeout(function() {
+		if(typeof(window.app.states[state].Resize)=="function"){
+			window.app.states[state].Resize();
+		}
+		
+	},1000);
 	//console.log(state);
 }
 

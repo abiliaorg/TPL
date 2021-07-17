@@ -1,115 +1,118 @@
 #home {
-    display: block;
-    background-color: #6633FF;
+	display: block;
+	background-color: #6633FF;
 }
 
 #home .homepage_banner {
-    background-image: url(../images/homepage/homepage.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    height: 500px;
-    width: 1150px;
-    left: 90px;
-    pointer-events: none;
+	background-image: url(../images/homepage/homepage.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	height: 500px;
+	width: 1150px;
+	left: 90px;
+	pointer-events: none;
 }
 
 #home .big_button {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 30px;
+	line-height: 35px;
 }
 
 #home .sidebar1 {
-    background-color: #FF99CC;
+	background-color: #FF99CC;
 }
 
 #home .sidebar2 {
-    background-color: #99CC66;
-    height: 200px;
-    transform: rotate(180deg);
+	background-color: #99CC66;
+	height: 200px;
+	transform: rotate(180deg);
 }
 
 #home .button_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col] 1fr;
-    grid-template-rows: [row]3fr [row]2fr;
-    grid-gap: 12px;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col] 1fr;
+	grid-template-rows: [row]3fr [row]2fr;
+	grid-gap: 12px;
 }
 
 #home .button_svg {
-    grid-column: col;
-    grid-row: row 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	grid-column: col;
+	grid-row: row 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 #home .button_text {
-    grid-column: col;
-    grid-row: row 2;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+	grid-column: col;
+	grid-row: row 2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
-#home #button_home {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    background-color: #FFCC00;
-    height: 100%;
+#home #button_tpl {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	background-color: #FFCC00;
+	height: 100%;
 }
 
 #home #info_home {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    font-size: 24px;
-    padding: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	font-size: 2vw;
+	padding: 2vw;
 }
 
 #home #registersignup_home {
-    height: 100%;
+	height: 100%;
 }
 
 #home p.cblack {
-    color: black;
+	color: black;
 }
 
 #home p.cpurple {
-    color: #6633FF;
+	color: #6633FF;
 }
 
 #home #button_signup {
-    height: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #F7524A;
+	height: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #F7524A;
+	text-align: center;
 }
 
 #home #button_login {
-    height: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #99CCFF;
+	height: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #99CCFF;
+	text-align: center;
 }
 
 
@@ -135,68 +138,68 @@ cursor: pointer;
 } */
 
 #popup_signup .signup_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col]1fr [col]1fr;
-    grid-template-rows: [row]1fr [row]1fr [row]1fr [row]1fr [row]1fr [row]1fr;
-    grid-gap: 4px;
-    background-color: black;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col]1fr [col]1fr;
+	grid-template-rows: [row]1fr [row]1fr [row]1fr [row]1fr [row]1fr [row]1fr;
+	grid-gap: 4px;
+	background-color: black;
 }
 
 #popup_signup .sup_item {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
+	background-color: white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 #popup_signup .i1 {
-    grid-column: col / span 2;
-    grid-row: row;
+	grid-column: col / span 2;
+	grid-row: row;
 }
 
 #popup_signup .i2 {
-    grid-column: col / span 1;
-    grid-row: row 2;
+	grid-column: col / span 1;
+	grid-row: row 2;
 }
 
 #popup_signup .i3 {
-    grid-column: col 2/ span 1;
-    grid-row: row 2;
+	grid-column: col 2/ span 1;
+	grid-row: row 2;
 }
 
 #popup_signup .i4 {
-    grid-column: col / span 2;
-    grid-row: row 3;
+	grid-column: col / span 2;
+	grid-row: row 3;
 }
 
 #popup_signup .i5 {
-    grid-column: col / span 1;
-    grid-row: row 4;
+	grid-column: col / span 1;
+	grid-row: row 4;
 }
 
 #popup_signup .i6 {
-    grid-column: col 2/ span 1;
-    grid-row: row 4;
+	grid-column: col 2/ span 1;
+	grid-row: row 4;
 }
 
 #popup_signup .i7 {
-    grid-column: col / span 2;
-    grid-row: row 5;
+	grid-column: col / span 2;
+	grid-row: row 5;
 }
 
 #popup_signup .i8 {
-    grid-column: col / span 2;
-    grid-row: row 6;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	grid-column: col / span 2;
+	grid-row: row 6;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -235,189 +238,158 @@ cursor: pointer;
 */
 
 #popup_login #login_pic {
-    background: url(../images/homepage/carpet.svg) white;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
+	background: url(../images/homepage/carpet.svg) white;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #popup_login .login_grid {
-    display: grid;
-    height: 100%;
-    grid-template-columns: [col]1fr [col]1fr;
-    grid-template-rows: [row]1fr [row]1fr [row]1fr [row]2fr [row]1fr;
-    grid-gap: 4px;
-    background-color: black;
+	display: grid;
+	height: 100%;
+	grid-template-columns: [col]1fr [col]1fr;
+	grid-template-rows: [row]1fr [row]1fr [row]1fr [row]2fr [row]1fr;
+	grid-gap: 4px;
+	background-color: black;
 }
 
 #popup_login .log_item {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-    background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
+	background-color: white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 #popup_login .i1 {
-    grid-column: col / span 1;
-    grid-row: row;
+	grid-column: col / span 1;
+	grid-row: row;
 }
 
 #popup_login .i2 {
-    grid-column: col 2/ span 1;
-    grid-row: row / span 4;
+	grid-column: col 2/ span 1;
+	grid-row: row / span 4;
 }
 
 #popup_login .i3 {
-    grid-column: col / span 1;
-    grid-row: row 2;
+	grid-column: col / span 1;
+	grid-row: row 2;
 }
 
 #popup_login .i4 {
-    grid-column: col / span 1;
-    grid-row: row 3;
+	grid-column: col / span 1;
+	grid-row: row 3;
 }
 
 #popup_login .i5 {
-    grid-column: col / span 1;
-    grid-row: row 4;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    font-size: 12px;
-    padding-bottom: 20px;
-    cursor: pointer;
+	grid-column: col / span 1;
+	grid-row: row 4;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	font-size: 12px;
+	padding-bottom: 20px;
+	cursor: pointer;
 }
 
 #popup_login .i6 {
-    grid-column: col / span 2;
-    grid-row: row 5;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+	grid-column: col / span 2;
+	grid-row: row 5;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
 
 #popup_play .body {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
 #popup_explore .body {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
 #popup_suggest .body {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
 #popup_play #play_done {
-    color: #6633FF;
-    font-size: 20px;
-    cursor: pointer;
+	color: #6633FF;
+	font-size: 20px;
+	cursor: pointer;
 }
 
 #popup_explore #explore_done {
-    color: #6633FF;
-    font-size: 20px;
-    cursor: pointer;
+	color: #6633FF;
+	font-size: 20px;
+	cursor: pointer;
 }
 
 #popup_suggest #suggest_done {
-    color: #6633FF;
-    font-size: 20px;
-    cursor: pointer;
+	color: #6633FF;
+	font-size: 20px;
+	cursor: pointer;
 }
 
 #popup_play .topic {
-    font-weight: bold;
-    font-size: 35px;
+	font-weight: bold;
+	font-size: 35px;
 }
 
 #popup_play .para {
-    font-weight: bold;
-    font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 #popup_explore .topic {
-    font-weight: bold;
-    font-size: 35px;
+	font-weight: bold;
+	font-size: 35px;
 }
 
 #popup_explore .para {
-    font-weight: bold;
-    font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 #popup_suggest .topic {
-    font-weight: bold;
-    font-size: 35px;
+	font-weight: bold;
+	font-size: 35px;
 }
 
 #popup_suggest .para {
-    font-weight: bold;
-    font-size: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 
-/* OLD WAY OF CREATING LAYOUTS (USING GRIDS)
-
-<==x.css==>
-
-#home .grid {
-display: grid;
-height: 100%;
-grid-template-columns: repeat(12, [col] 1fr);
-grid-template-rows: [row]1fr [row]1fr [row]3fr;
-grid-gap: 4px;
+@media (max-height: 768px) {
+	#home .big_button {
+		padding-bottom: 0px;
+	}
 }
 
-#home .grid__item {
-/* padding: 1em;
-font-size: 14px;
-background-color: white;
-}
-
-#home .item-v1 {
-grid-column: col / span 3;
-grid-row: row / span 2;
-}
-
-#home .item-v2 {
-grid-column: col 4 / span 7;
-grid-row: row / span 2;
-}
-
-<== index.html ==>
-
-<div class="grid">
-<div class="grid__item item-v1" id="come_ti_chiami">Come ti chiami?</div>
-<div class="grid__item item-v2" id="button_donna">Donna</div>
-<div class="grid__item item-v3" id="button_uomo">Uomo</div>
-</div>
-
-*/

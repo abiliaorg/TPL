@@ -76,6 +76,10 @@
     padding-bottom: 12px;
 }
 
+#avatar #come_ti_chiami svg{
+    height: 100%;
+}
+
 #avatar #button_left {
     display: flex;
     justify-content: center;

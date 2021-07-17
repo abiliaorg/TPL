@@ -4,19 +4,20 @@
 }
 
 #nursery .menu_left {
-    position: relative;
-    top: 10px;
+    position: absolute;
+    top: 110px;
     width: 100px;
     z-index: 999;
     height: 150px;
 }
 
 #nursery #nursery_inside {
-    position: absolute;
+		margin: auto;
+    /*position: absolute;
     width: 80%;
     height: 80%;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end;*/
 }
 
 #nursery .button_grid {
