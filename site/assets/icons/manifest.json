@@ -1,7 +1,7 @@
 {
 	"short_name": "TPL",
 	"name": "The Playful Living App",  
-	"start_url": "/",
+	"start_url": "/TPL/site/",
 	"background_color": "#6633FF",
 	"display": "fullscreen",
 	"orientation": "landscape",
