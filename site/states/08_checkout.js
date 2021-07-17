@@ -23,9 +23,9 @@ function State_Checkout() {
 
             if (c % 4 == 0) {
                 prod_string += '<div class="row b-b ht-75 no-gutters">';
-                prod_string += '<div class="col-3 b-r button_item" data-id="' + groupedlistofproducts[i][0].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + groupedlistofproducts[i][0].id + '.svg" height="80" width="80"></div><div class="item_text">' + name + '</div><div class="item_description">' + groupedlistofproducts[i][0].description + '</div></div></div>';
+                prod_string += '<div class="col-3 b-r button_item ht-100" data-id="' + groupedlistofproducts[i][0].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + groupedlistofproducts[i][0].id + '.svg" height="80" width="80"></div><div class="item_text">' + name + '</div><div class="item_description">' + groupedlistofproducts[i][0].description + '</div></div></div>';
             } else {
-                prod_string += '<div class="col-3 b-r button_item" data-id="' + groupedlistofproducts[i][0].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + groupedlistofproducts[i][0].id + '.svg" height="80" width="80"></div><div class="item_text">' + name + '</div><div class="item_description">' + groupedlistofproducts[i][0].description + '</div></div></div>';
+                prod_string += '<div class="col-3 b-r button_item ht-100" data-id="' + groupedlistofproducts[i][0].id + '">' + '<div class="item_grid"><div class="item_svg"><img src="./assets/images/bazar/products/' + groupedlistofproducts[i][0].id + '.svg" height="80" width="80"></div><div class="item_text">' + name + '</div><div class="item_description">' + groupedlistofproducts[i][0].description + '</div></div></div>';
             }
             if (c % 4 == 3) {
                 prod_string += '</div>';

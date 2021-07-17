@@ -88,7 +88,13 @@ function RunListeners() { //global buttons listeners here
     /*$(staticAncestors).on(eventName, dynamicChild, function() {});*/
     $(document).on("click", "[data-goto]", function() {
         var state = $(this).attr("data-goto");
-        goToState(state);
+			
+				if(state=="reload"){
+					window.location.reload();
+				}
+				else{					
+        	goToState(state);
+				}
     });
 
     $(document).on("click", "[popup-goto]", function() {
